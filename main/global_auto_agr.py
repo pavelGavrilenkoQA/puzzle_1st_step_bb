@@ -7,6 +7,7 @@ project_dir = os.getcwd()
 AUTO_SETUP_ARG = {
     'path': os.getcwd(),
     'logdir': True,
+    # 'logdir': './log',
     'devices': 'android://127.0.0.1:5037/08111JEC214267?cap_method=MINICAP&&ori_method=MINICAPORI&&touch_method=MAXTOUCH', ### Pixel
     'project_root': project_dir
 }
