@@ -1,16 +1,1 @@
-test_press_market_button провален, подробности: File not exist: tpl1670846241984.png
-test_first_product_buy провален, подробности: File not exist: tpl1670917540353.png
-test_swipe_product_list провален, подробности: File not exist: tpl1670918388195.png
-test_last_product_buy провален, подробности: File not exist: tpl1670918650500.png
-test_failed провален, подробности: File not exist: tp607000284.png
-test_press_setting_button провален, подробности: File not exist: tpl1670921483290.png
-test_sound_off провален, подробности: File not exist: tpl1670921961085.png
-test_vibro_off провален, подробности: File not exist: tpl1670921999824.png
-test_sound_and_vibro_on провален, подробности: File not exist: tpl1670922609202.png
-test_language_list_get провален, подробности: File not exist: tpl1670922039986.png
-test_privacy_tap провален, подробности: File not exist: tpl1670922100323.png
-test_off_all_privacy провален, подробности: File not exist: tpl1670922142371.png
-test_on_all_privacy провален, подробности: File not exist: tpl1670922892644.png
-test_cloud_menu_present провален, подробности: File not exist: tpl1670923038845.png
-test_link_in_setting_present провален, подробности: File not exist: tpl1670923277703.png
-test_setting_menu_exit провален, подробности: File not exist: tpl1670922068293.png
+test_failed --- is failed, detail: File not exist: tp607000284.png

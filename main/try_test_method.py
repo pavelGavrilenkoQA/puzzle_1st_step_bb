@@ -8,10 +8,10 @@ def run_logger(method):
     try:
         method()
         with open(f'{AUTO_SETUP_ARG.get("project_root")}/passed.txt', 'a+') as f:
-            f.write(f'{method.__name__} пройден успешно\n')
+            f.write(f'{method.__name__} --- is passed\n')
     except Exception as e:
         with open(f'{AUTO_SETUP_ARG.get("project_root")}/failed.txt', 'a+') as f:
-            f.write(f'{method.__name__} провален, подробности: {e}\n')
+            f.write(f'{method.__name__} --- is failed, detail: {e}\n')
 
 
 def remove_txt_result_file():
