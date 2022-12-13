@@ -6,8 +6,6 @@ import setting_main
 from try_test_method import remove_txt_result_file
 
 
-
-
 if __name__ == "__main__":
     remove_txt_result_file()
     market_main.run_market_feature()

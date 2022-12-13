@@ -2,14 +2,8 @@ __author__ = "QA PG"
 
 from airtest.core.api import *
 from global_auto_agr import AUTO_SETUP_ARG
-from try_test_method import run_logger
+from try_test_method import run_logger, remove_log_dir
 
-auto_setup(
-    __file__,
-    logdir=AUTO_SETUP_ARG.get('logdir'),
-    devices=[AUTO_SETUP_ARG.get('devices'), ],
-    project_root=AUTO_SETUP_ARG.get('project_root'),
-)
 
 
 def test_press_setting_button():
@@ -183,6 +177,13 @@ def test_setting_menu_exit():
 
 
 def run_setting_feature():
+    remove_log_dir('setting_feature')
+    auto_setup(
+        __file__,
+        logdir=AUTO_SETUP_ARG.get('logdir'),
+        devices=[AUTO_SETUP_ARG.get('devices'), ],
+        project_root=AUTO_SETUP_ARG.get('project_root'),
+    )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(test_press_setting_button)
     run_logger(test_sound_off)

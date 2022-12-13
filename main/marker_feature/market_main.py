@@ -3,14 +3,7 @@ __author__ = "QA PG"
 
 from airtest.core.api import *
 from global_auto_agr import AUTO_SETUP_ARG
-from try_test_method import run_logger
-
-auto_setup(
-    __file__,
-    logdir=AUTO_SETUP_ARG.get('logdir'),
-    devices=[AUTO_SETUP_ARG.get('devices'), ],
-    project_root=AUTO_SETUP_ARG.get('project_root'),
-)
+from try_test_method import run_logger, remove_log_dir
 
 
 def test_press_market_button():
@@ -38,11 +31,19 @@ def test_last_product_buy():
     touch(Template(r"tpl1670917588297.png", record_pos=(-0.402, -0.856), resolution=(1080, 2340)))
     sleep(1)
 
+
 def test_failed():
     assert_exists(Template(r"tp607000284.png", record_pos=(-0.372, 1.007), resolution=(1080, 2340)))
 
 
 def run_market_feature():
+    remove_log_dir('marker_feature')
+    auto_setup(
+        __file__,
+        logdir=AUTO_SETUP_ARG.get('logdir'),
+        devices=[AUTO_SETUP_ARG.get('devices'), ],
+        project_root=AUTO_SETUP_ARG.get('project_root'),
+    )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(test_press_market_button)
     run_logger(test_first_product_buy)
