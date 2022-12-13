@@ -1,0 +1,1 @@
+test_failed провален, подробности: File not exist: tp607000284.png

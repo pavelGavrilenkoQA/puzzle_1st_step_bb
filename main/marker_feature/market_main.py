@@ -1,0 +1,55 @@
+# -*- encoding=utf8 -*-
+__author__ = "QA PG"
+
+from airtest.core.api import *
+from global_auto_agr import AUTO_SETUP_ARG
+from try_test_method import run_logger
+
+auto_setup(
+    __file__,
+    logdir=AUTO_SETUP_ARG.get('logdir'),
+    devices=[AUTO_SETUP_ARG.get('devices'), ],
+    project_root=AUTO_SETUP_ARG.get('project_root'),
+)
+
+
+def test_press_market_button():
+    touch(Template(r"tpl1670846241984.png", record_pos=(-0.372, 1.007), resolution=(1080, 2340)))
+    assert_exists(Template(r"tpl1670846271079.png", record_pos=(0.01, -0.542), resolution=(1080, 2340)), "Ожидаем плашку магазина")
+
+
+def test_first_product_buy():
+    touch(Template(r"tpl1670917540353.png", record_pos=(0.283, 0.003), resolution=(1080, 2340)))
+    assert_exists(Template(r"tpl1670918309674.png", record_pos=(-0.006, 0.367), resolution=(1080, 2340)), "Ожидаем появления окна оплаты.")
+    #Выход из меню оплаты тапом по колесу настроек через залоченный экран
+    touch(Template(r"tpl1670917588297.png", record_pos=(-0.402, -0.856), resolution=(1080, 2340)))
+    sleep(1)
+
+
+def test_swipe_product_list():
+    swipe(Template(r"tpl1670918388195.png", record_pos=(0.01, 0.294), resolution=(1080, 2340)), vector=[-0.0194, -0.8])
+    assert_exists(Template(r"tpl1670918519701.png", record_pos=(-0.131, 0.549), resolution=(1080, 2340)), "Ожидаем отображение товара 3к монет")
+
+
+def test_last_product_buy():
+
+    touch(Template(r"tpl1670918650500.png", record_pos=(0.281, 0.561), resolution=(1080, 2340)))
+    assert_exists(Template(r"tpl1670918671500.png", record_pos=(0.007, 0.374), resolution=(1080, 2340)), "Please fill in the test point.")
+    touch(Template(r"tpl1670917588297.png", record_pos=(-0.402, -0.856), resolution=(1080, 2340)))
+    sleep(1)
+
+def test_failed():
+    assert_exists(Template(r"tp607000284.png", record_pos=(-0.372, 1.007), resolution=(1080, 2340)))
+
+
+def run_market_feature():
+    start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(test_press_market_button)
+    run_logger(test_first_product_buy)
+    run_logger(test_swipe_product_list)
+    run_logger(test_last_product_buy)
+    run_logger(test_failed)
+    stop_app("com.jollyco.jbpuzzleadventure")
+
+
+
