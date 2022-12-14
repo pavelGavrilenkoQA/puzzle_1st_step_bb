@@ -52,6 +52,7 @@ def run_market_feature():
     run_logger(test_last_product_buy)
     run_logger(test_failed)
     stop_app("com.jollyco.jbpuzzleadventure")
+    simple_report(__file__, logpath=True, output='html_report/market.html')
 
 
 

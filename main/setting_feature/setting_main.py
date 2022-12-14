@@ -198,3 +198,4 @@ def run_setting_feature():
     run_logger(test_link_in_setting_present)
     run_logger(test_setting_menu_exit)
     stop_app("com.jollyco.jbpuzzleadventure")
+    simple_report(__file__, logpath=True, output='html_report/setting.html')

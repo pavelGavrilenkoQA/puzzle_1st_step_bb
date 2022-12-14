@@ -13,4 +13,3 @@ if __name__ == "__main__":
     market_main.run_market_feature()
     setting_main.run_setting_feature()
     daily_main.run_daily_feature()
-    simple_report(__file__, logpath=True)
