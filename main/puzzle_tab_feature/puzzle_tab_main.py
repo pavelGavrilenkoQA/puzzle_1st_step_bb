@@ -14,7 +14,7 @@ def test_open_free_pack():
         resolution=(1080, 2340))
     )
     assert_exists(Template(
-        r"tpl1671007491882.png",
+        r"tpl1671112981459.png",
         record_pos=(0.001, -0.477),
         resolution=(1080, 2340)),
         "Ожидаем пазл внутри пака"
@@ -23,7 +23,7 @@ def test_open_free_pack():
 
 def test_open_art():
     touch(Template(
-        r"tpl1671007491882.png",
+        r"tpl1671112981459.png",
         record_pos=(0.001, -0.477),
         resolution=(1080, 2340))
     )
@@ -161,7 +161,7 @@ def test_exit_popup_close():
         "Ожидаем отсувие якоря главной"
     )
     assert_not_exists(Template(
-        r"tpl1671007491882.png",
+        r"tpl1671112981459.png",
         record_pos=(0.001, -0.477),
         resolution=(1080, 2340)),
         "Ожидаем отсутвие якоря листа артов")
@@ -178,8 +178,10 @@ def test_exit_popup_accept():
         record_pos=(-0.131, 0.048),
         resolution=(1080, 2340))
     )
+    swipe(Template(r"tpl1671113542467.png", record_pos=(-0.005, -0.166), resolution=(1080, 2340)),
+          vector=[0.0566, 0.1500])
     assert_exists(Template(
-        r"tpl1671007491882.png",
+        r"tpl1671112981459.png",
         record_pos=(0.001, -0.477),
         resolution=(1080, 2340)),
         "Ожидаем элемент из списка артов"

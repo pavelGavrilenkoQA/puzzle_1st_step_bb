@@ -1,1 +1,4 @@
 test_failed --- is failed, detail: File not exist: tp607000284.png
+test_tap_left_daily_puzzle --- is failed, detail: 'Picture Template(C:\\Dev_py\\puzzle_1st_step_bb\\main\\daily_feature\\tpl1670943687267.png) not found in screen'
+test_tap_middle_daily_puzzle --- is failed, detail: 'Picture Template(C:\\Dev_py\\puzzle_1st_step_bb\\main\\daily_feature\\tpl1670943703035.png) not found in screen'
+test_tap_right_daily_puzzle --- is failed, detail: 'Picture Template(C:\\Dev_py\\puzzle_1st_step_bb\\main\\daily_feature\\tpl1670943729036.png) not found in screen'
