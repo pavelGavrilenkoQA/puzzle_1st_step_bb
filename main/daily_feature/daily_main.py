@@ -21,7 +21,7 @@ def test_press_daily_button():
 
 
 def test_tap_left_daily_puzzle():
-    touch(Template(r"tpl1670943687267.png", record_pos=(-0.312, -0.312), resolution=(1080, 2340)))
+    touch(Template(r"tpl1671199173264.png", record_pos=(-0.265, -0.119), resolution=(1080, 2340)))
     assert_exists(Template(
         r"tpl1670943619339.png",
         record_pos=(0.003, 0.529),
@@ -33,7 +33,7 @@ def test_tap_left_daily_puzzle():
 
 
 def test_tap_middle_daily_puzzle():
-    touch(Template(r"tpl1670943703035.png", record_pos=(-0.006, -0.323), resolution=(1080, 2340)))
+    touch(Template(r"tpl1671199195761.png", record_pos=(-0.04, -0.193), resolution=(1080, 2340)))
     assert_exists(Template(
         r"tpl1670943619339.png",
         record_pos=(0.003, 0.529),
@@ -45,7 +45,7 @@ def test_tap_middle_daily_puzzle():
 
 
 def test_tap_right_daily_puzzle():
-    touch(Template(r"tpl1670943729036.png", record_pos=(0.323, -0.274), resolution=(1080, 2340)))
+    touch(Template(r"tpl1671199210374.png", record_pos=(0.227, -0.133), resolution=(1080, 2340)))
     assert_exists(Template(
         r"tpl1670943619339.png",
         record_pos=(0.003, 0.529),

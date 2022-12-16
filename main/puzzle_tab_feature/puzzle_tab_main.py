@@ -81,7 +81,7 @@ def test_swipe_count_element_to_16():
         vector=[-0.1300, -0.0062]
     )
     # КД для заверешения анимации свайпа
-    sleep(1)
+    sleep(2)
     assert_exists(Template(
         r"tpl1671008077643.png",
         record_pos=(-0.011, 0.219),
@@ -178,13 +178,11 @@ def test_exit_popup_accept():
         record_pos=(-0.131, 0.048),
         resolution=(1080, 2340))
     )
-    swipe(Template(r"tpl1671113542467.png", record_pos=(-0.005, -0.166), resolution=(1080, 2340)),
-          vector=[0.0566, 0.1500])
     assert_exists(Template(
-        r"tpl1671112981459.png",
-        record_pos=(0.001, -0.477),
+        r"tpl1671008576921.png",
+        record_pos=(-0.381, 0.967),
         resolution=(1080, 2340)),
-        "Ожидаем элемент из списка артов"
+        "Ожидаем кнопку выхода из списка"
     )
 
 

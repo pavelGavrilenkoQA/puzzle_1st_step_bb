@@ -7,6 +7,7 @@ import setting_main
 import daily_main
 import puzzle_tab_main
 from try_test_method import remove_txt_result_file
+from airtest.core.api import device, init_device
 
 
 if __name__ == "__main__":
