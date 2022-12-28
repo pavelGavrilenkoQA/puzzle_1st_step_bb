@@ -4,7 +4,7 @@
 ## Требования 
 |        | v     |
 |--------|-------|
-| Python | 3.7   |
+| Python | 3.x   |
 | adb    | any   |
 |Device | Pixel 4a|
 |JBJ app | 1.0.129+|
