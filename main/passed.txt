@@ -20,7 +20,6 @@ test_link_in_setting_present --- is passed
 test_setting_menu_exit --- is passed
 test_press_daily_button --- is passed
 test_tap_left_daily_puzzle --- is passed
-test_tap_middle_daily_puzzle --- is passed
 test_tap_right_daily_puzzle --- is passed
 test_tap_lock_puzzle --- is passed
 test_open_free_pack --- is passed
