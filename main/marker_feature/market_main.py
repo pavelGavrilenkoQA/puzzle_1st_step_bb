@@ -5,6 +5,7 @@ from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
+from general_steps import skip_system_pop
 
 
 def test_press_market_button():
@@ -46,6 +47,7 @@ def run_market_feature():
         project_root=AUTO_SETUP_ARG.get('project_root'),
     )
     start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(skip_system_pop)
     run_logger(test_press_market_button)
     run_logger(test_first_product_buy)
     run_logger(test_swipe_product_list)

@@ -4,6 +4,7 @@ from airtest.core.api import *
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
 from airtest.report.report import simple_report
+from general_steps import skip_system_pop
 
 
 def test_press_daily_button():
@@ -75,6 +76,7 @@ def run_daily_feature():
         project_root=AUTO_SETUP_ARG.get('project_root'),
     )
     start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(skip_system_pop)
     run_logger(test_press_daily_button)
     run_logger(test_tap_left_daily_puzzle)
     run_logger(test_tap_middle_daily_puzzle)

@@ -5,10 +5,10 @@ from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
+from general_steps import skip_system_pop
 
 
 def test_politic_accept():
-    sleep(2)
     touch(Template(
         r"tpl1672664808761.png",
         record_pos=(-0.003, 0.328),
@@ -129,6 +129,7 @@ def run_tutorial_feature():
     )
     clear_app("com.jollyco.jbpuzzleadventure")
     start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(skip_system_pop)
     run_logger(test_politic_accept)
     run_logger(test_tutorial_part_1)
     run_logger(test_tutorial_part_2)
