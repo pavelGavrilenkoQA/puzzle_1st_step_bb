@@ -16,8 +16,8 @@ def test_press_market_button():
 def test_first_product_buy():
     touch(Template(r"tpl1670917540353.png", record_pos=(0.283, 0.003), resolution=(1080, 2340)))
     assert_exists(Template(r"tpl1670918309674.png", record_pos=(-0.006, 0.367), resolution=(1080, 2340)), "Ожидаем появления окна оплаты.")
-    #Выход из меню оплаты тапом по колесу настроек через залоченный экран
-    touch(Template(r"tpl1670917588297.png", record_pos=(-0.402, -0.856), resolution=(1080, 2340)))
+    # Выход из меню оплаты тапом по заголовку через залоченный экран
+    touch(Template(r"tpl1673516370052.png", record_pos=(-0.002, -0.538), resolution=(1080, 2340)))
     sleep(1)
 
 
@@ -30,7 +30,8 @@ def test_last_product_buy():
 
     touch(Template(r"tpl1670918650500.png", record_pos=(0.281, 0.561), resolution=(1080, 2340)))
     assert_exists(Template(r"tpl1670918671500.png", record_pos=(0.007, 0.374), resolution=(1080, 2340)), "Please fill in the test point.")
-    touch(Template(r"tpl1670917588297.png", record_pos=(-0.402, -0.856), resolution=(1080, 2340)))
+    # Выход из меню оплаты тапом по заголовку через залоченный экран
+    touch(Template(r"tpl1673516370052.png", record_pos=(-0.002, -0.538), resolution=(1080, 2340)))
     sleep(1)
 
 

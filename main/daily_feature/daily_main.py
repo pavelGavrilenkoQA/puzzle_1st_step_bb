@@ -22,7 +22,7 @@ def test_press_daily_button():
 
 
 def test_tap_left_daily_puzzle():
-    touch(Template(r"tpl1671199173264.png", record_pos=(-0.265, -0.119), resolution=(1080, 2340)))
+    touch(Template(r"tpl1673512536025.png", record_pos=(-0.181, -0.108), resolution=(1080, 2340)))
     assert_exists(Template(
         r"tpl1670943619339.png",
         record_pos=(0.003, 0.529),
@@ -31,10 +31,11 @@ def test_tap_left_daily_puzzle():
     )
     #Возвращаемся к дейли меню
     touch(Template(r"tpl1670943635529.png", record_pos=(-0.385, 0.964), resolution=(1080, 2340)))
+    sleep(2)
 
 
 def test_tap_middle_daily_puzzle():
-    touch(Template(r"tpl1671199195761.png", record_pos=(-0.04, -0.193), resolution=(1080, 2340)))
+    touch(Template(r"tpl1673512654283.png", record_pos=(0.141, -0.242), resolution=(1080, 2340)))
     assert_exists(Template(
         r"tpl1670943619339.png",
         record_pos=(0.003, 0.529),
@@ -43,10 +44,11 @@ def test_tap_middle_daily_puzzle():
     )
     # Возвращаемся к дейли меню
     touch(Template(r"tpl1670943635529.png", record_pos=(-0.385, 0.964), resolution=(1080, 2340)))
+    sleep(2)
 
 
 def test_tap_right_daily_puzzle():
-    touch(Template(r"tpl1671199210374.png", record_pos=(0.227, -0.133), resolution=(1080, 2340)))
+    touch(Template(r"tpl1673512800019.png", record_pos=(0.18, -0.097), resolution=(1080, 2340)))
     assert_exists(Template(
         r"tpl1670943619339.png",
         record_pos=(0.003, 0.529),
@@ -55,6 +57,7 @@ def test_tap_right_daily_puzzle():
     )
     # Возвращаемся к дейли меню
     touch(Template(r"tpl1670943635529.png", record_pos=(-0.385, 0.964), resolution=(1080, 2340)))
+    sleep(2)
 
 
 def test_tap_lock_puzzle():
