@@ -179,6 +179,7 @@ def test_exit_popup_accept():
         record_pos=(-0.131, 0.048),
         resolution=(1080, 2340))
     )
+    sleep(2)
     assert_exists(Template(
         r"tpl1671008576921.png",
         record_pos=(-0.381, 0.967),
@@ -188,6 +189,7 @@ def test_exit_popup_accept():
 
 
 def test_to_main_from_art_list():
+    sleep(2)
     touch(Template(
         r"tpl1671008576921.png",
         record_pos=(-0.381, 0.967),

@@ -1,2 +1,1 @@
 test_failed --- is failed, detail: File not exist: tp607000284.png
-test_tap_middle_daily_puzzle --- is failed, detail: Template(C:\Dev_py\puzzle_1st_step_bb\main\daily_feature\tpl1670943619339.png) does not exist in screen, message: ќжидаем кнопку старт

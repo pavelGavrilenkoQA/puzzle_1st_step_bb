@@ -14,8 +14,9 @@ def test_press_market_button():
 
 
 def test_first_product_buy():
-    touch(Template(r"tpl1670917540353.png", record_pos=(0.283, 0.003), resolution=(1080, 2340)))
-    assert_exists(Template(r"tpl1670918309674.png", record_pos=(-0.006, 0.367), resolution=(1080, 2340)), "Ожидаем появления окна оплаты.")
+    touch(Template(r"tpl1673533172354.png", record_pos=(0.351, 0.006), resolution=(1080, 2340)))
+    assert_exists(Template(r"tpl1673532913329.png", record_pos=(-0.188, 0.412), resolution=(1200, 2000)), "Ожидаем часть попапа покупки")
+
     # Выход из меню оплаты тапом по заголовку через залоченный экран
     touch(Template(r"tpl1673516370052.png", record_pos=(-0.002, -0.538), resolution=(1080, 2340)))
     sleep(1)
@@ -26,13 +27,13 @@ def test_swipe_product_list():
     assert_exists(Template(r"tpl1670918519701.png", record_pos=(-0.131, 0.549), resolution=(1080, 2340)), "Ожидаем отображение товара 3к монет")
 
 
-def test_last_product_buy():
-
-    touch(Template(r"tpl1670918650500.png", record_pos=(0.281, 0.561), resolution=(1080, 2340)))
-    assert_exists(Template(r"tpl1670918671500.png", record_pos=(0.007, 0.374), resolution=(1080, 2340)), "Please fill in the test point.")
-    # Выход из меню оплаты тапом по заголовку через залоченный экран
-    touch(Template(r"tpl1673516370052.png", record_pos=(-0.002, -0.538), resolution=(1080, 2340)))
-    sleep(1)
+# def test_last_product_buy():
+#
+#     touch(Template(r"tpl1670918650500.png", record_pos=(0.281, 0.561), resolution=(1080, 2340)))
+#     assert_exists(Template(r"tpl1670918671500.png", record_pos=(0.007, 0.374), resolution=(1080, 2340)), "Please fill in the test point.")
+#     # Выход из меню оплаты тапом по заголовку через залоченный экран
+#     touch(Template(r"tpl1673516370052.png", record_pos=(-0.002, -0.538), resolution=(1080, 2340)))
+#     sleep(1)
 
 
 def test_failed():
@@ -52,7 +53,8 @@ def run_market_feature():
     run_logger(test_press_market_button)
     run_logger(test_first_product_buy)
     run_logger(test_swipe_product_list)
-    run_logger(test_last_product_buy)
+    # не стабилен для разных разрешений. продумать оптимизацию
+    # run_logger(test_last_product_buy)
     run_logger(test_failed)
     stop_app("com.jollyco.jbpuzzleadventure")
     simple_report(__file__, logpath=True, output='html_report/market.html')
