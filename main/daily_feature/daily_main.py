@@ -8,7 +8,7 @@ from general_steps import skip_system_pop
 
 
 def test_press_daily_button():
-    touch(Template(r"tpl1670943525840.png", record_pos=(-0.124, 1.022), resolution=(1080, 2340)))
+    touch(Template(r"tpl1673604451409.png", record_pos=(-0.085, 0.708), resolution=(1200, 1920)))
     assert_exists(Template(
         r"tpl1670943541988.png",
         record_pos=(0.007, -0.562),
