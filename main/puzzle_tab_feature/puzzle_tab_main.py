@@ -103,6 +103,7 @@ def test_start_art_puzzle():
         record_pos=(0.003, 0.535),
         resolution=(1080, 2340))
     )
+    sleep(2)
     # Проверяем наличие попапа сбора другого пазла
     if exists(Template(
             r"tpl1671009261312.png",
