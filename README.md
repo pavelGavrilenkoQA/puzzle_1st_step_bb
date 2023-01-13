@@ -16,7 +16,7 @@
 при активированном ВО
 
 ```sh
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 !!! Тесты написаны для Pixel 4a - стабильно работают на нем. Адаптивносность в процессе реализации.
