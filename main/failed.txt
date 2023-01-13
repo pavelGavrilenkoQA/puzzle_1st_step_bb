@@ -1,1 +1,1 @@
-test_failed --- is failed, detail: File not exist: tp607000284.png
+test_failed --- is failed

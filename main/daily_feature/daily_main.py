@@ -56,7 +56,7 @@ def test_tap_right_daily_puzzle():
         resolution=(1080, 2340)),
         "Ожидаем кнопку старт"
     )
-    # Возвращаемся к дейли меню
+    # Возвращаемся к дейли меню новое
     touch(Template(r"tpl1670943635529.png", record_pos=(-0.385, 0.964), resolution=(1080, 2340)))
 
 
