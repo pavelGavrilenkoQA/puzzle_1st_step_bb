@@ -24,15 +24,12 @@ test_tap_right_daily_puzzle --- is passed
 test_tap_lock_puzzle --- is passed
 skip_system_pop --- is passed
 test_press_market_button --- is passed
-test_first_product_buy --- is passed
-test_swipe_product_list --- is passed
 skip_system_pop --- is passed
 test_open_free_pack --- is passed
 test_open_art --- is passed
 test_rotation_button_on --- is passed
 test_rotation_button_off --- is passed
 test_swipe_count_element_to_16 --- is passed
-test_start_art_puzzle --- is passed
 test_exit_popup --- is passed
 test_exit_popup_close --- is passed
 test_exit_popup_accept --- is passed

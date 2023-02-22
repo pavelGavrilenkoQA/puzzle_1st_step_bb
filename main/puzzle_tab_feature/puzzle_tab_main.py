@@ -103,7 +103,7 @@ def test_start_art_puzzle():
         record_pos=(0.003, 0.535),
         resolution=(1080, 2340))
     )
-    sleep(2)
+    sleep(4)
     # Проверяем наличие попапа сбора другого пазла
     if exists(Template(
             r"tpl1671009261312.png",
@@ -111,8 +111,9 @@ def test_start_art_puzzle():
             resolution=(1080, 2340))
     ):
         # При отображении подтверждаем переход к сбору нового пазла
+        sleep(3)
         touch(Template(
-            r"tpl1671009289719.png",
+            r"tpl1671008499695.png",
             record_pos=(-0.131, 0.06),
             resolution=(1080, 2340))
         )

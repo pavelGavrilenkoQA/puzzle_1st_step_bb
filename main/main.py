@@ -16,3 +16,4 @@ if __name__ == "__main__":
     daily_main.run_daily_feature()
     market_main.run_market_feature()
     puzzle_tab_main.run_puzzle_tab_feature()
+

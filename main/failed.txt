@@ -1,1 +1,4 @@
+test_first_product_buy --- is failed
+test_swipe_product_list --- is failed
 test_failed --- is failed
+test_start_art_puzzle --- is failed
