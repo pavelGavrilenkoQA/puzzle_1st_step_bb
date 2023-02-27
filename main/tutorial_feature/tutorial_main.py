@@ -42,7 +42,7 @@ def test_tutorial_part_1():
         record_pos=(-0.321, 1.038),
         resolution=(1080, 2340))
     )
-    sleep(4)
+    sleep(7)
     assert_exists(Template(
         r"tpl1672664849254.png",
         record_pos=(-0.003, -0.211),
@@ -85,10 +85,10 @@ def test_tutorial_part_3():
     )
     sleep(7)
     assert_exists(Template(
-        r"tpl1672665342996.png",
-        record_pos=(0.014, -0.303),
+        r"tpl1677494484072.png",
+        record_pos=(0.008, -0.206),
         resolution=(1080, 2340)),
-        "Ожидаем отображение арта окончания тутора входа в пазл"
+        "Отображение завершенного арта туториала"
     )
 
 
