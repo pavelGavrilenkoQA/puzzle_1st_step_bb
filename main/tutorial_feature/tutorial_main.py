@@ -127,6 +127,7 @@ def run_tutorial_feature():
         devices=[AUTO_SETUP_ARG.get('devices'), ],
         project_root=AUTO_SETUP_ARG.get('project_root'),
     )
+    # очистка апп даты только для Андроида, при запуске на Иос будет падать, отключать при пуске на оси
     clear_app("com.jollyco.jbpuzzleadventure")
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(skip_system_pop)
