@@ -10,9 +10,10 @@
       <sourceFolder url="file://$MODULE_DIR$/main/html_report" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/tutorial_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/elements_in_art" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main/page" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

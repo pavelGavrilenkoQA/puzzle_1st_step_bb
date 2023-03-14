@@ -12,9 +12,9 @@ def test_play_puzzle_9_elements():
     touch(Template(r"tpl1672751319901.png", record_pos=(-0.008, 0.536), resolution=(1080, 2340)))
     sleep(2)
     if exists(Template(
-            r"tpl1671009261312.png",
-            record_pos=(0.001, -0.008),
-            resolution=(1080, 2340))
+                  r"tpl1677495070425.png",
+                   record_pos=(-0.006, -0.015),
+                   resolution=(1080, 2340))
     ):
         touch(Template(
             r"tpl1671009289719.png", record_pos=(-0.131, 0.06), resolution=(1080, 2340))
