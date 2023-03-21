@@ -154,7 +154,7 @@ def swipe_analytics_on():
         resolution=(1080, 2340)
     )
 
-def swipe_personalized_ads_on():
+def swipe_analytics_on():
     return Template(
         r"swipe_personalized_ads_on.png",
         record_pos=(0.027, 0.197),
@@ -183,7 +183,7 @@ def swipe_personalized_off():
 
 def swipe_analytics_personalized_ads_on():
     return Template(
-        r"swipe_analutics_personalized_on.png",
+        r"swipe_analytics_personalized_on.png",
         record_pos=(0.058, 0.082),
         resolution=(1080, 2340)
     )
@@ -332,12 +332,6 @@ def elements_16():
         r"elements_16.png",
         record_pos=(-0.011, 0.219),
         resolution=(1080, 2340)
-    )
-def another_puzzle_in_progress():
-    return Template(
-            r"another_puzzle_in_progress.png",
-            record_pos=(0.001, -0.008),
-            resolution=(1080, 2340)
     )
 
 def button_yes():
@@ -499,6 +493,49 @@ def completed_elements_256():
         resolution=(1080, 2340)
     )
 
+def completed_art_tutorial():
+    return Template(
+        r"completed_art_tutorial.png",
+        record_pos=(0.008, -0.206),
+        resolution=(1080, 2340)
+    )
+
+def another_puzzle_in_progress():
+    return Template(
+            r"another_puzzle_in_progress.png",
+            record_pos=(-0.006, -0.015),
+            resolution=(1080, 2340)
+    )
+
+def empty_field():
+    return Template(
+        r"empty_field.png",
+        record_pos=(0.224, -0.213),
+        resolution=(1080, 2340)
+    )
+
+def setting_menu():
+    return Template(
+        r"setting_menu.png",
+        record_pos=(0.265, -0.057),
+        resolution=(1080, 2340)
+    )
+
+def part_of_daily():
+    return Template(
+        r"part_of_daily.png",
+        record_pos=(0.134, -0.335),
+        resolution=(1200, 2000)
+    )
+
+def swipe_elements_to_16():
+    return Template(
+        r"swipe_elements_to_16.png",
+        record_pos=(0.095, 0.185),
+        resolution=(1080, 2340),
+        vector=[-0.1300, -0.0062]
+    )
+
 if __name__ == "__main__":
     print(button_ok())
     print(tutorial_image())
@@ -548,7 +585,6 @@ if __name__ == "__main__":
     print(coins_3())
     print(coins_6())
     print(elements_16())
-    print(another_puzzle_in_progress())
     print(button_yes())
     print(button_level_assert())
     print(button_exit())
@@ -571,4 +607,9 @@ if __name__ == "__main__":
     print(completed_144_elements())
     print(elements_256())
     print(completed_elements_256())
-
+    print(completed_art_tutorial())
+    print(another_puzzle_in_progress())
+    print(empty_field())
+    print(setting_menu())
+    print(part_of_daily())
+    print(swipe_elements_to_16())
