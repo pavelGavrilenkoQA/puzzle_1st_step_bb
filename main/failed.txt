@@ -1,1 +1,3 @@
-test_failed --- is failed
+test_ads_hint --- is failed
+test_ads_coins --- is failed
+test_purchases_for_dollars --- is failed
