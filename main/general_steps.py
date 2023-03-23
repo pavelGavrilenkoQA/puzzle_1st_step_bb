@@ -616,12 +616,34 @@ def completed_elements_256():
 
 def touch_locked_50():
     touch(locked_50())
+    sleep(1)
 
 
 def touch_locked_200():
     touch(locked_200())
+    sleep(1)
+
+
+def touch_locked_600():
+    touch(locked_600())
+    sleep(1)
+
 
 def assert_not_exists_claim():
     assert_not_exists(button_claim())
 
+
+def touch_ads_hint():
+    touch(ads_hint())
+    sleep(20.0)
+
+
+def touch_ads_coins():
+    touch(ads_coins())
+    sleep(20.0)
+
+
+def touch_close_ads():
+    touch(close_ads())
+    sleep(2.0)
 

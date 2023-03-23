@@ -297,7 +297,7 @@ def text_shop():
 
 def locked_50():
     return Template(
-        r"locked_50",
+        r"locked_50.png",
         record_pos=(0.308, 0.006),
         resolution=(1080, 2400)
     )
@@ -305,16 +305,42 @@ def locked_50():
 
 def locked_200():
     return Template(
-        r"locked_200",
+        r"locked_200.png",
         record_pos=(0.308, 0.17),
         resolution=(1080, 2400)
     )
 
 
 def locked_600():
-    touch(Template(r"tpl1678886163541.png",
-                   record_pos=(0.308, 0.329),
-                   resolution=(1080, 2400)))
+    return Template(
+            r"locked_600.png",
+            record_pos=(0.308, 0.329),
+            resolution=(1080, 2400)
+    )
+
+
+def ads_hint():
+    return Template(
+            r"ads_hint.png",
+            record_pos=(0.272, -0.334),
+            resolution=(1080, 2400)
+    )
+
+
+def ads_coins():
+    return Template(
+            r"ads_coins.png",
+            record_pos=(0.273, -0.172),
+            resolution=(1080, 2400)
+    )
+
+
+def close_ads():
+    return Template(
+        record_pos=(0.392, -0.898),
+        resolution=(1080, 2400)
+    )
+
 
 def first_product_buy():
     return Template(
