@@ -162,6 +162,11 @@ def test_purchases_for_coins():
     assert_exists(Template(r"tpl1678886892072.png",
                            record_pos=(0.395, -0.912),
                            resolution=(1080, 2400)), "3")
+
+
+
+
+
     sleep(1.0)
     touch(Template(r"tpl1678886142174.png",
                    record_pos=(0.308, 0.17),

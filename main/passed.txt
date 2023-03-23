@@ -22,3 +22,15 @@ test_press_market_button --- is passed
 test_ads_hint --- is passed
 test_ads_coins --- is passed
 test_purchases_for_coins --- is passed
+skip_system_pop --- is passed
+test_politic_accept --- is passed
+test_tutorial_part_1 --- is passed
+test_tutorial_part_2 --- is passed
+test_tutorial_part_3 --- is passed
+test_language_check --- is passed
+skip_system_pop --- is passed
+test_press_market_button --- is passed
+test_ads_hint --- is passed
+test_ads_coins --- is passed
+test_purchases_for_coins --- is passed
+test_purchases_for_dollars --- is passed

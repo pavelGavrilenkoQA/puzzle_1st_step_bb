@@ -614,17 +614,17 @@ def completed_elements_256():
     assert_exists(completed_elements_256())
 
 
-def touch_locked_50():
+def touch_50():
     touch(locked_50())
     sleep(1)
 
 
-def touch_locked_200():
+def touch_200():
     touch(locked_200())
     sleep(1)
 
 
-def touch_locked_600():
+def touch_600():
     touch(locked_600())
     sleep(1)
 
@@ -646,4 +646,69 @@ def touch_ads_coins():
 def touch_close_ads():
     touch(close_ads())
     sleep(2.0)
+
+
+def assert_hint_x1():
+    assert_exists(hint_x1)
+
+
+def assert_hint3():
+    assert_exists(hint_3())
+
+
+def touch_claim():
+    touch(button_claim())
+
+
+def assert_1():
+    assert_exists(hint_1())
+
+
+def touch_debug():
+    touch(debug())
+
+
+def touch_plus_100():
+    touch(plus_100())
+
+
+def touch_hide():
+    touch(hide())
+
+
+def assert_coins_x10():
+    assert_exists(coins_x10())
+
+
+def assert_x10():
+    assert_exists(x10())
+
+
+def touch_plus_1():
+    touch(plus_1())
+
+
+def touch_reload():
+    touch(reload())
+
+
+def assert_x1():
+    assert_exists(x1())
+
+
+def assert_claim():
+    assert_exists(button_claim())
+
+
+def assert_hint11():
+    assert_exists(cons_11())
+
+
+def assert_91():
+    assert_exists(assert_91())
+
+
+
+
+
 

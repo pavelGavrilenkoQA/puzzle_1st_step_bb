@@ -337,7 +337,96 @@ def ads_coins():
 
 def close_ads():
     return Template(
+        r"close_ads.png",
         record_pos=(0.392, -0.898),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_x1():
+    return Template(
+        r"hint_x1.png",
+        record_pos=(0.001, -0.117),
+        resolution=(1080, 2400)
+    )
+
+
+def x1():
+    return Template(
+        r"x1.png",
+        record_pos=(-0.001, 0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_1():
+    return Template(
+        r"1.png",
+        record_pos=(-0.001, 0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def debug():
+    return Template(
+        r"debug.png",
+        record_pos=(0.429, 1.068),
+        resolution=(1080, 2400)
+    )
+
+
+def plus_100():
+    return Template(
+        r"plus_100.png",
+        record_pos=(0.094, -0.592),
+        resolution=(1080, 2400)
+    )
+
+
+def hide():
+    return Template(
+        r"Hide.png",
+        record_pos=(-0.219, 1.029),
+        resolution=(1080, 2400)
+    )
+
+
+def coins_x10():
+    return Template(
+        r"coins_x10.png",
+        record_pos=(0.003, -0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def x10():
+    return Template(
+        r"x10.png",
+        record_pos=(-0.003, 0.112),
+        resolution=(1080, 2400)
+    )
+
+
+def cons_11():
+    return Template(
+        r"11.png",
+        record_pos=(0.001, -0.907),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_3():
+    return Template(
+        r"3.png",
+        record_pos=(0.395, -0.912),
+        resolution=(1080, 2400)
+    )
+
+
+def coins_91():
+    return Template(
+        r"91.png",
+        record_pos=(-0.001, -0.908),
         resolution=(1080, 2400)
     )
 
@@ -347,6 +436,22 @@ def first_product_buy():
         r"first_product_buy.png",
         record_pos=(0.351, 0.006),
         resolution=(1080, 2340)
+    )
+
+
+def plus_1():
+    return Template(
+        r"plus_1.png",
+        record_pos = (-0.283, -0.592),
+        resolution = (1080, 2400)
+    )
+
+
+def reload():
+    return Template(
+        r"Reload.png",
+        record_pos=(-0.198, 0.902),
+        resolution=(1080, 2400)
     )
 
 
