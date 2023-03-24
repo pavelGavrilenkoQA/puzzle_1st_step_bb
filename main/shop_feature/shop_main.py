@@ -175,6 +175,9 @@ def test_purchases_for_coins():
     assert_exists(Template(r"tpl1678885189932.png",
                            record_pos=(0.001, -0.24),
                            resolution=(1080, 2400)), "Hint")
+
+
+
     assert_exists(Template(r"tpl1678886641504.png",
                            record_pos=(0.02, 0.11),
                            resolution=(1080, 2400)), "5")
@@ -182,9 +185,15 @@ def test_purchases_for_coins():
                    record_pos=(0.0, 0.381),
                    resolution=(1080, 2400)))
     sleep(2.0)
+
+
     assert_exists(Template(r"tpl1678887023215.png",
                            record_pos=(0.393, -0.91),
                            resolution=(1080, 2400)), "8")
+
+
+
+
     touch(Template(r"tpl1678886163541.png",
                    record_pos=(0.308, 0.329),
                    resolution=(1080, 2400)))
@@ -210,10 +219,14 @@ def test_purchases_for_dollars():
                    resolution=(1080, 2400)),
           vector=[-0.0132, -0.2193])
 
+
+
     touch(Template(r"tpl1678887207476.png",
                    record_pos=(0.231, 0.071),
                    resolution=(1080, 2400)))
     sleep(3.0)
+
+
     assert_exists(Template(r"tpl1678887470007.png",
                            record_pos=(-0.18, 0.582),
                            resolution=(1080, 2400)), "1")
@@ -245,9 +258,16 @@ def test_purchases_for_dollars():
                    record_pos=(0.0, 0.381),
                    resolution=(1080, 2400)))
     sleep(2.0)
+
+
+
+
     assert_exists(Template(r"tpl1678887563338.png",
                            record_pos=(0.374, -0.909),
                            resolution=(1080, 2400)), "29")
+
+
+
 
     touch(Template(r"tpl1678890179493.png",
                    record_pos=(0.227, 0.394),

@@ -708,7 +708,64 @@ def assert_91():
     assert_exists(assert_91())
 
 
+def assert_5():
+    assert_exists(hint_5())
 
 
+def assert_8():
+    assert_exists(hint_8())
 
+
+def assert_20():
+    assert_exists(hint_20())
+
+
+def assert_28():
+    assert_exists(hint_28())
+
+
+def swipe_shop():
+    swipe(swipe_shop(),
+          vector=[-0.0132, -0.2193]
+          )
+
+
+def android_price0():
+    assert_exists(android_price_0())
+
+
+def android_quantity1():
+    assert_exists(android_quantity_1())
+
+
+def price_0():
+    touch(price_0_dollars())
+
+
+def touch_android_choice():
+    touch(touch_android_choice())
+
+
+def touch_card_approve():
+    touch(android_card())
+
+
+def touch_buy():
+    touch(android_buy())
+
+
+def assert_29():
+    assert_exists(hint_29())
+
+
+def price_4():
+    touch(price_4_dollars())
+
+
+def touch_loading():
+    touch(loading())
+
+
+def assert_oops():
+    assert_exists(text_oops())
 

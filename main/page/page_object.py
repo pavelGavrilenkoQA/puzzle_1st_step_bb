@@ -423,6 +423,124 @@ def hint_3():
     )
 
 
+def hint_5():
+    return Template(
+        r"5.png",
+        record_pos=(0.02, 0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_8():
+    return Template(
+        r"8.png",
+        record_pos=(0.393, -0.91),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_20():
+    return Template(
+        r"20.png",
+        record_pos=(0.02, 0.108),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_28():
+    return Template(
+        r"28.png",
+        record_pos=(0.372, -0.91),
+        resolution=(1080, 2400)
+    )
+
+
+def shop_swipe():
+    return Template(
+        r"swipe_shop.png",
+        record_pos=(-0.01, 0.128),
+        resolution=(1080, 2400)
+    )
+
+
+def price_0_dollars():
+    return Template(
+        r"0dollars.png",
+        record_pos=(0.231, 0.071),
+        resolution=(1080, 2400)
+    )
+
+
+def android_quantity_1():
+    return Template(
+        r"android_1.png",
+        record_pos=(-0.18, 0.582),
+        resolution=(1080, 2400)
+    )
+
+
+def android_price_0():
+    return Template(
+        r"android_price.png",
+        record_pos=(0.34, 0.579),
+        resolution=(1080, 2400)
+    )
+
+
+def android_choice():
+    return Template(
+        r"choice.png",
+        record_pos=(0.404, 0.787),
+        resolution=(1080, 2400)
+    )
+
+
+def android_buy():
+    return Template(
+        r"buy.png",
+        record_pos=(-0.002, 1.03),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_29():
+    return Template(
+        r"29.png",
+        record_pos=(0.374, -0.909),
+        resolution=(1080, 2400)
+    )
+
+
+def price_4_dollars():
+    return Template(
+        r"4dollars.png",
+        record_pos=(0.227, 0.394),
+        resolution=(1080, 2400)
+    )
+
+
+def loading():
+    return Template(
+        r"loading_puzzle.png",
+        record_pos=(0.103, -0.082),
+        resolution=(1080, 2400)
+    )
+
+
+def text_oops():
+    return Template(
+        r"text_oops.png",
+        record_pos=(-0.001, -0.251),
+        resolution=(1080, 2400)
+    )
+def android_card():
+    return Template(
+        r"card_approve.png",
+        record_pos=(-0.396, -0.698),
+        resolution=(1080, 2400)
+    )
+
+
 def coins_91():
     return Template(
         r"91.png",

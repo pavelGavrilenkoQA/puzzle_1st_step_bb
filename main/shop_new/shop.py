@@ -67,10 +67,46 @@ def test_purchases_for_50coins():
     assert_x1()
     touch_claim()
     assert_hint3()
-    
 
 
+def test_purchases_for_200coins():
+    touch_200()
+    assert_hint_x1()
+    assert_5()
+    touch_claim()
+    assert_8()
 
+
+def test_purchases_for_600coins():
+    touch_600()
+    assert_hint_x1()
+    assert_20()
+    touch_claim()
+    assert_28()
+
+
+def shop_swipe():
+    swipe_shop()
+
+
+def test_purchases_for_0dollars():
+    price_0()
+    android_quantity1()
+    android_price0()
+    touch_android_choice()
+    touch_card_approve()
+    touch_buy()
+    assert_hint_x1()
+    assert_x1()
+    touch_claim()
+    assert_29()
+
+
+def purchase_failed():
+    price_4()
+    touch_loading()
+    assert_oops()
+    touch_button_ok()
 
 
 
