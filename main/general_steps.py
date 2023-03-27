@@ -136,10 +136,9 @@ def touch_travelling_pack():
     touch(button_start())
     sleep(6)
 
+
 def touch_button_start():
     touch(button_start())
-
-
 
 
 # def test_press_setting_button():
@@ -160,6 +159,14 @@ def assert_exists_text_setting():
 
 def touch_swipe_sound_on():
     touch(touch_swipe_sound_on())
+
+
+def touch_swipe_sound_on():
+    swipe_sound_on()
+
+
+def touch_swipe_sound_off():
+    swipe_sound_off()
 
 
 def assert_exists_swipe_sound_off():
@@ -188,7 +195,7 @@ def assert_exists_swipe_vibration_off():
 #    assert_exists(Template(
 #        r"sound_vibration_on.png"))
 
-def sound_vibration_on():
+def touch_sound_vibration_on():
     touch(sound_vibration_on())
 
 
@@ -250,6 +257,10 @@ def assert_exists_swipe_analytics_personalized_off():
     assert_exists(swipe_analytics_personalized_ads_off())
 
 
+def assert_exists_swipe_analytics_personalized_ads_on():
+    assert_exists(swipe_analytics_personalized_ads_on())
+
+
 # def test_on_all_privacy():
 #    touch(Template(
 #        r"swipe_analytics_off.png"))
@@ -273,7 +284,7 @@ def touch_swipe_personalized_off():
 #        r"cloud_menu.png"))
 
 def assert_exists_cloud_menu():
-    assert_exists( cloud_menu())
+    assert_exists(cloud_menu())
 
 
 # def test_link_in_setting_present():
@@ -454,7 +465,7 @@ def assert_exists_swipe_rotation_off():
 
 
 def assert_not_exists_coins_6():
-    assert_not_exists( coins_6())
+    assert_not_exists(coins_6())
 
 
 # def test_swipe_count_element_to_16():
@@ -494,7 +505,6 @@ def another_puzzle_in_progress():
     sleep(4)
     if exists(another_puzzle_in_progress()):
         sleep(3)
-
 
 
 def touch_button_yes():
