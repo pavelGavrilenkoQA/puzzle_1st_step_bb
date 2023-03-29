@@ -53,8 +53,8 @@ def button_back():
 def button_settings():
     return Template(
         r"button_settings.png",
-        record_pos=(-0.403, -0.857),
-        resolution=(1080, 2340)
+        record_pos=(-0.391, 0.968),
+        resolution=(1080, 2400)
     )
 
 
@@ -242,8 +242,8 @@ def setting_and_coins():
 def button_daily():
     return Template(
         r"button_daily.png",
-        record_pos=(-0.085, 0.708),
-        resolution=(1200, 1920)
+        record_pos=(-0.074, 1.019),
+        resolution=(1080, 2400)
     )
 
 
@@ -258,8 +258,8 @@ def daily_challenge():
 def reward():
     return Template(
         r"reward.png",
-        record_pos=(0.029, 0.217),
-        resolution=(1080, 2340)
+        record_pos=(-0.002, -0.569),
+        resolution=(1080, 2400)
     )
 
 
@@ -292,6 +292,335 @@ def text_shop():
         r"text_shop.png",
         record_pos=(-0.002, -0.546),
         resolution=(1080, 2400)
+    )
+
+
+
+
+def first_product_buy():
+    return Template(
+        r"first_product_buy.png",
+        record_pos=(0.351, 0.006),
+        resolution=(1080, 2340)
+    )
+
+
+def plus_1():
+    return Template(
+        r"plus_1.png",
+        record_pos = (-0.283, -0.592),
+        resolution = (1080, 2400)
+    )
+
+
+def reload():
+    return Template(
+        r"Reload.png",
+        record_pos=(-0.198, 0.902),
+        resolution=(1080, 2400)
+    )
+
+
+def purchase_popap():
+    return Template(
+        r"purchase_popap.png",
+        record_pos=(-0.188, 0.412),
+        resolution=(1200, 2000)
+    )
+
+
+def locked_text_shop():
+    return Template(
+        r"locked_text_shop.png",
+        record_pos=(-0.002, -0.538),
+        resolution=(1080, 2340)
+    )
+
+
+def product_list():
+    return Template(
+        r"product_list.png",
+        record_pos=(0.01, 0.294),
+        resolution=(1080, 2340)
+    )
+
+
+def product_3k_coins():
+    return Template(
+        r"product_3k_coins.png",
+        record_pos=(-0.131, 0.549),
+        resolution=(1080, 2340)
+    )
+
+
+def sugar_mesh_bw():
+    return Template(
+        r"sugar_mesh_bw.png",
+        record_pos=(0.001, -0.477),
+        resolution=(1080, 2340)
+    )
+
+
+def swipe_rotation_off():
+    return Template(
+        r"swipe_rotation_off.png",
+        record_pos=(0.111, 0.297),
+        resolution=(1080, 2340)
+    )
+
+
+def swipe_rotation_on():
+    return Template(
+        r"swipe_rotation_on.png",
+        record_pos=(0.006, 0.294),
+        resolution=(1080, 2340)
+    )
+
+
+def coins_3():
+    return Template(
+        r"coins_3.png",
+        record_pos=(0.068, 0.413),
+        resolution=(1080, 2340)
+    )
+
+
+def coins_6():
+    return Template(
+        r"coins_6.png",
+        record_pos=(0.069, 0.413),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_16():
+    return Template(
+        r"elements_16.png",
+        record_pos=(-0.011, 0.219),
+        resolution=(1080, 2340)
+    )
+
+
+def button_yes():
+    return Template(
+            r"button_yes.png",
+            record_pos=(-0.131, 0.06),
+            resolution=(1080, 2340)
+    )
+
+
+def button_level_assert():
+    return Template(
+        r"buton_level_assert.png",
+        record_pos=(0.292, 0.936),
+        resolution=(1080, 2340)
+    )
+
+
+def button_exit():
+    return Template(
+        r"button_exit.png",
+        record_pos=(0.384, 0.966),
+        resolution=(1080, 2340)
+    )
+
+
+def popap_before_exit():
+    return Template(
+        r"tpl1671008301646.png",
+        record_pos=(-0.001, -0.013),
+        resolution=(1080, 2340)
+    )
+
+
+def button_no():
+    return Template(
+        r"button_no.png",
+        record_pos=(0.141, 0.052),
+        resolution=(1080, 2400)
+    )
+
+
+def completed_pack_with_1_art():
+    return Template(
+        r"completed_pack_with_1_art.png",
+        record_pos=(-0.004, -0.719),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_9_elements():
+    return Template(
+        r"completed_9_elements.png",
+        record_pos=(-0.001, 0.181),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_16_2():
+    return Template(
+        r"elements_16_2.png",
+        record_pos=(0.187, 0.184),
+        resolution=(1080, 2340)
+    )
+
+
+def button_claim():
+    return Template(
+        r"button_claim.png",
+        record_pos=(0.0, 0.381),
+        resolution=(1080, 2400)
+    )
+
+
+def completed_16_elements():
+    return Template(
+        r"completed_16_elements.png",
+        record_pos=(0.187, 0.184),
+        resolution=(1080, 2340))
+
+
+def next_element():
+    return Template(
+        r"next_element.png",
+        record_pos=(0.343, 0.191),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_25():
+    return Template(
+        r"elements_25.png",
+        record_pos=(0.183, 0.185),
+        resolution=(1080, 2340))
+
+
+def completed_25_level():
+    return Template(
+        r"completed_25_elements.png",
+        record_pos=(0.189, 0.178),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_49():
+    return Template(
+        r"completed_49",
+        record_pos=(0.18, 0.177),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_49_elements():
+    return Template(
+        r"completed_49_elements.png",
+        record_pos=(0.187, 0.183),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_64():
+    return Template(
+        r"elements_64.png",
+        record_pos=(0.183, 0.188),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_64_elements():
+    return Template(
+        r"completed_64_elements.png",
+        record_pos=(0.194, 0.183),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_81():
+    return Template(
+        r"elements_81.png",
+        record_pos=(0.177, 0.17),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_81_elements():
+    return Template(
+        r"completed_81_elements.png",
+        record_pos=(0.189, 0.181),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_144():
+    return Template(
+        r"elements_144.png",
+        record_pos=(0.183, 0.173),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_144_elements():
+    return Template(
+        r"completed_144_elements.png",
+        record_pos=(0.203, 0.185),
+        resolution=(1080, 2340)
+    )
+
+
+def elements_256():
+    return Template(
+        r"elements_256.png",
+        record_pos=(0.202, 0.184),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_elements_256():
+    return Template(
+        r"completed_elements_256.png",
+        record_pos=(0.197, 0.178),
+        resolution=(1080, 2340)
+    )
+
+
+def completed_art_tutorial():
+    return Template(
+        r"completed_art_tutorial.png",
+        record_pos=(0.008, -0.206),
+        resolution=(1080, 2340)
+    )
+
+
+def another_puzzle_in_progress():
+    return Template(
+            r"another_puzzle_in_progress.png",
+            record_pos=(-0.006, -0.015),
+            resolution=(1080, 2340)
+    )
+
+
+def empty_field():
+    return Template(
+        r"empty_field.png",
+        record_pos=(0.224, -0.213),
+        resolution=(1080, 2340)
+    )
+
+
+def setting_menu():
+    return Template(
+        r"setting_menu.png",
+        record_pos=(0.265, -0.057),
+        resolution=(1080, 2340)
+    )
+
+
+def swipe_elements_to_16():
+    return Template(
+        r"swipe_elements_to_16.png",
+        record_pos=(0.095, 0.185),
+        resolution=(1080, 2340),
+        vector=[-0.1300, -0.0062]
     )
 
 
@@ -533,6 +862,8 @@ def text_oops():
         record_pos=(-0.001, -0.251),
         resolution=(1080, 2400)
     )
+
+
 def android_card():
     return Template(
         r"card_approve.png",
@@ -549,339 +880,72 @@ def coins_91():
     )
 
 
-def first_product_buy():
+def completed_0_daily_puzzle():
     return Template(
-        r"first_product_buy.png",
-        record_pos=(0.351, 0.006),
-        resolution=(1080, 2340)
-    )
-
-
-def plus_1():
-    return Template(
-        r"plus_1.png",
-        record_pos = (-0.283, -0.592),
-        resolution = (1080, 2400)
-    )
-
-
-def reload():
-    return Template(
-        r"Reload.png",
-        record_pos=(-0.198, 0.902),
+        r"0_3.png",
+        record_pos=(-0.002, 0.022),
         resolution=(1080, 2400)
     )
 
 
-def purchase_popap():
+def completed_1_daily_puzzle():
     return Template(
-        r"purchase_popap.png",
-        record_pos=(-0.188, 0.412),
-        resolution=(1200, 2000)
-    )
-
-
-def locked_text_shop():
-    return Template(
-        r"locked_text_shop.png",
-        record_pos=(-0.002, -0.538),
-        resolution=(1080, 2340)
-    )
-
-
-def product_list():
-    return Template(
-        r"product_list.png",
-        record_pos=(0.01, 0.294),
-        resolution=(1080, 2340)
-    )
-
-
-def product_3k_coins():
-    return Template(
-        r"product_3k_coins.png",
-        record_pos=(-0.131, 0.549),
-        resolution=(1080, 2340)
-    )
-
-
-def sugar_mesh_bw():
-    return Template(
-        r"sugar_mesh_bw.png",
-        record_pos=(0.001, -0.477),
-        resolution=(1080, 2340)
-    )
-
-
-def swipe_rotation_off():
-    return Template(
-        r"swipe_rotation_off.png",
-        record_pos=(0.111, 0.297),
-        resolution=(1080, 2340)
-    )
-
-
-def swipe_rotation_on():
-    return Template(
-        r"swipe_rotation_on.png",
-        record_pos=(0.006, 0.294),
-        resolution=(1080, 2340)
-    )
-
-
-def coins_3():
-    return Template(
-        r"coins_3.png",
-        record_pos=(0.068, 0.413),
-        resolution=(1080, 2340)
-    )
-
-
-def coins_6():
-    return Template(
-        r"coins_6.png",
-        record_pos=(0.069, 0.413),
-        resolution=(1080, 2340)
-    )
-
-
-def elements_16():
-    return Template(
-        r"elements_16.png",
-        record_pos=(-0.011, 0.219),
-        resolution=(1080, 2340)
-    )
-
-
-def button_yes():
-    return Template(
-            r"button_yes.png",
-            record_pos=(-0.131, 0.06),
-            resolution=(1080, 2340)
-    )
-
-
-def button_level_assert():
-    return Template(
-        r"buton_level_assert.png",
-        record_pos=(0.292, 0.936),
-        resolution=(1080, 2340)
-    )
-
-
-def button_exit():
-    return Template(
-        r"button_exit.png",
-        record_pos=(0.384, 0.966),
-        resolution=(1080, 2340)
-    )
-
-
-def popap_before_exit():
-    return Template(
-        r"tpl1671008301646.png",
-        record_pos=(-0.001, -0.013),
-        resolution=(1080, 2340)
-    )
-
-
-def button_no():
-    return Template(
-        r"button_no.png",
-        record_pos=(0.156, 0.053),
-        resolution=(1080, 2340)
-    )
-
-
-def completed_pack_with_1_art():
-    return Template(
-        r"completed_pack_with_1_art.png",
-        record_pos=(-0.004, -0.719),
-        resolution=(1080, 2340)
-    )
-
-
-def completed_9_elements():
-    return Template(
-        r"completed_9_elements.png",
-        record_pos=(-0.001, 0.181),
-        resolution=(1080, 2340)
-    )
-
-
-def elements_16_2():
-    return Template(
-        r"elements_16_2.png",
-        record_pos=(0.187, 0.184),
-        resolution=(1080, 2340)
-    )
-
-
-def button_claim():
-    return Template(
-        r"button_claim.png",
-        record_pos=(0.0, 0.381),
+        r"1_3.png",
+        record_pos=(-0.001, 0.022),
         resolution=(1080, 2400)
     )
 
 
-def completed_16_elements():
+def completed_2_daily_puzzle():
     return Template(
-        r"completed_16_elements.png",
-        record_pos=(0.187, 0.184),
-        resolution=(1080, 2340))
-
-
-def next_element():
-    return Template(
-        r"next_element.png",
-        record_pos=(0.343, 0.191),
-        resolution=(1080, 2340)
+        r"2_3.png",
+        record_pos=(-0.002, 0.024),
+        resolution=(1080, 2400)
     )
 
 
-def elements_25():
+def completed_3_daily_puzzle():
     return Template(
-        r"elements_25.png",
-        record_pos=(0.183, 0.185),
-        resolution=(1080, 2340))
-
-
-def completed_25_level():
-    return Template(
-        r"completed_25_elements.png",
-        record_pos=(0.189, 0.178),
-        resolution=(1080, 2340)
+        r"3_3.png",
+        record_pos=(-0.002, 0.022),
+        resolution=(1080, 2400)
     )
 
 
-def elements_49():
+def daily_puzzle_1():
     return Template(
-        r"completed_49",
-        record_pos=(0.18, 0.177),
-        resolution=(1080, 2340)
+        r"daily_puzzle_1.png",
+        record_pos=(-0.462, -0.218),
+        resolution=(1080, 2400)
     )
 
 
-def completed_49_elements():
+def daily_puzzle_2():
     return Template(
-        r"completed_49_elements.png",
-        record_pos=(0.187, 0.183),
-        resolution=(1080, 2340)
+        r"daily_puzzle_2.png",
+        record_pos=(0.001, -0.444),
+        resolution=(1080, 2400)
     )
 
 
-def elements_64():
+def daily_puzzle_3():
     return Template(
-        r"elements_64.png",
-        record_pos=(0.183, 0.188),
-        resolution=(1080, 2340)
+        r"daily_puzzle_3.png",
+        record_pos=(0.462, -0.219),
+        resolution=(1080, 2400)
     )
 
 
-def completed_64_elements():
+def text_exit():
     return Template(
-        r"completed_64_elements.png",
-        record_pos=(0.194, 0.183),
-        resolution=(1080, 2340)
+        r"text_exit.png",
+        record_pos=(-0.156, -0.069),
+        resolution=(1080, 2400)
     )
 
 
-def elements_81():
-    return Template(
-        r"elements_81.png",
-        record_pos=(0.177, 0.17),
-        resolution=(1080, 2340)
-    )
 
 
-def completed_81_elements():
-    return Template(
-        r"completed_81_elements.png",
-        record_pos=(0.189, 0.181),
-        resolution=(1080, 2340)
-    )
-
-
-def elements_144():
-    return Template(
-        r"elements_144.png",
-        record_pos=(0.183, 0.173),
-        resolution=(1080, 2340)
-    )
-
-
-def completed_144_elements():
-    return Template(
-        r"completed_144_elements.png",
-        record_pos=(0.203, 0.185),
-        resolution=(1080, 2340)
-    )
-
-
-def elements_256():
-    return Template(
-        r"elements_256.png",
-        record_pos=(0.202, 0.184),
-        resolution=(1080, 2340)
-    )
-
-
-def completed_elements_256():
-    return Template(
-        r"completed_elements_256.png",
-        record_pos=(0.197, 0.178),
-        resolution=(1080, 2340)
-    )
-
-
-def completed_art_tutorial():
-    return Template(
-        r"completed_art_tutorial.png",
-        record_pos=(0.008, -0.206),
-        resolution=(1080, 2340)
-    )
-
-
-def another_puzzle_in_progress():
-    return Template(
-            r"another_puzzle_in_progress.png",
-            record_pos=(-0.006, -0.015),
-            resolution=(1080, 2340)
-    )
-
-
-def empty_field():
-    return Template(
-        r"empty_field.png",
-        record_pos=(0.224, -0.213),
-        resolution=(1080, 2340)
-    )
-
-
-def setting_menu():
-    return Template(
-        r"setting_menu.png",
-        record_pos=(0.265, -0.057),
-        resolution=(1080, 2340)
-    )
-
-
-def part_of_daily():
-    return Template(
-        r"part_of_daily.png",
-        record_pos=(0.134, -0.335),
-        resolution=(1200, 2000)
-    )
-
-
-def swipe_elements_to_16():
-    return Template(
-        r"swipe_elements_to_16.png",
-        record_pos=(0.095, 0.185),
-        resolution=(1080, 2340),
-        vector=[-0.1300, -0.0062]
-    )
 
 
 if __name__ == "__main__":
@@ -907,7 +971,7 @@ if __name__ == "__main__":
     print(button_privacy())
     print(green_privacy_shield())
     print(swipe_analytics_on())
-    print(swipe_personalized_ads_on())
+   # print(swipe_personalized_ads_on())
     print(swipe_analytics_personalized_ads_off())
     print(swipe_analytics_off())
     print(swipe_personalized_off())

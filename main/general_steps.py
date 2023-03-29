@@ -115,10 +115,12 @@ def asserts_exists_completed_art_tutorial():
 def touch_button_back():
     sleep(2)
     touch(button_back())
+    sleep(1.0)
 
 
 def touch_button_settings():
     touch(button_settings())
+    sleep(1.0)
 
 
 def english_language():
@@ -136,8 +138,10 @@ def touch_travelling_pack():
     touch(button_start())
     sleep(6)
 
+
 def touch_button_start():
     touch(button_start())
+    sleep(2.0)
 
 
 
@@ -304,13 +308,14 @@ def assert_exists_setting_and_coins():
 
 def touch_button_daily():
     touch(button_daily())
+    sleep(1.0)
 
 
-def assert_exists_daily_challenge():
+def assert_daily_challenge():
     assert_exists(daily_challenge())
 
 
-def assert_exists_reward():
+def assert_reward():
     assert_exists(reward())
 
 
@@ -322,10 +327,6 @@ def assert_exists_reward():
 #        r"button_start.png"))
 #    touch(Template(
 #        r"button_back.png"))
-
-def touch_part_of_daily():
-    sleep(3)
-    touch(part_of_daily())
 
 
 def assert_button_start():
@@ -513,6 +514,7 @@ def assert_exists_button_level_assert():
 
 def touch_button_exit():
     touch(button_exit())
+    sleep(1.0)
 
 
 # def test_exit_popup_close():
@@ -527,6 +529,7 @@ def touch_button_exit():
 
 def touch_button_no():
     touch(button_no())
+    sleep(1.0)
 
 
 def assert_not_exists_button_level_assert():
@@ -768,4 +771,40 @@ def touch_loading():
 
 def assert_oops():
     assert_exists(text_oops())
+
+
+def assert_completed_0_daily_puzzle():
+    completed_0_daily_puzzle()
+
+
+def assert_completed_1_daily_puzzle():
+    completed_1_daily_puzzle()
+
+
+def assert_completed_2_daily_puzzle():
+    completed_2_daily_puzzle()
+
+
+def assert_completed_3_daily_puzzle():
+    completed_3_daily_puzzle()
+
+
+def touch_daily_puzzle_1():
+    daily_puzzle_1
+    sleep(1)
+
+
+def touch_daily_puzzle_2():
+    daily_puzzle_2
+    sleep(1)
+
+
+def touch_daily_puzzle_3():
+    daily_puzzle_3
+    sleep(1)
+
+
+def assert_text_exit():
+    text_exit()
+
 
