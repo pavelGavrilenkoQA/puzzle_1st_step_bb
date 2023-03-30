@@ -52,6 +52,7 @@ def assert_exist_empty_elements_list():
 def touch_button_win():
     sleep(5)
     touch(button_win())
+    sleep(3)
 
 
 # def test_tutorial_part_2():
@@ -497,9 +498,9 @@ def another_puzzle_in_progress():
         sleep(3)
 
 
-
 def touch_button_yes():
     touch(button_yes())
+    sleep(3.0)
 
 
 def assert_exists_button_level_assert():
@@ -659,8 +660,9 @@ def assert_hint3():
     assert_exists(hint_3())
 
 
-def touch_claim():
+def touch_button_claim():
     touch(button_claim())
+    sleep(1.0)
 
 
 def assert_1():
@@ -769,42 +771,126 @@ def touch_loading():
     touch(loading())
 
 
-def assert_oops():
+def assert_text_oops():
     assert_exists(text_oops())
 
 
 def assert_completed_0_daily_puzzle():
-    completed_0_daily_puzzle()
+    assert_exists(completed_0_daily_puzzle())
 
 
 def assert_completed_1_daily_puzzle():
-    completed_1_daily_puzzle()
+    assert_exists(completed_1_daily_puzzle())
 
 
 def assert_completed_2_daily_puzzle():
-    completed_2_daily_puzzle()
+    assert_exists(completed_2_daily_puzzle())
 
 
 def assert_completed_3_daily_puzzle():
-    completed_3_daily_puzzle()
+    assert_exists(completed_3_daily_puzzle())
 
 
 def touch_daily_puzzle_1():
-    daily_puzzle_1
+    touch(daily_puzzle_1())
     sleep(1)
 
 
 def touch_daily_puzzle_2():
-    daily_puzzle_2
+    touch(daily_puzzle_2())
     sleep(1)
 
 
 def touch_daily_puzzle_3():
-    daily_puzzle_3
+    touch(daily_puzzle_3())
     sleep(1)
 
 
 def assert_text_exit():
-    text_exit()
+    assert_exists(text_exit())
+
+
+def assert_hourglass_1():
+    assert_exists(hourglass_1())
+
+
+def assert_hourglass_2():
+    assert_exists(hourglass_2())
+
+
+def assert_hourglass_3():
+    assert_exists(hourglass_3())
+
+
+def assert_hourglass_main():
+    assert_exists(hourglass_main())
+
+
+def touch_button_continue():
+    touch(text_continue())
+    sleep(3.0)
+
+
+def touch_hint_main():
+    touch(hint_main())
+    sleep(1.0)
+
+
+def assert_text_hint():
+    assert_exists(text_hint())
+
+
+def assert_text_puzzle_completed():
+    assert_exists(text_puzzle_completed())
+
+
+def assert_button_save():
+    assert_exists(button_save())
+
+
+def assert_checkmark_1():
+    assert_exists(checkmark_1())
+
+
+def assert_checkmark_2():
+    assert_exists(checkmark_2())
+
+
+def assert_checkmark_3():
+    assert_exists(checkmark_3())
+
+
+def assert_x25():
+    assert_exists(x25())
+
+
+def assert_x2():
+    assert_exists(x2())
+
+
+def assert_x4():
+    assert_exists(x4())
+
+
+def touch_ads_reward():
+    touch(ads_reward())
+    sleep(20.0)
+
+
+def assert_text_back():
+    assert_exists(text_back())
+
+
+def assert_not_attention():
+    assert_not_exists(attention())
+
+
+
+
+
+
+
+
+
 
 

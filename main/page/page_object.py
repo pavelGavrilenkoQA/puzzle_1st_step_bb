@@ -944,8 +944,156 @@ def text_exit():
     )
 
 
+def hourglass_1():
+    return Template(
+        r"hourglass_1.png",
+        record_pos=(-0.185, -0.097),
+        resolution=(1080, 2400)
+    )
 
 
+def hourglass_2():
+    return Template(
+        r"hourglass_2.png",
+        record_pos=(0.136, -0.18),
+        resolution=(1080, 2400)
+    )
+
+
+def hourglass_3():
+    return Template(
+        r"hourglass_3.png",
+        record_pos=(0.46, -0.095),
+        resolution=(1080, 2400)
+    )
+
+
+def hourglass_main():
+    return Template(
+        r"hourglass_main.png",
+        record_pos=(0.333, -0.009),
+        resolution=(1080, 2400)
+    )
+
+
+def text_continue():
+    return Template(
+        r"continue.png",
+        record_pos=(-0.005, 0.529),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_main():
+    return Template(
+        r"hint_main.png",
+        record_pos=(0.361, 0.977),
+        resolution=(1080, 2400)
+    )
+
+
+def text_hint():
+    return Template(
+        r"text_hint.png",
+        record_pos=(-0.009, -0.076),
+        resolution=(1080, 2400)
+    )
+
+
+def text_puzzle_completed():
+    return Template(
+        r"text_puzzle_completed.png",
+        record_pos=(-0.001, -0.735),
+        resolution=(1080, 2400)
+    )
+
+
+def button_save():
+    return Template(
+         r"button_save.png",
+         record_pos=(-0.001, 0.3),
+         resolution=(1080, 2400)
+    )
+
+
+def checkmark_1():
+    return Template(
+        r"checkmark_1.png",
+        record_pos=(-0.205, -0.095),
+        resolution=(1080, 2400)
+    )
+
+
+def checkmark_2():
+    return Template(
+        r"checkmark_2.png",
+        record_pos=(0.119, -0.174),
+        resolution=(1080, 2400)
+    )
+
+
+def checkmark_3():
+    return Template(
+        r"checkmark_3.png",
+        record_pos=(0.444, -0.094),
+        resolution=(1080, 2400)
+    )
+
+
+def x25():
+    return Template(
+        r"x25.png",
+        record_pos=(-0.002, 0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def x2():
+    return Template(
+        r"x2.png",
+        record_pos=(0.002, 0.112),
+        resolution=(1080, 2400)
+    )
+
+
+def x4():
+    return Template(
+        r"x4.png",
+        record_pos=(0.001, 0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def ads_reward():
+    return Template(
+        r"ads_reward.png",
+        record_pos=(-0.078, 0.57),
+        resolution=(1080, 2400)
+    )
+
+
+def text_back():
+    return Template(
+        r"text_back.png",
+        record_pos=(-0.05, 0.372),
+        resolution=(1080, 2400)
+    )
+
+
+def text_back():
+    return Template(
+        r"text_back.png",
+        record_pos=(-0.05, 0.372),
+        resolution=(1080, 2400)
+    )
+
+
+def attention():
+    return Template(
+        r"!.png",
+        record_pos=(-0.066, 0.969),
+        resolution=(1080, 2400)
+    )
 
 
 if __name__ == "__main__":

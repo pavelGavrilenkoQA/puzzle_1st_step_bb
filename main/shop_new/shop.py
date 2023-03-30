@@ -31,7 +31,7 @@ def test_ads_hint():
 
 
 def test_receiving_hint():
-    touch_claim()
+    touch_button_claim()
     assert_1
 
 
@@ -47,7 +47,7 @@ def test_ads_coins():
 
 
 def test_receiving_coins():
-    touch_claim()
+    touch_button_claim()
     assert_hint11()
 
 
@@ -65,7 +65,7 @@ def test_purchases_for_50coins():
     touch_50()
     assert_hint_x1()
     assert_x1()
-    touch_claim()
+    touch_button_claim()
     assert_hint3()
 
 
@@ -73,7 +73,7 @@ def test_purchases_for_200coins():
     touch_200()
     assert_hint_x1()
     assert_5()
-    touch_claim()
+    touch_button_claim()
     assert_8()
 
 
@@ -81,7 +81,7 @@ def test_purchases_for_600coins():
     touch_600()
     assert_hint_x1()
     assert_20()
-    touch_claim()
+    touch_button_claim()
     assert_28()
 
 
@@ -98,14 +98,14 @@ def test_purchases_for_0dollars():
     touch_buy()
     assert_hint_x1()
     assert_x1()
-    touch_claim()
+    touch_button_claim()
     assert_29()
 
 
 def purchase_failed():
     price_4()
     touch_loading()
-    assert_oops()
+    assert_text_oops()
     touch_button_ok()
 
 
