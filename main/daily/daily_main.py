@@ -162,6 +162,7 @@ def test_third_resolved_puzzle():
     touch_button_ok()
     assert_checkmark_3()
     assert_completed_3_daily_puzzle()
+    touch_button_claim()
 
 
 def test_reward():
@@ -171,7 +172,7 @@ def test_reward():
     assert_hint_x1()
     assert_x2()
     touch_ads_reward()
-    close_ads()
+    touch_close_ads()
     assert_hint_x1()
     assert_x4()
     touch_button_claim()

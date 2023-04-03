@@ -17,7 +17,7 @@ if __name__ == "__main__":
     #tutorial_main.run_tutorial_feature()
     #setting_main.run_setting_feature()
     #daily_main.run_daily_feature()
-    #shop.run_shop_new()
+    shop.run_shop_new()
     daily_main.run_daily()
     #market_main.run_market_feature()
     #puzzle_tab_main.run_puzzle_tab_feature()

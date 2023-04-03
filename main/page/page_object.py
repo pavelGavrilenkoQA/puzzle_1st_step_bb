@@ -908,24 +908,24 @@ def completed_3_daily_puzzle():
 def daily_puzzle_1():
     return Template(
         fr"{PAGE_ROOT}daily_puzzle_1.png",
-        record_pos=(-0.462, -0.218),
-        resolution=(1080, 2400)
+        record_pos=(-0.185, -0.21),
+        resolution=(1080, 2340)
     )
 
 
 def daily_puzzle_2():
     return Template(
         fr"{PAGE_ROOT}daily_puzzle_2.png",
-        record_pos=(0.001, -0.444),
-        resolution=(1080, 2400)
+        record_pos=(0.134, -0.335),
+        resolution=(1200, 2000)
     )
 
 
 def daily_puzzle_3():
     return Template(
         fr"{PAGE_ROOT}daily_puzzle_3.png",
-        record_pos=(0.333, -0.079),
-        resolution=(1080, 2400)
+        record_pos=(0.003, 0.529),
+        resolution=(1080, 2340)
     )
 
 

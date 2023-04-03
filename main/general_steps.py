@@ -70,6 +70,7 @@ def touch_button_win():
 def assert_exists_empty_field():
     sleep(6)
     assert_exists(empty_field())
+    sleep(1)
 
 
 # def test_tutorial_part_3():
@@ -799,17 +800,17 @@ def assert_completed_3_daily_puzzle():
 
 
 def touch_daily_puzzle_1():
-    touch(daily_puzzle_1())
+    touch((198, 970))
     sleep(1)
 
 
 def touch_daily_puzzle_2():
-    touch(daily_puzzle_2())
+    touch((542, 874))
     sleep(1)
 
 
 def touch_daily_puzzle_3():
-    touch(daily_puzzle_3())
+    touch((892, 959))
     sleep(1)
 
 
