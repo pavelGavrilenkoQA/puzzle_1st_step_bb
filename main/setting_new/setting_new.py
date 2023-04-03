@@ -1,6 +1,11 @@
 __author__ = "QA SASHA"
 
 from general_steps import *
+from airtest.core.api import *
+from airtest.report.report import simple_report
+from global_auto_agr import AUTO_SETUP_ARG
+from try_test_method import run_logger, remove_log_dir
+from general_steps import skip_system_pop
 
 
 def test_press_setting_button():
@@ -14,7 +19,7 @@ def test_sound_off():
 
 
 def test_vibro_off():
-    touch_sound_vibration_on()
+    touch_swipe_vibration_on()
     assert_exists_swipe_vibration_off()
 
 
@@ -29,7 +34,6 @@ def test_language_list_get():
     assert_exists_all_languages()
     touch_button_back()
     sleep(2)
-    touch_button_back()
 
 
 def test_privacy_tap():
@@ -39,14 +43,14 @@ def test_privacy_tap():
 
 def test_off_all_privacy():
     touch_swipe_analytics_on()
-    touch_swipe_analytics_on()
+    touch_swipe_personalized_ads_on()
     assert_exists_swipe_analytics_personalized_off()
 
 
 def test_on_all_privacy():
     touch_swipe_analytics_off()
     touch_swipe_personalized_off()
-    assert_exists_swipe_analytics_personalized_ads_on()()
+    assert_exists_swipe_analytics_personalized_ads_on()
     touch_button_back()
 
 
@@ -64,7 +68,7 @@ def test_setting_menu_exit():
 
 
 def run_setting_new():
-    remove_log_dir('setting_new.py')
+    remove_log_dir('setting_new')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),

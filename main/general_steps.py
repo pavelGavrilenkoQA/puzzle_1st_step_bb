@@ -17,11 +17,6 @@ def skip_system_pop():
     sleep(6)
 
 
-# def test_politic_accept():
-#   touch(Template(r"button_ok.png"))
-#  sleep(6)
-#  assert_exists(Template(r"tutorial_image.png"))
-
 def touch_button_ok():
     touch(button_ok())
 
@@ -121,12 +116,12 @@ def touch_button_settings():
     touch(button_settings())
 
 
-def english_language():
-    if not exists(english_language()):
+def switch_english_language_test():
+    if not exists(english_language_test()):
         touch(setting_menu())
-        touch(english_language())
+        touch(english_language_test())
         sleep(2)
-        assert_exists(english_language())
+        assert_exists(english_language_test())
 
 
 def touch_travelling_pack():
@@ -162,11 +157,11 @@ def touch_swipe_sound_on():
 
 
 def touch_swipe_sound_on():
-    swipe_sound_on()
+    touch(swipe_sound_on())
 
 
 def touch_swipe_sound_off():
-    swipe_sound_off()
+    touch(swipe_sound_off())
 
 
 def assert_exists_swipe_sound_off():
@@ -250,7 +245,7 @@ def touch_swipe_analytics_on():
 
 
 def touch_swipe_personalized_ads_on():
-    touch(swipe_analytics_on())
+    touch(personalized_ads_on())
 
 
 def assert_exists_swipe_analytics_personalized_off():
@@ -334,6 +329,10 @@ def assert_exists_reward():
 #    touch(Template(
 #        r"button_back.png"))
 
+def assert_button_back():
+    assert_exists(button_back())
+
+
 def touch_part_of_daily():
     sleep(3)
     touch(part_of_daily())
@@ -369,7 +368,7 @@ def touch_first_product_buy():
     touch(first_product_buy())
 
 
-def assert_exists():
+def assert_exists_purchase_popap():
     assert_exists(purchase_popap())
 
 
@@ -414,6 +413,10 @@ def assert_exists_sugar_mesh_bw():
     assert_exists(sugar_mesh_bw())
 
 
+def assert_exists_sugar_mesh_pack():
+    assert_exists(sugar_mesh_pack())
+
+
 # def test_open_art():
 #    touch(Template(
 #        r"sugar_mesh_bw.png"))
@@ -441,6 +444,7 @@ def touch_swipe_rotation_off():
 
 
 def assert_exists_swipe_():
+    sleep(2)
     assert_exists(swipe_rotation_on())
 
 
@@ -478,8 +482,7 @@ def assert_not_exists_coins_6():
 #        r"coins_3.png"))
 
 def swipe_elements_to_16():
-    swipe(Template(
-        r"swipe_elements_to_16.png"))
+    swipe(swipe_elements_to_16())
 
 
 def assert_exists_element_16():
@@ -501,7 +504,7 @@ def assert_not_exists_coins_3():
 #        assert_exists(Template(
 #            r"buton_level_assert.png"))
 
-def another_puzzle_in_progress():
+def test_another_puzzle_in_progress():
     sleep(4)
     if exists(another_puzzle_in_progress()):
         sleep(3)
@@ -523,6 +526,10 @@ def assert_exists_button_level_assert():
 
 def touch_button_exit():
     touch(button_exit())
+
+
+def popap_before_exit():
+    assert_exists(popap_before_exit())
 
 
 # def test_exit_popup_close():
@@ -552,14 +559,18 @@ def assert_not_exists_sugar_mesh_bw():
 
 
 def assert_exists_completed_pack_with_1_art():
+    sleep(2)
     assert_exists(completed_pack_with_1_art())
 
 
 def touch_completed_pack_with_1_art():
+    sleep(2)
     touch(completed_pack_with_1_art())
+    sleep(2)
 
 
 def assert_exists_completed_9_elements():
+    sleep(4)
     assert_exists(completed_9_elements())
 
 
@@ -573,6 +584,7 @@ def assert_exists_completed_16_elements():
 
 
 def touch_next_element():
+    sleep(2)
     touch(next_element())
 
 
@@ -580,19 +592,19 @@ def touch_puzzle_25_elements():
     touch(elements_25())
 
 
-def completed_25_level():
+def assert_completed_25_level():
     assert_exists(completed_25_level())
 
 
-def elements_49():
+def touch_elements_49():
     touch(elements_49())
 
 
-def completed_49_elements():
+def assert_completed_49_elements():
     assert_exists(completed_49_elements())
 
 
-def test_play_puzzle_64_elements():
+def play_puzzle_64_elements():
     touch(elements_64())
 
 
@@ -600,25 +612,36 @@ def completed_64_elements():
     assert_exists(completed_64_elements())
 
 
-def elements_81():
+def touch_elements_81():
     touch(elements_81())
 
 
-def completed_81_elements():
+def completed_81_element():
     assert_exists(completed_81_elements())
 
 
-def elements_144():
+def touch_elements_144():
     touch(elements_144())
 
 
-def completed_144_elements():
+def completed_144_element():
     assert_exists(completed_144_elements())
 
 
-def elements_256():
+def touch_elements_256():
     touch(elements_256())
 
 
-def completed_elements_256():
+def completed_element_256():
     assert_exists(completed_elements_256())
+
+
+def claim_in_russian():
+    sleep(8)
+    if exists(button_claim_in_russian()):
+        touch(button_claim_in_russian())
+
+
+def touch_button_claim():
+    sleep(7)
+    touch(button_claim())

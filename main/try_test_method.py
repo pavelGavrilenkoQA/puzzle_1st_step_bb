@@ -3,6 +3,7 @@ import shutil
 import pathlib
 from global_auto_agr import AUTO_SETUP_ARG
 
+
 def run_logger(method):
     '''Выполняется тестовый метод, при удачном выполнении пишет в пройденные'''
     '''при падении пишет в падения вместе с исключением'''

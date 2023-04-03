@@ -10,6 +10,9 @@ from elements_in_art import elements_in_art_main
 from try_test_method import remove_txt_result_file
 from elements_in_art import elements_in_art_main
 from tutorial_new import tutorial_new_main
+from setting_new import setting_new
+from puzzle_tab_new import  puzzle_tab_new_main
+from Elements_new import Elements_new_main
 
 if __name__ == "__main__":
      # remove_txt_result_file()
@@ -19,4 +22,7 @@ if __name__ == "__main__":
      # market_main.run_market_feature()
      # puzzle_tab_main.run_puzzle_tab_feature()
      # elements_in_art_main.run_elements_in_art()
-    tutorial_new_main.run_tutorial_new()
+     tutorial_new_main.run_tutorial_new()
+     setting_new.run_setting_new()
+     puzzle_tab_new_main.run_puzzle_tab_new()
+     Elements_new_main.run_elements_in_art_new()

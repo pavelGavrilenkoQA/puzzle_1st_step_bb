@@ -30,17 +30,20 @@ def test_tutorial_part_2():
 
 def test_tutorial_part_3():
     touch_button_ok()
-    assert_exists_empty_field()
+
+
+def saved_purchase():
+    claim_in_russian()
 
 
 def test_language_check():
     touch_button_back()
     touch_button_back()
     touch_button_settings()
-    english_language()
+    switch_english_language_test()
     touch_button_back()
     touch_travelling_pack()
-    touch_button_start()
+
 
 
 def run_tutorial_new():
@@ -59,6 +62,7 @@ def run_tutorial_new():
     run_logger(test_tutorial_part_1)
     run_logger(test_tutorial_part_2)
     run_logger(test_tutorial_part_3)
+    run_logger(saved_purchase)
     run_logger(test_language_check)
     stop_app("com.jollyco.jbpuzzleadventure")
     simple_report(__file__, logpath=True, output='html_report/tutorial_new_main.html')
