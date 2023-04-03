@@ -5,6 +5,7 @@ from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
 from page_object import *
+from global_auto_agr import PAGE_ROOT
 
 
 def skip_system_pop():
@@ -342,10 +343,12 @@ def assert_button_start():
 
 def touch_icon_shop():
     touch(icon_shop())
+    sleep(2.0)
 
 
-def assert_exists_text_shop():
+def assert_text_shop():
     assert_exists(text_shop())
+
 
 
 # def test_first_product_buy():
@@ -359,8 +362,7 @@ def assert_exists_text_shop():
 def touch_first_product_buy():
     touch(first_product_buy())
 
-
-def assert_exists():
+def assert_exists_her_sobachia():
     assert_exists(purchase_popap())
 
 
@@ -653,7 +655,7 @@ def touch_close_ads():
 
 
 def assert_hint_x1():
-    assert_exists(hint_x1)
+    assert_exists(hint_x1())
 
 
 def assert_hint3():
@@ -706,11 +708,11 @@ def assert_claim():
 
 
 def assert_hint11():
-    assert_exists(cons_11())
+    assert_exists(coins_11())
 
 
 def assert_91():
-    assert_exists(assert_91())
+    assert_exists(coins_91())
 
 
 def assert_5():
@@ -730,9 +732,11 @@ def assert_28():
 
 
 def swipe_shop():
-    swipe(swipe_shop(),
-          vector=[-0.0132, -0.2193]
-          )
+    swipe(Template(fr"{PAGE_ROOT}swipe_shop.png",
+                   record_pos=(-0.103, 0.128),
+                   resolution=(1080, 2400)),
+          vector=[-0.0145, -0.1634])
+    sleep(2.0)
 
 
 def android_price0():
@@ -748,15 +752,18 @@ def price_0():
 
 
 def touch_android_choice():
-    touch(touch_android_choice())
+    touch(android_choice())
+    sleep(1.0)
 
 
 def touch_card_approve():
     touch(android_card())
+    sleep(1.0)
 
 
 def touch_buy():
     touch(android_buy())
+    sleep(1.0)
 
 
 def assert_29():

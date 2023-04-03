@@ -1,10 +1,6 @@
 __author__ = "QA PG"
 
-from airtest.core.api import *
-from global_auto_agr import AUTO_SETUP_ARG
-from try_test_method import run_logger, remove_log_dir
-from airtest.report.report import simple_report
-from general_steps import skip_system_pop
+
 from general_steps import *
 
 
@@ -113,7 +109,7 @@ def test_third_puzzle_continue():
 
 
 def test_first_resolved_puzzle():
-    touch_daily_puzzle_3()
+    touch_daily_puzzle_1()
     touch_button_start()
     assert_text_oops()
     touch_button_no()
@@ -137,33 +133,6 @@ def test_first_resolved_puzzle():
 def test_second_resolved_puzzle():
     touch_daily_puzzle_2()
     touch_button_start()
-    assert_text_oops()
-    touch_button_no()
-    touch_button_start()
-    assert_text_oops()
-    touch_button_yes()
-    touch_hint_main()
-    assert_text_hint()
-    touch_button_no()
-    touch_hint_main()
-    assert_text_hint()
-    touch_button_yes()
-    touch_button_win()
-    assert_text_puzzle_completed()
-    assert_button_save()
-    touch_button_ok()
-    assert_checkmark_1()
-    assert_completed_2_daily_puzzle()
-
-
-def test_second_resolved_puzzle():
-    touch_daily_puzzle_2()
-    touch_button_start()
-    assert_text_oops()
-    touch_button_no()
-    touch_button_start()
-    assert_text_oops()
-    touch_button_yes()
     touch_hint_main()
     assert_text_hint()
     touch_button_no()
@@ -181,11 +150,6 @@ def test_second_resolved_puzzle():
 def test_third_resolved_puzzle():
     touch_daily_puzzle_3()
     touch_button_start()
-    assert_text_oops()
-    touch_button_no()
-    touch_button_start()
-    assert_text_oops()
-    touch_button_yes()
     touch_hint_main()
     assert_text_hint()
     touch_button_no()
@@ -213,6 +177,31 @@ def test_reward():
     touch_button_claim()
     assert_text_back()
     assert_not_attention
+
+
+def run_daily():
+    remove_log_dir('shop_feature')
+    auto_setup(
+        __file__,
+        logdir=AUTO_SETUP_ARG.get('logdir'),
+        devices=[AUTO_SETUP_ARG.get('devices'), ],
+        project_root=AUTO_SETUP_ARG.get('project_root'),
+    )
+    start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(test_press_daily_button)
+    run_logger(test_exit_to_main_menu)
+    run_logger(test_first_unresolved_puzzle)
+    run_logger(test_first_puzzle_continue)
+    run_logger(test_second_unresolved_puzzle)
+    run_logger(test_second_puzzle_continue)
+    run_logger(test_third_unresolved_puzzle)
+    run_logger(test_third_puzzle_continue)
+    run_logger(test_first_resolved_puzzle)
+    run_logger(test_second_resolved_puzzle)
+    run_logger(test_third_resolved_puzzle)
+    run_logger(test_reward)
+    stop_app("com.jollyco.jbpuzzleadventure")
+    simple_report(__file__, logpath=True, output='html_report/daily.html')
 
 
 

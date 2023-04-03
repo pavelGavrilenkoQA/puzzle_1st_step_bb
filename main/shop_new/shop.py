@@ -8,12 +8,12 @@ from try_test_method import run_logger, remove_log_dir
 from general_steps import *
 
 
-def test_press_market_button():
+def test_press_market_button(): #+++++++++
     touch_icon_shop()
-    assert_exists_text_shop()
+    assert_text_shop()
 
 
-def test_locked_purchases():
+def test_locked_purchases(): #+++++++++
     touch_50()
     assert_not_exists_claim()
     touch_200()
@@ -22,7 +22,7 @@ def test_locked_purchases():
     assert_not_exists_claim()
 
 
-def test_ads_hint():
+def test_ads_hint(): #+++++++++
     touch_ads_hint()
     touch_close_ads()
     assert_hint_x1()
@@ -30,12 +30,12 @@ def test_ads_hint():
     assert_claim()
 
 
-def test_receiving_hint():
+def test_receiving_hint(): #+++++++++
     touch_button_claim()
-    assert_1
+    assert_1()
 
 
-def test_ads_coins():
+def test_ads_coins():#+++++++++
     touch_debug()
     touch_plus_100()
     touch_hide()
@@ -46,12 +46,12 @@ def test_ads_coins():
     assert_claim()
 
 
-def test_receiving_coins():
+def test_receiving_coins():#+++++++++
     touch_button_claim()
     assert_hint11()
 
 
-def debug():
+def debug(): #+++++++++
     touch_debug()
     for i in range(8):
         (touch_plus_100())
@@ -60,7 +60,7 @@ def debug():
     assert_91()
 
 
-def test_purchases_for_50coins():
+def test_purchases_for_50coins():#+++++++++
     touch_icon_shop()
     touch_50()
     assert_hint_x1()
@@ -69,7 +69,7 @@ def test_purchases_for_50coins():
     assert_hint3()
 
 
-def test_purchases_for_200coins():
+def test_purchases_for_200coins():#+++++++++
     touch_200()
     assert_hint_x1()
     assert_5()
@@ -77,7 +77,7 @@ def test_purchases_for_200coins():
     assert_8()
 
 
-def test_purchases_for_600coins():
+def test_purchases_for_600coins():#+++++++++
     touch_600()
     assert_hint_x1()
     assert_20()
@@ -102,13 +102,38 @@ def test_purchases_for_0dollars():
     assert_29()
 
 
-def purchase_failed():
+def test_purchase_failed():
     price_4()
     touch_loading()
     assert_text_oops()
-    touch_button_ok()
+    touch_button_yes()
 
 
+def run_shop_new():
+    remove_log_dir('shop_feature')
+    auto_setup(
+        __file__,
+        logdir=AUTO_SETUP_ARG.get('logdir'),
+        devices=[AUTO_SETUP_ARG.get('devices'), ],
+        project_root=AUTO_SETUP_ARG.get('project_root'),
+    )
+    start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(skip_system_pop)
+    run_logger(test_press_market_button)
+    run_logger(test_locked_purchases)
+    run_logger(test_ads_hint)
+    run_logger(test_receiving_hint)
+    run_logger(test_ads_coins)
+    run_logger(test_receiving_coins)
+    run_logger(debug)
+    run_logger(test_purchases_for_50coins)
+    run_logger(test_purchases_for_200coins)
+    run_logger(test_purchases_for_600coins)
+    run_logger(shop_swipe)
+    run_logger(test_purchases_for_0dollars)
+    run_logger(test_purchase_failed)
+    stop_app("com.jollyco.jbpuzzleadventure")
+    simple_report(__file__, logpath=True, output='html_report/shop.html')
 
 
 
