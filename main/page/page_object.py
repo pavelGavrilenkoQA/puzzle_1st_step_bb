@@ -1081,6 +1081,38 @@ def attention():
     )
 
 
+def text_no_hint():
+    return Template(
+        fr"{PAGE_ROOT}text_no_hint.png",
+        record_pos=(-0.219, -0.124),
+        resolution=(1080, 2400)
+    )
+
+
+def coins_25():
+    return Template(
+        fr"{PAGE_ROOT}25.png",
+        record_pos=(0.047, -0.908),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_4():
+    return Template(
+        fr"{PAGE_ROOT}4.png",
+        record_pos=(0.392, -0.916),
+        resolution=(1080, 2400)
+    )
+
+
+def button_claim_daily_reward():
+    return Template(
+        fr"{PAGE_ROOT}button_claim_daily_reward.png",
+        record_pos=(0.001, 0.587),
+        resolution=(1080, 2400)
+    )
+
+
 if __name__ == "__main__":
     print(button_ok())
     print(tutorial_image())

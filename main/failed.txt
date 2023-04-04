@@ -177,3 +177,7 @@ test_first_resolved_puzzle --- is failed
 test_second_resolved_puzzle --- is failed
 test_third_resolved_puzzle --- is failed
 test_reward --- is failed
+test_third_resolved_puzzle --- is failed
+test_reward --- is failed
+test_third_resolved_puzzle --- is failed
+test_reward --- is failed

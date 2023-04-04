@@ -893,6 +893,36 @@ def assert_not_attention():
     assert_not_exists(attention())
 
 
+def assert_not_text_oops():
+    assert_not_exists(text_oops())
+
+
+def assert_not_text_exit():
+    assert_not_exists(text_exit())
+
+
+def assert_not_text_hint():
+    assert_not_exists(text_hint())
+
+
+def assert_text_no_hint():
+    assert_exists(text_no_hint())
+
+
+def assert_4():
+    assert_exists(hint_4())
+
+
+def assert_25():
+    assert_exists(coins_25())
+
+
+def touch_button_claim_daily_reward():
+    touch(button_claim_daily_reward())
+    sleep(1.0)
+
+
+
 
 
 
