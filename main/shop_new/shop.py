@@ -8,7 +8,16 @@ from try_test_method import run_logger, remove_log_dir
 from general_steps import *
 
 
-def test_press_market_button(): #+++++++++
+def test_debug_clear():
+    touch_debug()
+    for i in range(5):
+        (touch_minus_1())
+    for i in range(3):
+        (touch_minus_10())
+    touch_hide()
+
+
+def test_press_market_button():
     touch_icon_shop()
     assert_text_shop()
 
@@ -90,7 +99,7 @@ def shop_swipe():
 
 
 def test_purchases_for_0dollars():
-    price_0()
+    touch_price_0()
     android_quantity1()
     android_price0()
     touch_android_choice()
@@ -103,14 +112,14 @@ def test_purchases_for_0dollars():
 
 
 def test_purchase_failed():
-    price_4()
+    touch_price_4()
     touch_loading()
     assert_text_oops()
     touch_button_yes()
 
 
 def run_shop_new():
-    remove_log_dir('shop_feature')
+    remove_log_dir('shop_new')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),
@@ -119,6 +128,7 @@ def run_shop_new():
     )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(skip_system_pop)
+    run_logger(test_debug_clear)
     run_logger(test_press_market_button)
     run_logger(test_locked_purchases)
     run_logger(test_ads_hint)

@@ -674,14 +674,17 @@ def assert_1():
 
 def touch_debug():
     touch(debug())
+    sleep(1.0)
 
 
 def touch_plus_100():
     touch(plus_100())
+    sleep(1.0)
 
 
 def touch_hide():
     touch(hide())
+    sleep(1.0)
 
 
 def assert_coins_x10():
@@ -694,10 +697,12 @@ def assert_x10():
 
 def touch_plus_1():
     touch(plus_1())
+    sleep(1.0)
 
 
 def touch_reload():
     touch(reload())
+    sleep(1.0)
 
 
 def assert_x1():
@@ -748,8 +753,9 @@ def android_quantity1():
     assert_exists(android_quantity_1())
 
 
-def price_0():
+def touch_price_0():
     touch(price_0_dollars())
+    sleep(3.0)
 
 
 def touch_android_choice():
@@ -771,12 +777,14 @@ def assert_29():
     assert_exists(hint_29())
 
 
-def price_4():
+def touch_price_4():
     touch(price_4_dollars())
+    sleep(1.0)
 
 
 def touch_loading():
     touch(loading())
+    sleep(1.0)
 
 
 def assert_text_oops():
@@ -919,6 +927,16 @@ def assert_25():
 
 def touch_button_claim_daily_reward():
     touch(button_claim_daily_reward())
+    sleep(1.0)
+
+
+def touch_minus_10():
+    touch(minus_10())
+    sleep(1.0)
+
+
+def touch_minus_1():
+    touch(minus_1())
     sleep(1.0)
 
 

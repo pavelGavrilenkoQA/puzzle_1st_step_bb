@@ -1113,6 +1113,24 @@ def button_claim_daily_reward():
     )
 
 
+def minus_10():
+    return Template(
+        fr"{PAGE_ROOT}minus_10.png",
+        record_pos=(0.272, -0.594),
+        resolution=(1080, 2400)
+    )
+
+
+def minus_1():
+    return Template(
+        fr"{PAGE_ROOT}minus_1.png",
+        record_pos=(-0.103, -0.594),
+        resolution=(1080, 2400)
+    )
+
+
+
+
 if __name__ == "__main__":
     print(button_ok())
     print(tutorial_image())

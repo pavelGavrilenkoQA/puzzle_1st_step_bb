@@ -168,7 +168,7 @@ def test_reward():
 
 
 def run_daily():
-    remove_log_dir('daily_main')
+    remove_log_dir('daily')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),
@@ -176,6 +176,7 @@ def run_daily():
         project_root=AUTO_SETUP_ARG.get('project_root'),
     )
     start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(skip_system_pop)
     run_logger(test_press_daily_button)
     run_logger(test_exit_to_main_menu)
     run_logger(test_first_unresolved_puzzle)
