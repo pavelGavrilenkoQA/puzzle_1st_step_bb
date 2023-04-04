@@ -1129,6 +1129,13 @@ def minus_1():
     )
 
 
+def text_hint_ads():
+    return Template(
+        fr"{PAGE_ROOT}text_hint_ads.png",
+        record_pos=(-0.233, 0.581),
+        resolution=(1080, 2400)
+    )
+
 
 
 if __name__ == "__main__":

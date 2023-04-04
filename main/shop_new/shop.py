@@ -100,6 +100,7 @@ def shop_swipe():
 
 def test_purchases_for_0dollars():
     touch_price_0()
+    assert_text_hint_ads()
     android_quantity1()
     android_price0()
     touch_android_choice()

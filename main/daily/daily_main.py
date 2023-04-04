@@ -1,4 +1,4 @@
-__author__ = "QA PG"
+__author__ = "TS"
 
 
 from general_steps import *
@@ -13,12 +13,15 @@ def test_press_daily_button():
 
 def test_exit_to_main_menu():
     touch_daily_puzzle_1()
+    assert_button_start()
     touch_button_back()
     assert_daily_challenge()
     touch_daily_puzzle_2()
+    assert_button_start()
     touch_button_back()
     assert_daily_challenge()
     touch_daily_puzzle_3()
+    assert_button_start()
     touch_button_back()
     assert_daily_challenge()
 

@@ -940,6 +940,10 @@ def touch_minus_1():
     sleep(1.0)
 
 
+def assert_text_hint_ads():
+    assert_exists(text_hint_ads())
+
+
 
 
 
