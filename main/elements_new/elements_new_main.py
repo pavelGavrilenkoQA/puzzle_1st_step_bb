@@ -49,12 +49,13 @@ def test_play_puzzle_49_elements():
     touch_completed_pack_with_1_art()
     touch_next_element()
     touch_next_element()
+    touch_next_element()
     assert_completed_49_elements()
     touch_next_element()
 
 
 def test_play_puzzle_64_elements():
-    play_puzzle_64_elements()
+    assert_64_elements()
     touch_button_start()
     touch_button_win()
     touch_button_claim()
@@ -62,12 +63,14 @@ def test_play_puzzle_64_elements():
     touch_next_element()
     touch_next_element()
     touch_next_element()
-    completed_64_elements()
+    touch_next_element()
+    assert_completed_64_element()
     touch_next_element()
 
 
 def test_play_puzzle_81_elements():
-    touch_elements_81()
+    assert_elements_81()
+    touch_button_start()
     touch_button_win()
     touch_button_claim()
     touch_completed_pack_with_1_art()
@@ -76,10 +79,13 @@ def test_play_puzzle_81_elements():
     touch_next_element()
     touch_next_element()
     completed_81_element()
+    touch_next_element()
+    touch_next_element()
 
 
 def test_play_puzzle_144_elements():
-    touch_elements_144()
+    assert_elements_144()
+    touch_button_start()
     touch_button_win()
     touch_button_claim()
     touch_completed_pack_with_1_art()
@@ -88,12 +94,14 @@ def test_play_puzzle_144_elements():
     touch_next_element()
     touch_next_element()
     touch_next_element()
-    completed_144_element()
     touch_next_element()
+    completed_144_element()
 
 
 def test_play_puzzle_256_elements():
+    assert_elements_256()
     touch_elements_256()
+    touch_button_start()
     touch_button_win()
     touch_button_claim()
     touch_completed_pack_with_1_art()
@@ -107,7 +115,7 @@ def test_play_puzzle_256_elements():
 
 
 def run_elements_in_art_new():
-    remove_log_dir('Elements_new')
+    remove_log_dir('elements_new')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),

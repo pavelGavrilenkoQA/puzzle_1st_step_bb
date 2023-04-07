@@ -1,7 +1,6 @@
 __author__ = "QA SASHA"
 
 from general_steps import *
-from tutorial_main import run_tutorial_feature
 from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
@@ -43,7 +42,6 @@ def test_language_check():
     switch_english_language_test()
     touch_button_back()
     touch_travelling_pack()
-
 
 
 def run_tutorial_new():

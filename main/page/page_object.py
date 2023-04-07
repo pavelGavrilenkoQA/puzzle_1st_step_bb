@@ -517,11 +517,11 @@ def completed_64_elements():
     )
 
 
-def elements_81():
+def element_81():
     return Template(
-        fr"{PAGE_ROOT}elements_81.png",
-        record_pos=(0.177, 0.17),
-        resolution=(1080, 2340)
+        fr"{PAGE_ROOT}element_81.png",
+        record_pos=(-0.003, 0.173),
+        resolution=(1200, 1920)
     )
 
 
@@ -695,7 +695,7 @@ if __name__ == "__main__":
     print(completed_49_elements())
     print(elements_64())
     print(completed_64_elements())
-    print(elements_81())
+    print(element_81())
     print(completed_81_elements())
     print(elements_144())
     print(completed_144_elements())

@@ -113,6 +113,7 @@ def touch_button_back():
 
 
 def touch_button_settings():
+    sleep(2)
     touch(button_settings())
 
 
@@ -133,6 +134,7 @@ def touch_travelling_pack():
 
 
 def touch_button_start():
+    sleep(4)
     touch(button_start())
 
 
@@ -229,6 +231,7 @@ def touch_button_privacy():
 
 
 def assert_exists_green_privacy_shield():
+    sleep(2)
     assert_exists(green_privacy_shield())
 
 
@@ -602,18 +605,29 @@ def touch_elements_49():
 
 def assert_completed_49_elements():
     assert_exists(completed_49_elements())
+    sleep(2)
 
 
-def play_puzzle_64_elements():
+def assert_64_elements():
+    assert_exists(elements_64())
+
+
+def touch_64_elements():
     touch(elements_64())
 
 
-def completed_64_elements():
+def assert_completed_64_element():
     assert_exists(completed_64_elements())
+    sleep(2)
+
+
+def assert_elements_81():
+    sleep(2)
+    assert_exists(element_81())
 
 
 def touch_elements_81():
-    touch(elements_81())
+    touch(element_81())
 
 
 def completed_81_element():
@@ -624,12 +638,21 @@ def touch_elements_144():
     touch(elements_144())
 
 
+def assert_elements_144():
+    assert_exists(elements_144())
+
+
 def completed_144_element():
     assert_exists(completed_144_elements())
 
 
 def touch_elements_256():
     touch(elements_256())
+    sleep(2)
+
+
+def assert_elements_256():
+    assert_exists(elements_256())
 
 
 def completed_element_256():
