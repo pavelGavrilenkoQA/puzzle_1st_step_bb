@@ -68,7 +68,7 @@ def test_setting_menu_exit():
 
 
 def run_setting_new():
-    remove_log_dir('setting_new')
+    remove_log_dir('setting_new_feature')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),
@@ -89,4 +89,4 @@ def run_setting_new():
     run_logger(test_link_in_setting_present)
     run_logger(test_setting_menu_exit)
     stop_app("com.jollyco.jbpuzzleadventure")
-    simple_report(__file__, logpath=True, output='html_report/setting_new.html')
+    simple_report(__file__, logpath=True, output='html_report/setting_new_feature.html')

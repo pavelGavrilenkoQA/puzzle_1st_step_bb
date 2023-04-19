@@ -13,7 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/main/page" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/elements_new" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/puzzle_tab_new" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main/setting_new" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main/setting_new_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/shop_new" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/tutorial_new" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
