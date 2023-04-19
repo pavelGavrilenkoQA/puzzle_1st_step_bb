@@ -53,8 +53,8 @@ def button_back():
 def button_settings():
     return Template(
         fr"{PAGE_ROOT}button_settings.png",
-        record_pos=(-0.403, -0.857),
-        resolution=(1080, 2340)
+        record_pos=(-0.392, 0.969),
+        resolution=(1080, 2400)
     )
 
 
@@ -354,8 +354,8 @@ def swipe_rotation_off():
 def swipe_rotation_on():
     return Template(
         fr"{PAGE_ROOT}swipe_rotation_on.png",
-        record_pos=(0.006, 0.294),
-        resolution=(1080, 2340)
+        record_pos=(0.094, 0.294),
+        resolution=(1080, 2400)
     )
 
 
@@ -552,8 +552,8 @@ def completed_144_elements():
 def elements_256():
     return Template(
         fr"{PAGE_ROOT}elements_256.png",
-        record_pos=(0.202, 0.184),
-        resolution=(1080, 2340)
+        record_pos=(0.189, 0.186),
+        resolution=(1080, 2400)
     )
 
 
@@ -627,6 +627,22 @@ def button_claim_in_russian():
         fr"{PAGE_ROOT}button_claim_in_russian.png",
         record_pos=(-0.009, 0.339),
         resolution=(1200, 1920)
+    )
+
+
+def element_49():
+    return Template(
+        fr"{PAGE_ROOT}element_49.png",
+        record_pos=(0.191, 0.19),
+        resolution=(1080, 2400)
+    )
+
+
+def button_settings_2():
+    return Template(
+        fr"{PAGE_ROOT}button_settings_2.png",
+        record_pos=(-0.406, -0.905),
+        resolution=(1080, 2400)
     )
 
 
@@ -708,3 +724,5 @@ if __name__ == "__main__":
     print(part_of_daily())
     print(swipe_elements_to_16())
     print(button_claim_in_russian())
+    print(element_49())
+    print(button_settings_2())

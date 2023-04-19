@@ -484,7 +484,7 @@ def assert_not_exists_coins_6():
 #    assert_not_exists(Template(
 #        r"coins_3.png"))
 
-def swipe_elements_to_16():
+def swipe_elements_16():
     swipe(swipe_elements_to_16())
 
 
@@ -600,7 +600,7 @@ def assert_completed_25_level():
 
 
 def touch_elements_49():
-    touch(elements_49())
+    touch(element_49())
 
 
 def assert_completed_49_elements():
@@ -668,3 +668,8 @@ def claim_in_russian():
 def touch_button_claim():
     sleep(7)
     touch(button_claim())
+
+
+def touch_button_settings_2():
+    sleep(2)
+    touch(button_settings_2())

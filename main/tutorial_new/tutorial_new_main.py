@@ -38,7 +38,7 @@ def saved_purchase():
 def test_language_check():
     touch_button_back()
     touch_button_back()
-    touch_button_settings()
+    touch_button_settings_2()
     switch_english_language_test()
     touch_button_back()
     touch_travelling_pack()

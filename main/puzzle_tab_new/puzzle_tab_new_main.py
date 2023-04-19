@@ -25,13 +25,13 @@ def test_rotation_button_on():
 
 
 def test_rotation_button_off():
-    touch_swipe_rotation_off()
+    touch_swipe_rotation_on()
     assert_exists_swipe_rotation_off()
     assert_not_exists_coins_6()
 
 
 def test_swipe_count_element_to_16():
-    swipe_elements_to_16()
+    swipe_elements_16()
     assert_exists_element_16()
     assert_not_exists_coins_3()
 
