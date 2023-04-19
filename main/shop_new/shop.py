@@ -103,8 +103,6 @@ def test_purchases_for_0dollars():
     assert_text_hint_ads()
     android_quantity1()
     android_price0()
-    touch_android_choice()
-    touch_card_approve()
     touch_buy()
     assert_hint_x1()
     assert_x1()

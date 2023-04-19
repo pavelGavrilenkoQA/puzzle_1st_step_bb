@@ -755,7 +755,7 @@ def android_quantity1():
 
 def touch_price_0():
     touch(price_0_dollars())
-    sleep(3.0)
+    sleep(5.0)
 
 
 def touch_android_choice():
