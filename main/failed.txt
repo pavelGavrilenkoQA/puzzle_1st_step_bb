@@ -1,1 +1,0 @@
-test_swipe_count_element_to_16 --- is failed

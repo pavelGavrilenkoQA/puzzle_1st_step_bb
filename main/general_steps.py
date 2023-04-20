@@ -485,7 +485,12 @@ def assert_not_exists_coins_6():
 #        r"coins_3.png"))
 
 def swipe_elements_16():
-    swipe(swipe_elements_to_16())
+    swipe(Template(
+        fr"{PAGE_ROOT}swipe_elements_to_16.png",
+        record_pos=(0.095, 0.185),
+        resolution=(1080, 2340)),
+        vector=[-0.1300, -0.0062]
+    )
 
 
 def assert_exists_element_16():
