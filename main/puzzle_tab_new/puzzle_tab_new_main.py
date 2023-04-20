@@ -38,8 +38,8 @@ def test_swipe_count_element_to_16():
 
 def test_start_art_puzzle():
     touch_button_start()
-    test_another_puzzle_in_progress()
-    touch_button_yes()
+    if test_another_puzzle_in_progress():
+        touch_button_yes()
     assert_exists_button_level_assert()
 
 
@@ -47,6 +47,7 @@ def test_exit_popup():
     touch_button_settings()
     touch_button_exit()
     popap_before_exit()
+    #assert_exists(popap_before_exit_1())
 
 
 def test_exit_popup_close():

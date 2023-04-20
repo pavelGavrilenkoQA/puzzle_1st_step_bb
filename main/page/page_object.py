@@ -407,7 +407,7 @@ def button_exit():
     )
 
 
-def popap_before_exit():
+def popap_before_exit_1():
     return Template(
         fr"{PAGE_ROOT}popap_before_exit.png",
         record_pos=(-0.001, -0.013),

@@ -112,9 +112,9 @@ def touch_button_back():
     touch(button_back())
 
 
-def touch_button_settings():
-    sleep(2)
-    touch(button_settings())
+# def touch_button_settings():
+#     sleep(2)
+#     touch(button_settings())
 
 
 def switch_english_language_test():
@@ -511,6 +511,7 @@ def test_another_puzzle_in_progress():
     sleep(4)
     if exists(another_puzzle_in_progress()):
         sleep(3)
+        return True
 
 
 def touch_button_yes():
@@ -532,7 +533,7 @@ def touch_button_exit():
 
 
 def popap_before_exit():
-    assert_exists(popap_before_exit())
+    assert_exists(popap_before_exit_1())
 
 
 # def test_exit_popup_close():
@@ -670,6 +671,6 @@ def touch_button_claim():
     touch(button_claim())
 
 
-def touch_button_settings_2():
+def touch_button_settings():
     sleep(2)
     touch(button_settings_2())
