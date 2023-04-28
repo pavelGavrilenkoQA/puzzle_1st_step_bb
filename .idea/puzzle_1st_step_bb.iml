@@ -10,12 +10,12 @@
       <sourceFolder url="file://$MODULE_DIR$/main/html_report" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/tutorial_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/elements_in_art" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main/page" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/elements_new" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/puzzle_tab_new" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/setting_new_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/shop_new" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/tutorial_new" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main/page_alex" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (puzzle_1st_step_bb)" jdkType="Python SDK" />

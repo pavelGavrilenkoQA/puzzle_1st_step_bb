@@ -4,7 +4,7 @@ from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
-from page_object import *
+from page_object_alex import *
 
 
 def skip_system_pop():
@@ -486,7 +486,7 @@ def assert_not_exists_coins_6():
 
 def swipe_elements_16():
     swipe(Template(
-        fr"{PAGE_ROOT}swipe_elements_to_16.png",
+        fr"{PAGE_ROOT_ALEX}swipe_elements_to_16.png",
         record_pos=(0.095, 0.185),
         resolution=(1080, 2340)),
         vector=[-0.1300, -0.0062]

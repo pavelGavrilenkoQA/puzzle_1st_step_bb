@@ -2,7 +2,7 @@ import os
 
 # Set this dir as global project root
 project_dir = os.getcwd()
-PAGE_ROOT = f"{project_dir}/page/"
+PAGE_ROOT_ALEX = f"{project_dir}/page_alex/"
 
 ### Global set for feature
 AUTO_SETUP_ARG = {

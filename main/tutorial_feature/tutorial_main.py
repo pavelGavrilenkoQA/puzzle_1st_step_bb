@@ -5,7 +5,7 @@ from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
-from general_steps import skip_system_pop
+from general_steps_alex import skip_system_pop
 
 
 def test_politic_accept():
