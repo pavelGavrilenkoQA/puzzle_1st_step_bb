@@ -15,8 +15,6 @@ test_third_unresolved_puzzle --- is passed
 test_third_puzzle_continue --- is passed
 test_first_resolved_puzzle --- is passed
 test_second_resolved_puzzle --- is passed
-test_third_resolved_puzzle --- is passed
-test_reward --- is passed
 skip_system_pop --- is passed
 test_debug_clear --- is passed
 test_press_market_button --- is passed

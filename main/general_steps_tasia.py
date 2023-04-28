@@ -5,7 +5,7 @@ from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
 from page_object import *
-from global_auto_agr import PAGE_ROOT
+from global_auto_agr import PAGE_ROOT_TAISIA
 
 
 def skip_system_pop():
@@ -738,7 +738,7 @@ def assert_28():
 
 
 def swipe_shop():
-    swipe(Template(fr"{PAGE_ROOT}swipe_shop.png",
+    swipe(Template(fr"{PAGE_ROOT_TAISIA}swipe_shop.png",
                    record_pos=(-0.103, 0.128),
                    resolution=(1080, 2400)),
           vector=[-0.0145, -0.1634])

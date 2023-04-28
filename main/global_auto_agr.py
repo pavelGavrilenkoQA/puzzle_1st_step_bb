@@ -2,7 +2,7 @@ import os
 
 # Set this dir as global project root
 project_dir = os.getcwd()
-PAGE_ROOT = f"{project_dir}/page/"
+PAGE_ROOT_TAISIA = f"{project_dir}/page_taisia/"
 
 ### Global set for feature
 AUTO_SETUP_ARG = {

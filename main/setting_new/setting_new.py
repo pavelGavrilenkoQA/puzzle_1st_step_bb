@@ -1,6 +1,6 @@
 __author__ = "QA SASHA"
 
-from general_steps import *
+from general_steps_tasia import *
 
 touch_button_settings()
 assert_exists_text_setting()

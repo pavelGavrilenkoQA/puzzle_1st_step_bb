@@ -1,7 +1,7 @@
 __author__ = "TS"
 
 
-from general_steps import *
+from general_steps_tasia import *
 
 
 def test_press_daily_button():

@@ -1,11 +1,11 @@
 
 from airtest.core.api import *
-from global_auto_agr import PAGE_ROOT
+from global_auto_agr import PAGE_ROOT_TAISIA
 
 
 def button_ok():
     return Template(
-        fr"{PAGE_ROOT}button_ok.png",
+        fr"{PAGE_ROOT_TAISIA}button_ok.png",
         record_pos=(-0.003, 0.328),
         resolution=(1080, 2340)
     )
@@ -13,7 +13,7 @@ def button_ok():
 
 def tutorial_image():
     return Template(
-        fr"{PAGE_ROOT}tutorial_image.png",
+        fr"{PAGE_ROOT_TAISIA}tutorial_image.png",
         record_pos=(-0.003, -0.211),
         resolution=(1080, 2340)
     )
@@ -21,7 +21,7 @@ def tutorial_image():
 
 def empty_elements_list():
     return Template(
-        fr"{PAGE_ROOT}empty_elements_list.png",
+        fr"{PAGE_ROOT_TAISIA}empty_elements_list.png",
         record_pos=(0.271, 0.71),
         resolution=(1080, 2340)
     )
@@ -29,7 +29,7 @@ def empty_elements_list():
 
 def button_win():
     return Template(
-        fr"{PAGE_ROOT}button_win.png",
+        fr"{PAGE_ROOT_TAISIA}button_win.png",
         record_pos=(-0.321, 1.038),
         resolution=(1080, 2340)
     )
@@ -37,7 +37,7 @@ def button_win():
 
 def sugar_mesh_pack():
     return Template(
-        fr"{PAGE_ROOT}sugar_mesh_pack.png",
+        fr"{PAGE_ROOT_TAISIA}sugar_mesh_pack.png",
         record_pos=(0.014, -0.303),
         resolution=(1080, 2340)
     )
@@ -45,7 +45,7 @@ def sugar_mesh_pack():
 
 def button_back():
     return Template(
-        fr"{PAGE_ROOT}button_back.png",
+        fr"{PAGE_ROOT_TAISIA}button_back.png",
         record_pos=(-0.381, 0.969),
         resolution=(1080, 2340)
     )
@@ -53,7 +53,7 @@ def button_back():
 
 def button_settings():
     return Template(
-        fr"{PAGE_ROOT}button_settings.png",
+        fr"{PAGE_ROOT_TAISIA}button_settings.png",
         record_pos=(-0.391, 0.968),
         resolution=(1080, 2400)
     )
@@ -61,7 +61,7 @@ def button_settings():
 
 def english_language():
     return Template(
-        fr"{PAGE_ROOT}english_language.png",
+        fr"{PAGE_ROOT_TAISIA}english_language.png",
         record_pos=(-0.213, -0.015),
         resolution=(1080, 2340)
     )
@@ -69,7 +69,7 @@ def english_language():
 
 def travelling_pack_color():
     return Template(
-        fr"{PAGE_ROOT}travelling_pack_color.png",
+        fr"{PAGE_ROOT_TAISIA}travelling_pack_color.png",
         record_pos=(0.007, -0.537),
         resolution=(1080, 2340)
     )
@@ -77,7 +77,7 @@ def travelling_pack_color():
 
 def travelling_pack_bw():
     return Template(
-        fr"{PAGE_ROOT}travelling_pack_bw.png",
+        fr"{PAGE_ROOT_TAISIA}travelling_pack_bw.png",
         record_pos=(-0.003, -0.476),
         resolution=(1080, 2340)
     )
@@ -85,7 +85,7 @@ def travelling_pack_bw():
 
 def button_start():
     return Template(
-        fr"{PAGE_ROOT}button_start.png",
+        fr"{PAGE_ROOT_TAISIA}button_start.png",
         record_pos=(-0.003, 0.531),
         resolution=(1080, 2340)
     )
@@ -93,7 +93,7 @@ def button_start():
 
 def text_setting():
     return Template(
-        fr"{PAGE_ROOT}text_setting.png",
+        fr"{PAGE_ROOT_TAISIA}text_setting.png",
         record_pos=(0.003, -0.65),
         resolution=(1080, 2340)
     )
@@ -101,7 +101,7 @@ def text_setting():
 
 def swipe_sound_on():
     return Template(
-        fr"{PAGE_ROOT}swipe_sound_on.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_sound_on.png",
         record_pos=(-0.139, -0.214),
         resolution=(1080, 2340)
     )
@@ -109,14 +109,14 @@ def swipe_sound_on():
 
 def swipe_sound_off():
     return Template(
-        fr"{PAGE_ROOT}swipe_sound_off.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_sound_off.png",
         record_pos=(-0.133, -0.213),
         resolution=(1080, 2340))
 
 
 def swipe_vibration_on():
     return Template(
-        fr"{PAGE_ROOT}swipe_vibration_on.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_vibration_on.png",
         record_pos=(0.137, -0.213),
         resolution=(1080, 2340)
     )
@@ -124,7 +124,7 @@ def swipe_vibration_on():
 
 def swipe_vibration_off():
     return Template(
-        fr"{PAGE_ROOT}swipe_vibration_off.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_vibration_off.png",
         record_pos=(0.151, -0.215),
         resolution=(1080, 2340)
     )
@@ -132,7 +132,7 @@ def swipe_vibration_off():
 
 def sound_vibration_on():
     return Template(
-        fr"{PAGE_ROOT}sound_vibration_on.png",
+        fr"{PAGE_ROOT_TAISIA}sound_vibration_on.png",
         record_pos=(0.007, -0.21),
         resolution=(1080, 2340)
     )
@@ -140,7 +140,7 @@ def sound_vibration_on():
 
 def english_flag_text():
     return Template(
-        fr"{PAGE_ROOT}english_flag_text.png",
+        fr"{PAGE_ROOT_TAISIA}english_flag_text.png",
         record_pos=(0.007, -0.013),
         resolution=(1080, 2340)
     )
@@ -148,7 +148,7 @@ def english_flag_text():
 
 def all_languages():
     return Template(
-        fr"{PAGE_ROOT}all_languages.png",
+        fr"{PAGE_ROOT_TAISIA}all_languages.png",
         record_pos=(-0.002, -0.024),
         resolution=(1080, 2340)
     )
@@ -156,7 +156,7 @@ def all_languages():
 
 def button_privacy():
     return Template(
-        fr"{PAGE_ROOT}button_privacy.png",
+        fr"{PAGE_ROOT_TAISIA}button_privacy.png",
         record_pos=(-0.004, 0.144),
         resolution=(1080, 2340)
     )
@@ -164,7 +164,7 @@ def button_privacy():
 
 def green_privacy_shield():
     return Template(
-        fr"{PAGE_ROOT}green_privacy_shield.png",
+        fr"{PAGE_ROOT_TAISIA}green_privacy_shield.png",
         record_pos=(0.001, -0.249),
         resolution=(1080, 2340)
     )
@@ -172,7 +172,7 @@ def green_privacy_shield():
 
 def swipe_analytics_on():
     return Template(
-        fr"{PAGE_ROOT}swipe_analytics_on.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_analytics_on.png",
         record_pos=(0.035, -0.024),
         resolution=(1080, 2340)
     )
@@ -180,7 +180,7 @@ def swipe_analytics_on():
 
 def swipe_analytics_on():
     return Template(
-        fr"{PAGE_ROOT}swipe_personalized_ads_on.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_personalized_ads_on.png",
         record_pos=(0.027, 0.197),
         resolution=(1080, 2340)
     )
@@ -188,14 +188,14 @@ def swipe_analytics_on():
 
 def swipe_analytics_personalized_ads_off():
     return Template(
-        fr"{PAGE_ROOT}swipe_analytics_personalized_ads_off.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_analytics_personalized_ads_off.png",
         record_pos=(0.008, 0.082),
         resolution=(1080, 2340))
 
 
 def swipe_analytics_off():
     return Template(
-        fr"{PAGE_ROOT}swipe_analytics_off.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_analytics_off.png",
         record_pos=(0.007, -0.033),
         resolution=(1080, 2340)
     )
@@ -203,7 +203,7 @@ def swipe_analytics_off():
 
 def swipe_personalized_off():
     return Template(
-        fr"{PAGE_ROOT}swipe_personalized_off.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_personalized_off.png",
         record_pos=(0.003, 0.199),
         resolution=(1080, 2340)
     )
@@ -211,7 +211,7 @@ def swipe_personalized_off():
 
 def swipe_analytics_personalized_ads_on():
     return Template(
-        fr"{PAGE_ROOT}swipe_analytics_personalized_on.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_analytics_personalized_on.png",
         record_pos=(0.058, 0.082),
         resolution=(1080, 2340)
     )
@@ -219,7 +219,7 @@ def swipe_analytics_personalized_ads_on():
 
 def cloud_menu():
     return Template(
-        fr"{PAGE_ROOT}cloud_menu.png",
+        fr"{PAGE_ROOT_TAISIA}cloud_menu.png",
         record_pos=(-0.004, 0.339),
         resolution=(1080, 2340)
     )
@@ -227,7 +227,7 @@ def cloud_menu():
 
 def link_in_setting():
     return Template(
-        fr"{PAGE_ROOT}link_in_setting.png",
+        fr"{PAGE_ROOT_TAISIA}link_in_setting.png",
         record_pos=(0.009, 0.495),
         resolution=(1080, 2340)
     )
@@ -235,14 +235,14 @@ def link_in_setting():
 
 def setting_and_coins():
     return Template(
-        fr"{PAGE_ROOT}setting_and_coins.png",
+        fr"{PAGE_ROOT_TAISIA}setting_and_coins.png",
         record_pos=(-0.283, -0.865),
         resolution=(1080, 2340))
 
 
 def button_daily():
     return Template(
-        fr"{PAGE_ROOT}button_daily.png",
+        fr"{PAGE_ROOT_TAISIA}button_daily.png",
         record_pos=(-0.074, 1.019),
         resolution=(1080, 2400)
     )
@@ -250,7 +250,7 @@ def button_daily():
 
 def daily_challenge():
     return Template(
-        fr"{PAGE_ROOT}daily_challenge.png",
+        fr"{PAGE_ROOT_TAISIA}daily_challenge.png",
         record_pos=(0.007, -0.562),
         resolution=(1080, 2340)
     )
@@ -258,7 +258,7 @@ def daily_challenge():
 
 def reward():
     return Template(
-        fr"{PAGE_ROOT}reward.png",
+        fr"{PAGE_ROOT_TAISIA}reward.png",
         record_pos=(-0.002, -0.569),
         resolution=(1080, 2400)
     )
@@ -266,7 +266,7 @@ def reward():
 
 def bw_button_coming_soon():
     return Template(
-        fr"{PAGE_ROOT}bw_button_coming_soon.png",
+        fr"{PAGE_ROOT_TAISIA}bw_button_coming_soon.png",
         record_pos=(0.311, 1.008),
         resolution=(1080, 2340)
     )
@@ -274,7 +274,7 @@ def bw_button_coming_soon():
 
 def text_coming_soon():
     return Template(
-        fr"{PAGE_ROOT}text_coming_soon.png",
+        fr"{PAGE_ROOT_TAISIA}text_coming_soon.png",
         record_pos=(0.219, 0.931),
         resolution=(1080, 2340)
     )
@@ -282,7 +282,7 @@ def text_coming_soon():
 
 def icon_shop():
     return Template(
-        fr"{PAGE_ROOT}icon_shop.png",
+        fr"{PAGE_ROOT_TAISIA}icon_shop.png",
         record_pos=(-0.379, 1.036),
         resolution=(1080, 2400)
     )
@@ -290,7 +290,7 @@ def icon_shop():
 
 def text_shop():
     return Template(
-        fr"{PAGE_ROOT}text_shop.png",
+        fr"{PAGE_ROOT_TAISIA}text_shop.png",
         record_pos=(-0.002, -0.546),
         resolution=(1080, 2400)
     )
@@ -300,7 +300,7 @@ def text_shop():
 
 def first_product_buy():
     return Template(
-        fr"{PAGE_ROOT}first_product_buy.png",
+        fr"{PAGE_ROOT_TAISIA}first_product_buy.png",
         record_pos=(0.351, 0.006),
         resolution=(1080, 2340)
     )
@@ -308,7 +308,7 @@ def first_product_buy():
 
 def plus_1():
     return Template(
-        fr"{PAGE_ROOT}plus_1.png",
+        fr"{PAGE_ROOT_TAISIA}plus_1.png",
         record_pos = (-0.283, -0.592),
         resolution = (1080, 2400)
     )
@@ -316,7 +316,7 @@ def plus_1():
 
 def reload():
     return Template(
-        fr"{PAGE_ROOT}Reload.png",
+        fr"{PAGE_ROOT_TAISIA}Reload.png",
         record_pos=(-0.198, 0.902),
         resolution=(1080, 2400)
     )
@@ -324,7 +324,7 @@ def reload():
 
 def purchase_popap():
     return Template(
-        fr"{PAGE_ROOT}purchase_popap.png",
+        fr"{PAGE_ROOT_TAISIA}purchase_popap.png",
         record_pos=(-0.188, 0.412),
         resolution=(1200, 2000)
     )
@@ -332,7 +332,7 @@ def purchase_popap():
 
 def locked_text_shop():
     return Template(
-        fr"{PAGE_ROOT}locked_text_shop.png",
+        fr"{PAGE_ROOT_TAISIA}locked_text_shop.png",
         record_pos=(-0.002, -0.538),
         resolution=(1080, 2340)
     )
@@ -340,7 +340,7 @@ def locked_text_shop():
 
 def product_list():
     return Template(
-        fr"{PAGE_ROOT}product_list.png",
+        fr"{PAGE_ROOT_TAISIA}product_list.png",
         record_pos=(0.01, 0.294),
         resolution=(1080, 2340)
     )
@@ -348,7 +348,7 @@ def product_list():
 
 def product_3k_coins():
     return Template(
-        fr"{PAGE_ROOT}product_3k_coins.png",
+        fr"{PAGE_ROOT_TAISIA}product_3k_coins.png",
         record_pos=(-0.131, 0.549),
         resolution=(1080, 2340)
     )
@@ -356,7 +356,7 @@ def product_3k_coins():
 
 def sugar_mesh_bw():
     return Template(
-        fr"{PAGE_ROOT}sugar_mesh_bw.png",
+        fr"{PAGE_ROOT_TAISIA}sugar_mesh_bw.png",
         record_pos=(0.001, -0.477),
         resolution=(1080, 2340)
     )
@@ -364,7 +364,7 @@ def sugar_mesh_bw():
 
 def swipe_rotation_off():
     return Template(
-        fr"{PAGE_ROOT}swipe_rotation_off.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_rotation_off.png",
         record_pos=(0.111, 0.297),
         resolution=(1080, 2340)
     )
@@ -372,7 +372,7 @@ def swipe_rotation_off():
 
 def swipe_rotation_on():
     return Template(
-        fr"{PAGE_ROOT}swipe_rotation_on.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_rotation_on.png",
         record_pos=(0.006, 0.294),
         resolution=(1080, 2340)
     )
@@ -380,7 +380,7 @@ def swipe_rotation_on():
 
 def coins_3():
     return Template(
-        fr"{PAGE_ROOT}coins_3.png",
+        fr"{PAGE_ROOT_TAISIA}coins_3.png",
         record_pos=(0.068, 0.413),
         resolution=(1080, 2340)
     )
@@ -388,7 +388,7 @@ def coins_3():
 
 def coins_6():
     return Template(
-        fr"{PAGE_ROOT}coins_6.png",
+        fr"{PAGE_ROOT_TAISIA}coins_6.png",
         record_pos=(0.069, 0.413),
         resolution=(1080, 2340)
     )
@@ -396,7 +396,7 @@ def coins_6():
 
 def elements_16():
     return Template(
-        fr"{PAGE_ROOT}elements_16.png",
+        fr"{PAGE_ROOT_TAISIA}elements_16.png",
         record_pos=(-0.011, 0.219),
         resolution=(1080, 2340)
     )
@@ -404,7 +404,7 @@ def elements_16():
 
 def button_yes():
     return Template(
-            fr"{PAGE_ROOT}button_yes.png",
+            fr"{PAGE_ROOT_TAISIA}button_yes.png",
             record_pos=(-0.131, 0.06),
             resolution=(1080, 2340)
     )
@@ -412,7 +412,7 @@ def button_yes():
 
 def button_level_assert():
     return Template(
-        fr"{PAGE_ROOT}buton_level_assert.png",
+        fr"{PAGE_ROOT_TAISIA}buton_level_assert.png",
         record_pos=(0.292, 0.936),
         resolution=(1080, 2340)
     )
@@ -420,7 +420,7 @@ def button_level_assert():
 
 def button_exit():
     return Template(
-        fr"{PAGE_ROOT}button_exit.png",
+        fr"{PAGE_ROOT_TAISIA}button_exit.png",
         record_pos=(0.384, 0.966),
         resolution=(1080, 2340)
     )
@@ -428,7 +428,7 @@ def button_exit():
 
 def popap_before_exit():
     return Template(
-        fr"{PAGE_ROOT}tpl1671008301646.png",
+        fr"{PAGE_ROOT_TAISIA}tpl1671008301646.png",
         record_pos=(-0.001, -0.013),
         resolution=(1080, 2340)
     )
@@ -436,7 +436,7 @@ def popap_before_exit():
 
 def button_no():
     return Template(
-        fr"{PAGE_ROOT}button_no.png",
+        fr"{PAGE_ROOT_TAISIA}button_no.png",
         record_pos=(0.141, 0.052),
         resolution=(1080, 2400)
     )
@@ -444,7 +444,7 @@ def button_no():
 
 def completed_pack_with_1_art():
     return Template(
-        fr"{PAGE_ROOT}completed_pack_with_1_art.png",
+        fr"{PAGE_ROOT_TAISIA}completed_pack_with_1_art.png",
         record_pos=(-0.004, -0.719),
         resolution=(1080, 2340)
     )
@@ -452,7 +452,7 @@ def completed_pack_with_1_art():
 
 def completed_9_elements():
     return Template(
-        fr"{PAGE_ROOT}completed_9_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_9_elements.png",
         record_pos=(-0.001, 0.181),
         resolution=(1080, 2340)
     )
@@ -460,7 +460,7 @@ def completed_9_elements():
 
 def elements_16_2():
     return Template(
-        fr"{PAGE_ROOT}elements_16_2.png",
+        fr"{PAGE_ROOT_TAISIA}elements_16_2.png",
         record_pos=(0.187, 0.184),
         resolution=(1080, 2340)
     )
@@ -468,7 +468,7 @@ def elements_16_2():
 
 def button_claim():
     return Template(
-        fr"{PAGE_ROOT}button_claim.png",
+        fr"{PAGE_ROOT_TAISIA}button_claim.png",
         record_pos=(0.0, 0.381),
         resolution=(1080, 2400)
     )
@@ -476,14 +476,14 @@ def button_claim():
 
 def completed_16_elements():
     return Template(
-        fr"{PAGE_ROOT}completed_16_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_16_elements.png",
         record_pos=(0.187, 0.184),
         resolution=(1080, 2340))
 
 
 def next_element():
     return Template(
-        fr"{PAGE_ROOT}next_element.png",
+        fr"{PAGE_ROOT_TAISIA}next_element.png",
         record_pos=(0.343, 0.191),
         resolution=(1080, 2340)
     )
@@ -491,14 +491,14 @@ def next_element():
 
 def elements_25():
     return Template(
-        fr"{PAGE_ROOT}elements_25.png",
+        fr"{PAGE_ROOT_TAISIA}elements_25.png",
         record_pos=(0.183, 0.185),
         resolution=(1080, 2340))
 
 
 def completed_25_level():
     return Template(
-        fr"{PAGE_ROOT}completed_25_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_25_elements.png",
         record_pos=(0.189, 0.178),
         resolution=(1080, 2340)
     )
@@ -506,7 +506,7 @@ def completed_25_level():
 
 def elements_49():
     return Template(
-        fr"{PAGE_ROOT}completed_49",
+        fr"{PAGE_ROOT_TAISIA}completed_49",
         record_pos=(0.18, 0.177),
         resolution=(1080, 2340)
     )
@@ -514,7 +514,7 @@ def elements_49():
 
 def completed_49_elements():
     return Template(
-        fr"{PAGE_ROOT}completed_49_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_49_elements.png",
         record_pos=(0.187, 0.183),
         resolution=(1080, 2340)
     )
@@ -522,7 +522,7 @@ def completed_49_elements():
 
 def elements_64():
     return Template(
-        fr"{PAGE_ROOT}elements_64.png",
+        fr"{PAGE_ROOT_TAISIA}elements_64.png",
         record_pos=(0.183, 0.188),
         resolution=(1080, 2340)
     )
@@ -530,7 +530,7 @@ def elements_64():
 
 def completed_64_elements():
     return Template(
-        fr"{PAGE_ROOT}completed_64_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_64_elements.png",
         record_pos=(0.194, 0.183),
         resolution=(1080, 2340)
     )
@@ -538,7 +538,7 @@ def completed_64_elements():
 
 def elements_81():
     return Template(
-        fr"{PAGE_ROOT}elements_81.png",
+        fr"{PAGE_ROOT_TAISIA}elements_81.png",
         record_pos=(0.177, 0.17),
         resolution=(1080, 2340)
     )
@@ -546,7 +546,7 @@ def elements_81():
 
 def completed_81_elements():
     return Template(
-        fr"{PAGE_ROOT}completed_81_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_81_elements.png",
         record_pos=(0.189, 0.181),
         resolution=(1080, 2340)
     )
@@ -554,7 +554,7 @@ def completed_81_elements():
 
 def elements_144():
     return Template(
-        fr"{PAGE_ROOT}elements_144.png",
+        fr"{PAGE_ROOT_TAISIA}elements_144.png",
         record_pos=(0.183, 0.173),
         resolution=(1080, 2340)
     )
@@ -562,7 +562,7 @@ def elements_144():
 
 def completed_144_elements():
     return Template(
-        fr"{PAGE_ROOT}completed_144_elements.png",
+        fr"{PAGE_ROOT_TAISIA}completed_144_elements.png",
         record_pos=(0.203, 0.185),
         resolution=(1080, 2340)
     )
@@ -570,7 +570,7 @@ def completed_144_elements():
 
 def elements_256():
     return Template(
-        fr"{PAGE_ROOT}elements_256.png",
+        fr"{PAGE_ROOT_TAISIA}elements_256.png",
         record_pos=(0.202, 0.184),
         resolution=(1080, 2340)
     )
@@ -578,7 +578,7 @@ def elements_256():
 
 def completed_elements_256():
     return Template(
-        fr"{PAGE_ROOT}completed_elements_256.png",
+        fr"{PAGE_ROOT_TAISIA}completed_elements_256.png",
         record_pos=(0.197, 0.178),
         resolution=(1080, 2340)
     )
@@ -586,7 +586,7 @@ def completed_elements_256():
 
 def completed_art_tutorial():
     return Template(
-        fr"{PAGE_ROOT}completed_art_tutorial.png",
+        fr"{PAGE_ROOT_TAISIA}completed_art_tutorial.png",
         record_pos=(0.008, -0.206),
         resolution=(1080, 2340)
     )
@@ -594,7 +594,7 @@ def completed_art_tutorial():
 
 def another_puzzle_in_progress():
     return Template(
-            fr"{PAGE_ROOT}another_puzzle_in_progress.png",
+            fr"{PAGE_ROOT_TAISIA}another_puzzle_in_progress.png",
             record_pos=(-0.006, -0.015),
             resolution=(1080, 2340)
     )
@@ -602,7 +602,7 @@ def another_puzzle_in_progress():
 
 def empty_field():
     return Template(
-        fr"{PAGE_ROOT}empty_field.png",
+        fr"{PAGE_ROOT_TAISIA}empty_field.png",
         record_pos=(0.224, -0.213),
         resolution=(1080, 2340)
     )
@@ -610,7 +610,7 @@ def empty_field():
 
 def setting_menu():
     return Template(
-        fr"{PAGE_ROOT}setting_menu.png",
+        fr"{PAGE_ROOT_TAISIA}setting_menu.png",
         record_pos=(0.265, -0.057),
         resolution=(1080, 2340)
     )
@@ -618,7 +618,7 @@ def setting_menu():
 
 def swipe_elements_to_16():
     return Template(
-        fr"{PAGE_ROOT}swipe_elements_to_16.png",
+        fr"{PAGE_ROOT_TAISIA}swipe_elements_to_16.png",
         record_pos=(0.095, 0.185),
         resolution=(1080, 2340),
         vector=[-0.1300, -0.0062]
@@ -627,7 +627,7 @@ def swipe_elements_to_16():
 
 def locked_50():
     return Template(
-        fr"{PAGE_ROOT}locked_50.png",
+        fr"{PAGE_ROOT_TAISIA}locked_50.png",
         record_pos=(0.308, 0.006),
         resolution=(1080, 2400)
     )
@@ -635,7 +635,7 @@ def locked_50():
 
 def locked_200():
     return Template(
-        fr"{PAGE_ROOT}locked_200.png",
+        fr"{PAGE_ROOT_TAISIA}locked_200.png",
         record_pos=(0.308, 0.17),
         resolution=(1080, 2400)
     )
@@ -643,7 +643,7 @@ def locked_200():
 
 def locked_600():
     return Template(
-            fr"{PAGE_ROOT}locked_600.png",
+            fr"{PAGE_ROOT_TAISIA}locked_600.png",
             record_pos=(0.308, 0.329),
             resolution=(1080, 2400)
     )
@@ -651,7 +651,7 @@ def locked_600():
 
 def ads_hint():
     return Template(
-            fr"{PAGE_ROOT}ads_hint.png",
+            fr"{PAGE_ROOT_TAISIA}ads_hint.png",
             record_pos=(0.272, -0.334),
             resolution=(1080, 2400)
     )
@@ -659,7 +659,7 @@ def ads_hint():
 
 def ads_coins():
     return Template(
-            fr"{PAGE_ROOT}ads_coins.png",
+            fr"{PAGE_ROOT_TAISIA}ads_coins.png",
             record_pos=(0.273, -0.172),
             resolution=(1080, 2400)
     )
@@ -667,7 +667,7 @@ def ads_coins():
 
 def close_ads():
     return Template(
-        fr"{PAGE_ROOT}close_ads.png",
+        fr"{PAGE_ROOT_TAISIA}close_ads.png",
         record_pos=(0.392, -0.898),
         resolution=(1080, 2400)
     )
@@ -675,7 +675,7 @@ def close_ads():
 
 def hint_x1():
     return Template(
-        fr"{PAGE_ROOT}hint_x1.png",
+        fr"{PAGE_ROOT_TAISIA}hint_x1.png",
         record_pos=(0.001, -0.117),
         resolution=(1080, 2400)
     )
@@ -683,7 +683,7 @@ def hint_x1():
 
 def x1():
     return Template(
-        fr"{PAGE_ROOT}x1.png",
+        fr"{PAGE_ROOT_TAISIA}x1.png",
         record_pos=(-0.001, 0.11),
         resolution=(1080, 2400)
     )
@@ -691,7 +691,7 @@ def x1():
 
 def hint_1():
     return Template(
-        fr"{PAGE_ROOT}1.png",
+        fr"{PAGE_ROOT_TAISIA}1.png",
         record_pos=(-0.001, 0.11),
         resolution=(1080, 2400)
     )
@@ -699,7 +699,7 @@ def hint_1():
 
 def debug():
     return Template(
-        fr"{PAGE_ROOT}debug.png",
+        fr"{PAGE_ROOT_TAISIA}debug.png",
         record_pos=(0.429, 1.068),
         resolution=(1080, 2400)
     )
@@ -707,7 +707,7 @@ def debug():
 
 def plus_100():
     return Template(
-        fr"{PAGE_ROOT}plus_100.png",
+        fr"{PAGE_ROOT_TAISIA}plus_100.png",
         record_pos=(0.094, -0.592),
         resolution=(1080, 2400)
     )
@@ -715,7 +715,7 @@ def plus_100():
 
 def hide():
     return Template(
-        fr"{PAGE_ROOT}Hide.png",
+        fr"{PAGE_ROOT_TAISIA}Hide.png",
         record_pos=(-0.219, 1.029),
         resolution=(1080, 2400)
     )
@@ -723,7 +723,7 @@ def hide():
 
 def coins_x10():
     return Template(
-        fr"{PAGE_ROOT}coins_x10.png",
+        fr"{PAGE_ROOT_TAISIA}coins_x10.png",
         record_pos=(0.003, -0.11),
         resolution=(1080, 2400)
     )
@@ -731,7 +731,7 @@ def coins_x10():
 
 def x10():
     return Template(
-        fr"{PAGE_ROOT}x10.png",
+        fr"{PAGE_ROOT_TAISIA}x10.png",
         record_pos=(-0.003, 0.112),
         resolution=(1080, 2400)
     )
@@ -739,7 +739,7 @@ def x10():
 
 def coins_11():
     return Template(
-        fr"{PAGE_ROOT}11.png",
+        fr"{PAGE_ROOT_TAISIA}11.png",
         record_pos=(0.001, -0.907),
         resolution=(1080, 2400)
     )
@@ -747,7 +747,7 @@ def coins_11():
 
 def hint_3():
     return Template(
-        fr"{PAGE_ROOT}3.png",
+        fr"{PAGE_ROOT_TAISIA}3.png",
         record_pos=(0.395, -0.912),
         resolution=(1080, 2400)
     )
@@ -755,7 +755,7 @@ def hint_3():
 
 def hint_5():
     return Template(
-        fr"{PAGE_ROOT}5.png",
+        fr"{PAGE_ROOT_TAISIA}5.png",
         record_pos=(0.02, 0.11),
         resolution=(1080, 2400)
     )
@@ -763,7 +763,7 @@ def hint_5():
 
 def hint_8():
     return Template(
-        fr"{PAGE_ROOT}8.png",
+        fr"{PAGE_ROOT_TAISIA}8.png",
         record_pos=(0.393, -0.91),
         resolution=(1080, 2400)
     )
@@ -771,7 +771,7 @@ def hint_8():
 
 def hint_20():
     return Template(
-        fr"{PAGE_ROOT}20.png",
+        fr"{PAGE_ROOT_TAISIA}20.png",
         record_pos=(0.02, 0.108),
         resolution=(1080, 2400)
     )
@@ -779,7 +779,7 @@ def hint_20():
 
 def hint_28():
     return Template(
-        fr"{PAGE_ROOT}28.png",
+        fr"{PAGE_ROOT_TAISIA}28.png",
         record_pos=(0.372, -0.91),
         resolution=(1080, 2400)
     )
@@ -787,7 +787,7 @@ def hint_28():
 
 def price_0_dollars():
     return Template(
-        fr"{PAGE_ROOT}0dollars.png",
+        fr"{PAGE_ROOT_TAISIA}0dollars.png",
         record_pos=(0.231, 0.071),
         resolution=(1080, 2400)
     )
@@ -795,7 +795,7 @@ def price_0_dollars():
 
 def android_quantity_1():
     return Template(
-        fr"{PAGE_ROOT}android_1.png",
+        fr"{PAGE_ROOT_TAISIA}android_1.png",
         record_pos=(-0.18, 0.582),
         resolution=(1080, 2400)
     )
@@ -803,7 +803,7 @@ def android_quantity_1():
 
 def android_price_0():
     return Template(
-        fr"{PAGE_ROOT}android_price.png",
+        fr"{PAGE_ROOT_TAISIA}android_price.png",
         record_pos=(0.34, 0.579),
         resolution=(1080, 2400)
     )
@@ -811,7 +811,7 @@ def android_price_0():
 
 def android_choice():
     return Template(
-        fr"{PAGE_ROOT}choice.png",
+        fr"{PAGE_ROOT_TAISIA}choice.png",
         record_pos=(0.404, 0.787),
         resolution=(1080, 2400)
     )
@@ -819,7 +819,7 @@ def android_choice():
 
 def android_buy():
     return Template(
-        fr"{PAGE_ROOT}buy.png",
+        fr"{PAGE_ROOT_TAISIA}buy.png",
         record_pos=(-0.002, 1.03),
         resolution=(1080, 2400)
     )
@@ -827,7 +827,7 @@ def android_buy():
 
 def hint_29():
     return Template(
-        fr"{PAGE_ROOT}29.png",
+        fr"{PAGE_ROOT_TAISIA}29.png",
         record_pos=(0.374, -0.909),
         resolution=(1080, 2400)
     )
@@ -835,7 +835,7 @@ def hint_29():
 
 def price_4_dollars():
     return Template(
-        fr"{PAGE_ROOT}4dollars.png",
+        fr"{PAGE_ROOT_TAISIA}4dollars.png",
         record_pos=(0.227, 0.394),
         resolution=(1080, 2400)
     )
@@ -843,7 +843,7 @@ def price_4_dollars():
 
 def loading():
     return Template(
-        fr"{PAGE_ROOT}loading_puzzle.png",
+        fr"{PAGE_ROOT_TAISIA}loading_puzzle.png",
         record_pos=(0.103, -0.082),
         resolution=(1080, 2400)
     )
@@ -851,7 +851,7 @@ def loading():
 
 def text_oops():
     return Template(
-        fr"{PAGE_ROOT}text_oops.png",
+        fr"{PAGE_ROOT_TAISIA}text_oops.png",
         record_pos=(-0.001, -0.251),
         resolution=(1080, 2400)
     )
@@ -859,7 +859,7 @@ def text_oops():
 
 def android_card():
     return Template(
-        fr"{PAGE_ROOT}card_approve.png",
+        fr"{PAGE_ROOT_TAISIA}card_approve.png",
         record_pos=(-0.396, -0.698),
         resolution=(1080, 2400)
     )
@@ -867,7 +867,7 @@ def android_card():
 
 def coins_91():
     return Template(
-        fr"{PAGE_ROOT}91.png",
+        fr"{PAGE_ROOT_TAISIA}91.png",
         record_pos=(-0.001, -0.908),
         resolution=(1080, 2400)
     )
@@ -875,7 +875,7 @@ def coins_91():
 
 def completed_0_daily_puzzle():
     return Template(
-        fr"{PAGE_ROOT}0_3.png",
+        fr"{PAGE_ROOT_TAISIA}0_3.png",
         record_pos=(-0.002, 0.022),
         resolution=(1080, 2400)
     )
@@ -883,7 +883,7 @@ def completed_0_daily_puzzle():
 
 def completed_1_daily_puzzle():
     return Template(
-        fr"{PAGE_ROOT}1_3.png",
+        fr"{PAGE_ROOT_TAISIA}1_3.png",
         record_pos=(-0.001, 0.022),
         resolution=(1080, 2400)
     )
@@ -891,7 +891,7 @@ def completed_1_daily_puzzle():
 
 def completed_2_daily_puzzle():
     return Template(
-        fr"{PAGE_ROOT}2_3.png",
+        fr"{PAGE_ROOT_TAISIA}2_3.png",
         record_pos=(-0.002, 0.024),
         resolution=(1080, 2400)
     )
@@ -899,7 +899,7 @@ def completed_2_daily_puzzle():
 
 def completed_3_daily_puzzle():
     return Template(
-        fr"{PAGE_ROOT}3_3.png",
+        fr"{PAGE_ROOT_TAISIA}3_3.png",
         record_pos=(-0.002, 0.022),
         resolution=(1080, 2400)
     )
@@ -907,7 +907,7 @@ def completed_3_daily_puzzle():
 
 def daily_puzzle_1():
     return Template(
-        fr"{PAGE_ROOT}daily_puzzle_1.png",
+        fr"{PAGE_ROOT_TAISIA}daily_puzzle_1.png",
         record_pos=(-0.185, -0.21),
         resolution=(1080, 2340)
     )
@@ -915,7 +915,7 @@ def daily_puzzle_1():
 
 def daily_puzzle_2():
     return Template(
-        fr"{PAGE_ROOT}daily_puzzle_2.png",
+        fr"{PAGE_ROOT_TAISIA}daily_puzzle_2.png",
         record_pos=(0.134, -0.335),
         resolution=(1200, 2000)
     )
@@ -923,7 +923,7 @@ def daily_puzzle_2():
 
 def daily_puzzle_3():
     return Template(
-        fr"{PAGE_ROOT}daily_puzzle_3.png",
+        fr"{PAGE_ROOT_TAISIA}daily_puzzle_3.png",
         record_pos=(0.003, 0.529),
         resolution=(1080, 2340)
     )
@@ -931,7 +931,7 @@ def daily_puzzle_3():
 
 def text_exit():
     return Template(
-        fr"{PAGE_ROOT}text_exit.png",
+        fr"{PAGE_ROOT_TAISIA}text_exit.png",
         record_pos=(-0.156, -0.069),
         resolution=(1080, 2400)
     )
@@ -939,7 +939,7 @@ def text_exit():
 
 def hourglass_1():
     return Template(
-        fr"{PAGE_ROOT}hourglass_1.png",
+        fr"{PAGE_ROOT_TAISIA}hourglass_1.png",
         record_pos=(-0.185, -0.097),
         resolution=(1080, 2400)
     )
@@ -947,7 +947,7 @@ def hourglass_1():
 
 def hourglass_2():
     return Template(
-        fr"{PAGE_ROOT}hourglass_2.png",
+        fr"{PAGE_ROOT_TAISIA}hourglass_2.png",
         record_pos=(0.136, -0.18),
         resolution=(1080, 2400)
     )
@@ -955,7 +955,7 @@ def hourglass_2():
 
 def hourglass_3():
     return Template(
-        fr"{PAGE_ROOT}hourglass_3.png",
+        fr"{PAGE_ROOT_TAISIA}hourglass_3.png",
         record_pos=(0.46, -0.095),
         resolution=(1080, 2400)
     )
@@ -963,7 +963,7 @@ def hourglass_3():
 
 def hourglass_main():
     return Template(
-        fr"{PAGE_ROOT}hourglass_main.png",
+        fr"{PAGE_ROOT_TAISIA}hourglass_main.png",
         record_pos=(0.333, -0.009),
         resolution=(1080, 2400)
     )
@@ -971,7 +971,7 @@ def hourglass_main():
 
 def text_continue():
     return Template(
-        fr"{PAGE_ROOT}continue.png",
+        fr"{PAGE_ROOT_TAISIA}continue.png",
         record_pos=(-0.005, 0.529),
         resolution=(1080, 2400)
     )
@@ -979,7 +979,7 @@ def text_continue():
 
 def hint_main():
     return Template(
-        fr"{PAGE_ROOT}hint_main.png",
+        fr"{PAGE_ROOT_TAISIA}hint_main.png",
         record_pos=(0.361, 0.977),
         resolution=(1080, 2400)
     )
@@ -987,7 +987,7 @@ def hint_main():
 
 def text_hint():
     return Template(
-        fr"{PAGE_ROOT}text_hint.png",
+        fr"{PAGE_ROOT_TAISIA}text_hint.png",
         record_pos=(-0.009, -0.076),
         resolution=(1080, 2400)
     )
@@ -995,7 +995,7 @@ def text_hint():
 
 def text_puzzle_completed():
     return Template(
-        fr"{PAGE_ROOT}text_puzzle_completed.png",
+        fr"{PAGE_ROOT_TAISIA}text_puzzle_completed.png",
         record_pos=(-0.001, -0.735),
         resolution=(1080, 2400)
     )
@@ -1003,7 +1003,7 @@ def text_puzzle_completed():
 
 def button_save():
     return Template(
-         fr"{PAGE_ROOT}button_save.png",
+         fr"{PAGE_ROOT_TAISIA}button_save.png",
          record_pos=(-0.001, 0.3),
          resolution=(1080, 2400)
     )
@@ -1011,7 +1011,7 @@ def button_save():
 
 def checkmark_1():
     return Template(
-        fr"{PAGE_ROOT}checkmark_1.png",
+        fr"{PAGE_ROOT_TAISIA}checkmark_1.png",
         record_pos=(-0.205, -0.095),
         resolution=(1080, 2400)
     )
@@ -1019,7 +1019,7 @@ def checkmark_1():
 
 def checkmark_2():
     return Template(
-        fr"{PAGE_ROOT}checkmark_2.png",
+        fr"{PAGE_ROOT_TAISIA}checkmark_2.png",
         record_pos=(0.119, -0.174),
         resolution=(1080, 2400)
     )
@@ -1027,7 +1027,7 @@ def checkmark_2():
 
 def checkmark_3():
     return Template(
-        fr"{PAGE_ROOT}checkmark_3.png",
+        fr"{PAGE_ROOT_TAISIA}checkmark_3.png",
         record_pos=(0.444, -0.094),
         resolution=(1080, 2400)
     )
@@ -1035,7 +1035,7 @@ def checkmark_3():
 
 def x25():
     return Template(
-        fr"{PAGE_ROOT}x25.png",
+        fr"{PAGE_ROOT_TAISIA}x25.png",
         record_pos=(-0.002, 0.11),
         resolution=(1080, 2400)
     )
@@ -1043,7 +1043,7 @@ def x25():
 
 def x2():
     return Template(
-        fr"{PAGE_ROOT}x2.png",
+        fr"{PAGE_ROOT_TAISIA}x2.png",
         record_pos=(0.002, 0.112),
         resolution=(1080, 2400)
     )
@@ -1051,7 +1051,7 @@ def x2():
 
 def x4():
     return Template(
-        fr"{PAGE_ROOT}x4.png",
+        fr"{PAGE_ROOT_TAISIA}x4.png",
         record_pos=(0.001, 0.11),
         resolution=(1080, 2400)
     )
@@ -1059,7 +1059,7 @@ def x4():
 
 def ads_reward():
     return Template(
-        fr"{PAGE_ROOT}ads_reward.png",
+        fr"{PAGE_ROOT_TAISIA}ads_reward.png",
         record_pos=(-0.078, 0.57),
         resolution=(1080, 2400)
     )
@@ -1067,7 +1067,7 @@ def ads_reward():
 
 def text_back():
     return Template(
-        fr"{PAGE_ROOT}text_back.png",
+        fr"{PAGE_ROOT_TAISIA}text_back.png",
         record_pos=(-0.05, 0.372),
         resolution=(1080, 2400)
     )
@@ -1075,7 +1075,7 @@ def text_back():
 
 def attention():
     return Template(
-        fr"{PAGE_ROOT}!.png",
+        fr"{PAGE_ROOT_TAISIA}!.png",
         record_pos=(-0.066, 0.969),
         resolution=(1080, 2400)
     )
@@ -1083,7 +1083,7 @@ def attention():
 
 def text_no_hint():
     return Template(
-        fr"{PAGE_ROOT}text_no_hint.png",
+        fr"{PAGE_ROOT_TAISIA}text_no_hint.png",
         record_pos=(-0.219, -0.124),
         resolution=(1080, 2400)
     )
@@ -1091,7 +1091,7 @@ def text_no_hint():
 
 def coins_25():
     return Template(
-        fr"{PAGE_ROOT}25.png",
+        fr"{PAGE_ROOT_TAISIA}25.png",
         record_pos=(0.047, -0.908),
         resolution=(1080, 2400)
     )
@@ -1099,7 +1099,7 @@ def coins_25():
 
 def hint_4():
     return Template(
-        fr"{PAGE_ROOT}4.png",
+        fr"{PAGE_ROOT_TAISIA}4.png",
         record_pos=(0.392, -0.916),
         resolution=(1080, 2400)
     )
@@ -1107,7 +1107,7 @@ def hint_4():
 
 def button_claim_daily_reward():
     return Template(
-        fr"{PAGE_ROOT}button_claim_daily_reward.png",
+        fr"{PAGE_ROOT_TAISIA}button_claim_daily_reward.png",
         record_pos=(0.001, 0.587),
         resolution=(1080, 2400)
     )
@@ -1115,7 +1115,7 @@ def button_claim_daily_reward():
 
 def minus_10():
     return Template(
-        fr"{PAGE_ROOT}minus_10.png",
+        fr"{PAGE_ROOT_TAISIA}minus_10.png",
         record_pos=(0.272, -0.594),
         resolution=(1080, 2400)
     )
@@ -1123,7 +1123,7 @@ def minus_10():
 
 def minus_1():
     return Template(
-        fr"{PAGE_ROOT}minus_1.png",
+        fr"{PAGE_ROOT_TAISIA}minus_1.png",
         record_pos=(-0.103, -0.594),
         resolution=(1080, 2400)
     )
@@ -1131,7 +1131,7 @@ def minus_1():
 
 def text_hint_ads():
     return Template(
-        fr"{PAGE_ROOT}text_hint_ads.png",
+        fr"{PAGE_ROOT_TAISIA}text_hint_ads.png",
         record_pos=(-0.233, 0.581),
         resolution=(1080, 2400)
     )
