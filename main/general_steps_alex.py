@@ -6,7 +6,7 @@ from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
 from page_object import *
 from global_auto_agr import PAGE_ROOT_TAISIA
-from page_taisia import *
+from page_object_alex import *
 
 
 def skip_system_pop():
@@ -117,13 +117,21 @@ def touch_button_back():
     sleep(1.0)
 
 
-
 def touch_button_settings():
     touch(button_settings())
     sleep(1.0)
+
 # def touch_button_settings():
 #     sleep(2)
 #     touch(button_settings())
+
+
+def switch_english_language_test():
+    if not exists(english_language_test()):
+        touch(setting_menu())
+        touch(english_language_test())
+        sleep(2)
+        assert_exists(english_language_test())
 
 
 def touch_travelling_pack():
@@ -249,6 +257,9 @@ def touch_swipe_analytics_on():
     touch(swipe_analytics_on())
 
 
+def touch_swipe_personalized_ads_on():
+    touch(personalized_ads_on())
+
 
 def assert_exists_swipe_analytics_personalized_off():
     assert_exists(swipe_analytics_personalized_ads_off())
@@ -332,11 +343,13 @@ def assert_reward():
 #    touch(Template(
 #        r"button_back.png"))
 
-
 def assert_button_back():
     assert_exists(button_back())
 
 
+def touch_part_of_daily():
+    sleep(3)
+    touch(part_of_daily())
 
 def assert_button_start():
     assert_exists(button_start())
@@ -483,6 +496,13 @@ def assert_not_exists_coins_6():
 #    assert_not_exists(Template(
 #        r"coins_3.png"))
 
+def swipe_elements_16():
+    swipe(Template(
+        fr"{PAGE_ROOT_ALEX}swipe_elements_to_16.png",
+        record_pos=(0.095, 0.185),
+        resolution=(1080, 2340)),
+        vector=[-0.1300, -0.0062]
+    )
 
 
 def assert_exists_element_16():
@@ -530,6 +550,8 @@ def touch_button_exit():
     sleep(1.0)
 
 
+def popap_before_exit():
+    assert_exists(popap_before_exit_1())
 
 
 # def test_exit_popup_close():
@@ -597,6 +619,9 @@ def assert_completed_25_level():
     assert_exists(completed_25_level())
 
 
+def touch_elements_49():
+    touch(element_49())
+
 
 def assert_completed_49_elements():
     assert_exists(completed_49_elements())
@@ -616,6 +641,13 @@ def assert_completed_64_element():
     sleep(2)
 
 
+def assert_elements_81():
+    sleep(2)
+    assert_exists(element_81())
+
+
+def touch_elements_81():
+    touch(element_81())
 
 
 def completed_81_element():
@@ -641,6 +673,10 @@ def touch_elements_256():
 
 def assert_elements_256():
     assert_exists(elements_256())
+
+
+def completed_element_256():
+    assert_exists(completed_elements_256())
 
 
 def touch_50():
@@ -967,6 +1003,26 @@ def assert_text_hint_ads():
 
 
 
+
+
+
+
+
+
+
+
+
+def claim_in_russian():
+    sleep(8)
+    if exists(button_claim_in_russian()):
+        touch(button_claim_in_russian())
+
+
 def touch_button_claim():
-    touch(button_claim())
     sleep(7)
+    touch(button_claim())
+
+
+def touch_button_settings():
+    sleep(2)
+    touch(button_settings_2())
