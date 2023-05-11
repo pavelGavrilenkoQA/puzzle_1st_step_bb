@@ -9,6 +9,7 @@ from general_steps_alex import skip_system_pop
 
 
 def test_open_free_pack():
+    touch_button_back_2()
     touch_sugar_mesh_pack()
     assert_exists_sugar_mesh_bw()
 

@@ -121,6 +121,7 @@ def touch_button_settings():
     touch(button_settings())
     sleep(1.0)
 
+
 # def touch_button_settings():
 #     sleep(2)
 #     touch(button_settings())
@@ -351,6 +352,7 @@ def touch_part_of_daily():
     sleep(3)
     touch(part_of_daily())
 
+
 def assert_button_start():
     assert_exists(button_start())
 
@@ -368,7 +370,6 @@ def touch_icon_shop():
 
 def assert_text_shop():
     assert_exists(text_shop())
-
 
 
 # def test_first_product_buy():
@@ -529,6 +530,7 @@ def test_another_puzzle_in_progress():
     if exists(another_puzzle_in_progress()):
         sleep(3)
         return True
+
 
 def touch_button_yes():
     touch(button_yes())
@@ -1002,16 +1004,6 @@ def assert_text_hint_ads():
     assert_exists(text_hint_ads())
 
 
-
-
-
-
-
-
-
-
-
-
 def claim_in_russian():
     sleep(8)
     if exists(button_claim_in_russian()):
@@ -1026,3 +1018,17 @@ def touch_button_claim():
 def touch_button_settings():
     sleep(2)
     touch(button_settings_2())
+
+
+def touch_button_pass():
+    sleep(2)
+    touch(button_pass())
+
+
+def touch_button_back_2():
+    sleep(2)
+    touch(button_back_popup())
+
+
+def assert_settings_daily():
+    assert_exists(settings_daily())

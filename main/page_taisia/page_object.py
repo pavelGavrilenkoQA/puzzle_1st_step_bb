@@ -1138,6 +1138,7 @@ def text_hint_ads():
 
 
 
+
 if __name__ == "__main__":
     print(button_ok())
     print(tutorial_image())

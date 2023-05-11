@@ -402,8 +402,8 @@ def button_level_assert():
 def button_exit():
     return Template(
         fr"{PAGE_ROOT_ALEX}button_exit.png",
-        record_pos=(0.384, 0.966),
-        resolution=(1080, 2340)
+        record_pos=(0.381, 0.995),
+        resolution=(1080, 2400)
     )
 
 
@@ -638,6 +638,14 @@ def element_49():
     )
 
 
+def button_pass():
+    return Template(
+        fr"{PAGE_ROOT_ALEX}button_pass.png",
+        record_pos=(0.195, 0.11),
+        resolution=(1080, 2400)
+    )
+
+
 def button_settings_2():
     return Template(
         fr"{PAGE_ROOT_ALEX}button_settings_2.png",
@@ -645,8 +653,24 @@ def button_settings_2():
         resolution=(1080, 2400)
     )
 
+def button_back_popup():
+    return Template(
+        fr"{PAGE_ROOT_ALEX}button_back_2.png",
+        record_pos=(-0.383, 0.99),
+        resolution=(1080, 2400)
+    )
+
+
+def settings_daily():
+    return Template(
+        fr"{PAGE_ROOT_ALEX}settings_daily.png",
+        record_pos=(-0.331, -0.912),
+        resolution=(1080, 2400)
+    )
+
 
 if __name__ == "__main__":
+    print(button_pass())
     print(button_ok())
     print(tutorial_image())
     print(empty_elements_list())

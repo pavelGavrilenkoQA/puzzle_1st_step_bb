@@ -10,6 +10,7 @@ from general_steps_alex import skip_system_pop
 
 
 def test_play_puzzle_9_elements():
+    touch_button_back_2()
     touch_travelling_pack()
     another_puzzle_in_progress()
     touch_button_yes()
