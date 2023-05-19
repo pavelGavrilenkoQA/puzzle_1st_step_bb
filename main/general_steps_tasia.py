@@ -1,4 +1,4 @@
-__author__ = "QA PG"
+__author__ = "QA TS"
 
 from airtest.core.api import *
 from airtest.report.report import simple_report
@@ -665,7 +665,7 @@ def assert_hint3():
 
 def touch_button_claim():
     touch(button_claim())
-    sleep(1.0)
+    sleep(3.0)
 
 
 def assert_1():
@@ -713,11 +713,13 @@ def assert_claim():
     assert_exists(button_claim())
 
 
-def assert_hint11():
+def assert_coins11():
+    sleep(1)
     assert_exists(coins_11())
 
 
 def assert_91():
+    sleep(1)
     assert_exists(coins_91())
 
 
@@ -726,6 +728,7 @@ def assert_5():
 
 
 def assert_8():
+    sleep(1)
     assert_exists(hint_8())
 
 
@@ -774,6 +777,7 @@ def touch_buy():
 
 
 def assert_29():
+    sleep(1)
     assert_exists(hint_29())
 
 
@@ -848,6 +852,7 @@ def touch_button_continue():
 
 
 def touch_hint_main():
+    sleep(2.0)
     touch(hint_main())
     sleep(1.0)
 
@@ -943,6 +948,11 @@ def touch_minus_1():
 def assert_text_hint_ads():
     assert_exists(text_hint_ads())
 
+
+def touch_button_back_popup():
+    sleep(2)
+    touch(button_back_popup())
+    sleep(2.0)
 
 
 

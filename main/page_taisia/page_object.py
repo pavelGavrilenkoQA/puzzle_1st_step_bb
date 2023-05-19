@@ -243,7 +243,7 @@ def setting_and_coins():
 def button_daily():
     return Template(
         fr"{PAGE_ROOT_TAISIA}button_daily.png",
-        record_pos=(-0.074, 1.019),
+        record_pos=(-0.206, -0.931),
         resolution=(1080, 2400)
     )
 
@@ -291,7 +291,7 @@ def icon_shop():
 def text_shop():
     return Template(
         fr"{PAGE_ROOT_TAISIA}text_shop.png",
-        record_pos=(-0.002, -0.546),
+        record_pos=(0.0, -0.656),
         resolution=(1080, 2400)
     )
 
@@ -628,7 +628,7 @@ def swipe_elements_to_16():
 def locked_50():
     return Template(
         fr"{PAGE_ROOT_TAISIA}locked_50.png",
-        record_pos=(0.308, 0.006),
+        record_pos=(-0.239, 0.661),
         resolution=(1080, 2400)
     )
 
@@ -636,7 +636,7 @@ def locked_50():
 def locked_200():
     return Template(
         fr"{PAGE_ROOT_TAISIA}locked_200.png",
-        record_pos=(0.308, 0.17),
+        record_pos=(0.027, 0.253),
         resolution=(1080, 2400)
     )
 
@@ -644,7 +644,7 @@ def locked_200():
 def locked_600():
     return Template(
             fr"{PAGE_ROOT_TAISIA}locked_600.png",
-            record_pos=(0.308, 0.329),
+            record_pos=(0.031, -0.172),
             resolution=(1080, 2400)
     )
 
@@ -652,7 +652,7 @@ def locked_600():
 def ads_hint():
     return Template(
             fr"{PAGE_ROOT_TAISIA}ads_hint.png",
-            record_pos=(0.272, -0.334),
+            record_pos=(0.001, 0.66),
             resolution=(1080, 2400)
     )
 
@@ -660,7 +660,7 @@ def ads_hint():
 def ads_coins():
     return Template(
             fr"{PAGE_ROOT_TAISIA}ads_coins.png",
-            record_pos=(0.273, -0.172),
+            record_pos=(0.269, 0.664),
             resolution=(1080, 2400)
     )
 
@@ -740,7 +740,7 @@ def x10():
 def coins_11():
     return Template(
         fr"{PAGE_ROOT_TAISIA}11.png",
-        record_pos=(0.001, -0.907),
+        record_pos=(0.074, -0.917),
         resolution=(1080, 2400)
     )
 
@@ -764,7 +764,7 @@ def hint_5():
 def hint_8():
     return Template(
         fr"{PAGE_ROOT_TAISIA}8.png",
-        record_pos=(0.393, -0.91),
+        record_pos=(0.402, -0.918),
         resolution=(1080, 2400)
     )
 
@@ -780,7 +780,7 @@ def hint_20():
 def hint_28():
     return Template(
         fr"{PAGE_ROOT_TAISIA}28.png",
-        record_pos=(0.372, -0.91),
+        record_pos=(0.384, -0.915),
         resolution=(1080, 2400)
     )
 
@@ -788,7 +788,7 @@ def hint_28():
 def price_0_dollars():
     return Template(
         fr"{PAGE_ROOT_TAISIA}0dollars.png",
-        record_pos=(0.231, 0.071),
+        record_pos=(-0.307, 0.256),
         resolution=(1080, 2400)
     )
 
@@ -828,7 +828,7 @@ def android_buy():
 def hint_29():
     return Template(
         fr"{PAGE_ROOT_TAISIA}29.png",
-        record_pos=(0.374, -0.909),
+        record_pos=(0.389, -0.917),
         resolution=(1080, 2400)
     )
 
@@ -836,7 +836,7 @@ def hint_29():
 def price_4_dollars():
     return Template(
         fr"{PAGE_ROOT_TAISIA}4dollars.png",
-        record_pos=(0.227, 0.394),
+        record_pos=(0.224, 0.259),
         resolution=(1080, 2400)
     )
 
@@ -868,7 +868,7 @@ def android_card():
 def coins_91():
     return Template(
         fr"{PAGE_ROOT_TAISIA}91.png",
-        record_pos=(-0.001, -0.908),
+        record_pos=(0.074, -0.919),
         resolution=(1080, 2400)
     )
 
@@ -980,7 +980,7 @@ def text_continue():
 def hint_main():
     return Template(
         fr"{PAGE_ROOT_TAISIA}hint_main.png",
-        record_pos=(0.361, 0.977),
+        record_pos=(0.385, 0.969),
         resolution=(1080, 2400)
     )
 
@@ -1076,7 +1076,7 @@ def text_back():
 def attention():
     return Template(
         fr"{PAGE_ROOT_TAISIA}!.png",
-        record_pos=(-0.066, 0.969),
+        record_pos=(-0.195, -0.966),
         resolution=(1080, 2400)
     )
 
@@ -1135,6 +1135,15 @@ def text_hint_ads():
         record_pos=(-0.233, 0.581),
         resolution=(1080, 2400)
     )
+
+
+def button_back_popup():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}button_back_popup.png",
+        record_pos=(-0.383, 0.995),
+        resolution=(1080, 2400)
+    )
+
 
 
 
