@@ -310,8 +310,9 @@ def assert_exists_setting_and_coins():
 #        r"reward.png"))
 
 def touch_button_daily():
+    sleep(5.0)
     touch(button_daily())
-    sleep(1.0)
+    sleep(2.0)
 
 
 def assert_daily_challenge():
@@ -656,6 +657,7 @@ def touch_close_ads():
 
 
 def assert_hint_x1():
+    sleep(1.0)
     assert_exists(hint_x1())
 
 
@@ -955,7 +957,10 @@ def touch_button_back_popup():
     sleep(2.0)
 
 
-
+def assert_pass():
+    sleep(2)
+    assert_exists(button_pass())
+    sleep(1.0)
 
 
 

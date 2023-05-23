@@ -18,7 +18,7 @@ if __name__ == "__main__":
     remove_txt_result_file()
     tutorial_main.run_tutorial_feature()
     #setting_main.run_setting_feature()
-    #daily_main.run_daily()
+    daily_main.run_daily()
     shop.run_shop_new()
     #puzzle_tab_main.run_puzzle_tab_feature()
     #elements_in_art_main.run_elements_in_art()

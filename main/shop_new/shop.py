@@ -9,7 +9,8 @@ from general_steps_tasia import *
 
 
 def skip_daily_popup():
-    touch_button_back_popup()
+    if exists(button_pass()):
+        touch_button_back_popup()
 
 
 def test_debug_clear():

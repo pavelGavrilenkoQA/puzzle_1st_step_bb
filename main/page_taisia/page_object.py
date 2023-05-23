@@ -1145,6 +1145,12 @@ def button_back_popup():
     )
 
 
+def button_pass():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}button_pass.png",
+        record_pos=(0.186, 0.111),
+        resolution=(1080, 2400)
+    )
 
 
 if __name__ == "__main__":
