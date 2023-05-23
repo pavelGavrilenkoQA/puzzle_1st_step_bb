@@ -9,6 +9,7 @@ from general_steps_alex import skip_system_pop
 
 
 def test_press_setting_button():
+    touch_button_back_2()
     touch_button_settings()
     assert_exists_text_setting()
 
