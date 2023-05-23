@@ -62,3 +62,10 @@ test_exit_popup_accept --- is passed
 test_to_main_from_art_list --- is passed
 skip_daily_popup --- is passed
 test_play_puzzle_9_elements --- is passed
+test_play_puzzle_16_elements --- is passed
+test_play_puzzle_25_elements --- is passed
+test_play_puzzle_49_elements --- is passed
+test_play_puzzle_64_elements --- is passed
+test_play_puzzle_81_elements --- is passed
+test_play_puzzle_144_elements --- is passed
+test_play_puzzle_256_elements --- is passed

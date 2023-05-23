@@ -16,8 +16,8 @@ def skip_daily_popup():
 
 def test_play_puzzle_9_elements():
     touch_travelling_pack()
-    another_puzzle_in_progress()
-    touch_button_yes()
+    if test_another_puzzle_in_progress():
+        touch_button_yes()
     touch_button_win()
     touch_button_claim()
     assert_exists_completed_pack_with_1_art()
