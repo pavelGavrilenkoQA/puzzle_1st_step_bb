@@ -8,6 +8,11 @@ from try_test_method import run_logger, remove_log_dir
 from general_steps_tasia import *
 
 
+def skip_daily_popup():
+    if exists(button_pass()):
+        touch_button_back_popup()
+
+
 def test_debug_clear():
     touch_debug()
     for i in range(5):
@@ -22,7 +27,7 @@ def test_press_market_button():
     assert_text_shop()
 
 
-def test_locked_purchases(): #+++++++++
+def test_locked_purchases():
     touch_50()
     assert_not_exists_claim()
     touch_200()
@@ -31,7 +36,7 @@ def test_locked_purchases(): #+++++++++
     assert_not_exists_claim()
 
 
-def test_ads_hint(): #+++++++++
+def test_ads_hint():
     touch_ads_hint()
     touch_close_ads()
     assert_hint_x1()
@@ -39,12 +44,12 @@ def test_ads_hint(): #+++++++++
     assert_claim()
 
 
-def test_receiving_hint(): #+++++++++
+def test_receiving_hint():
     touch_button_claim()
     assert_1()
 
 
-def test_ads_coins():#+++++++++
+def test_ads_coins():
     touch_debug()
     touch_plus_100()
     touch_hide()
@@ -55,12 +60,12 @@ def test_ads_coins():#+++++++++
     assert_claim()
 
 
-def test_receiving_coins():#+++++++++
+def test_receiving_coins():
     touch_button_claim()
-    assert_hint11()
+    assert_coins11()
 
 
-def debug(): #+++++++++
+def debug():
     touch_debug()
     for i in range(8):
         (touch_plus_100())
@@ -69,7 +74,7 @@ def debug(): #+++++++++
     assert_91()
 
 
-def test_purchases_for_50coins():#+++++++++
+def test_purchases_for_50coins():
     touch_icon_shop()
     touch_50()
     assert_hint_x1()
@@ -78,7 +83,7 @@ def test_purchases_for_50coins():#+++++++++
     assert_hint3()
 
 
-def test_purchases_for_200coins():#+++++++++
+def test_purchases_for_200coins():
     touch_200()
     assert_hint_x1()
     assert_5()
@@ -86,16 +91,12 @@ def test_purchases_for_200coins():#+++++++++
     assert_8()
 
 
-def test_purchases_for_600coins():#+++++++++
+def test_purchases_for_600coins():
     touch_600()
     assert_hint_x1()
     assert_20()
     touch_button_claim()
     assert_28()
-
-
-def shop_swipe():
-    swipe_shop()
 
 
 def test_purchases_for_0dollars():
@@ -127,6 +128,7 @@ def run_shop_new():
     )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(skip_system_pop)
+    run_logger(skip_daily_popup)
     run_logger(test_debug_clear)
     run_logger(test_press_market_button)
     run_logger(test_locked_purchases)
@@ -138,7 +140,6 @@ def run_shop_new():
     run_logger(test_purchases_for_50coins)
     run_logger(test_purchases_for_200coins)
     run_logger(test_purchases_for_600coins)
-    run_logger(shop_swipe)
     run_logger(test_purchases_for_0dollars)
     run_logger(test_purchase_failed)
     stop_app("com.jollyco.jbpuzzleadventure")

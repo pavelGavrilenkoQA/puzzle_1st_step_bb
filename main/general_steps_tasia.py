@@ -19,6 +19,11 @@ def skip_system_pop():
     sleep(6)
 
 
+# def test_politic_accept():
+#   touch(Template(r"button_ok.png"))
+#  sleep(6)
+#  assert_exists(Template(r"tutorial_image.png"))
+
 def touch_button_ok():
     touch(button_ok())
 
@@ -117,13 +122,17 @@ def touch_button_back():
     sleep(1.0)
 
 
-
 def touch_button_settings():
     touch(button_settings())
     sleep(1.0)
-# def touch_button_settings():
-#     sleep(2)
-#     touch(button_settings())
+
+
+def english_language():
+    if not exists(english_language()):
+        touch(setting_menu())
+        touch(english_language())
+        sleep(2)
+        assert_exists(english_language())
 
 
 def touch_travelling_pack():
@@ -138,6 +147,8 @@ def touch_button_start():
     sleep(4)
     touch(button_start())
     sleep(2.0)
+
+
 
 
 # def test_press_setting_button():
@@ -194,7 +205,7 @@ def assert_exists_swipe_vibration_off():
 #    assert_exists(Template(
 #        r"sound_vibration_on.png"))
 
-def touch_sound_vibration_on():
+def sound_vibration_on():
     touch(sound_vibration_on())
 
 
@@ -248,6 +259,9 @@ def assert_exists_green_privacy_shield():
 def touch_swipe_analytics_on():
     touch(swipe_analytics_on())
 
+
+def touch_swipe_personalized_ads_on():
+    touch(swipe_analytics_on())
 
 
 def assert_exists_swipe_analytics_personalized_off():
@@ -311,8 +325,9 @@ def assert_exists_setting_and_coins():
 #        r"reward.png"))
 
 def touch_button_daily():
+    sleep(5.0)
     touch(button_daily())
-    sleep(1.0)
+    sleep(2.0)
 
 
 def assert_daily_challenge():
@@ -369,9 +384,6 @@ def assert_text_shop():
 def touch_first_product_buy():
     touch(first_product_buy())
 
-
-def assert_exists_purchase_popap():
-    assert_exists(purchase_popap())
 
 
 def touch_locked_text_shop():
@@ -483,6 +495,9 @@ def assert_not_exists_coins_6():
 #    assert_not_exists(Template(
 #        r"coins_3.png"))
 
+def swipe_elements_to_16():
+    swipe(Template(
+        r"swipe_elements_to_16.png"))
 
 
 def assert_exists_element_16():
@@ -504,11 +519,11 @@ def assert_not_exists_coins_3():
 #        assert_exists(Template(
 #            r"buton_level_assert.png"))
 
-def test_another_puzzle_in_progress():
+def another_puzzle_in_progress():
     sleep(4)
     if exists(another_puzzle_in_progress()):
         sleep(3)
-        return True
+
 
 def touch_button_yes():
     touch(button_yes())
@@ -528,8 +543,6 @@ def assert_exists_button_level_assert():
 def touch_button_exit():
     touch(button_exit())
     sleep(1.0)
-
-
 
 
 # def test_exit_popup_close():
@@ -597,6 +610,8 @@ def assert_completed_25_level():
     assert_exists(completed_25_level())
 
 
+def elements_49():
+    touch(elements_49())
 
 def assert_completed_49_elements():
     assert_exists(completed_49_elements())
@@ -616,6 +631,8 @@ def assert_completed_64_element():
     sleep(2)
 
 
+def elements_81():
+    touch(elements_81())
 
 
 def completed_81_element():
@@ -678,6 +695,7 @@ def touch_close_ads():
 
 
 def assert_hint_x1():
+    sleep(1.0)
     assert_exists(hint_x1())
 
 
@@ -687,7 +705,7 @@ def assert_hint3():
 
 def touch_button_claim():
     touch(button_claim())
-    sleep(1.0)
+    sleep(3.0)
 
 
 def assert_1():
@@ -735,11 +753,13 @@ def assert_claim():
     assert_exists(button_claim())
 
 
-def assert_hint11():
+def assert_coins11():
+    sleep(1)
     assert_exists(coins_11())
 
 
 def assert_91():
+    sleep(1)
     assert_exists(coins_91())
 
 
@@ -748,6 +768,7 @@ def assert_5():
 
 
 def assert_8():
+    sleep(1)
     assert_exists(hint_8())
 
 
@@ -796,6 +817,7 @@ def touch_buy():
 
 
 def assert_29():
+    sleep(1)
     assert_exists(hint_29())
 
 
@@ -870,6 +892,7 @@ def touch_button_continue():
 
 
 def touch_hint_main():
+    sleep(2.0)
     touch(hint_main())
     sleep(1.0)
 
@@ -964,6 +987,23 @@ def touch_minus_1():
 
 def assert_text_hint_ads():
     assert_exists(text_hint_ads())
+
+
+def touch_button_back_popup():
+    sleep(2)
+    touch(button_back_popup())
+    sleep(2.0)
+
+
+def assert_pass():
+    sleep(2)
+    assert_exists(button_pass())
+    sleep(1.0)
+
+
+
+
+
 
 
 
