@@ -1032,3 +1032,16 @@ def touch_button_back_2():
 
 def assert_settings_daily():
     assert_exists(settings_daily())
+
+
+def touch_button_back_popup():
+    sleep(2)
+    touch(button_back_popup())
+    sleep(2.0)
+
+
+def assert_pass():
+    sleep(2)
+    assert_exists(button_pass())
+    sleep(1.0)
+

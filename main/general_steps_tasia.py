@@ -1001,12 +1001,6 @@ def assert_pass():
     sleep(1.0)
 
 
-
-
-
-
-
-
 def touch_button_claim():
     touch(button_claim())
     sleep(7)

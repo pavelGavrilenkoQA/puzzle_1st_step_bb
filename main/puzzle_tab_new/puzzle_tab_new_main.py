@@ -8,8 +8,12 @@ from try_test_method import run_logger, remove_log_dir
 from general_steps_alex import skip_system_pop
 
 
+def skip_daily_popup():
+    if exists(button_pass()):
+        touch_button_back_popup()
+
+
 def test_open_free_pack():
-    touch_button_back_2()
     touch_sugar_mesh_pack()
     assert_exists_sugar_mesh_bw()
 
@@ -79,6 +83,7 @@ def run_puzzle_tab_new():
     )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(skip_system_pop)
+    run_logger(skip_daily_popup)
     run_logger(test_open_free_pack)
     run_logger(test_open_art)
     run_logger(test_rotation_button_on)

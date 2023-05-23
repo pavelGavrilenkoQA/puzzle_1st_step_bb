@@ -653,18 +653,34 @@ def button_settings_2():
         resolution=(1080, 2400)
     )
 
-def button_back_popup():
-    return Template(
-        fr"{PAGE_ROOT_ALEX}button_back_2.png",
-        record_pos=(-0.383, 0.99),
-        resolution=(1080, 2400)
-    )
+# def button_back_popup():
+#     return Template(
+#         fr"{PAGE_ROOT_ALEX}button_back_2.png",
+#         record_pos=(-0.383, 0.99),
+#         resolution=(1080, 2400)
+#     )
 
 
 def settings_daily():
     return Template(
         fr"{PAGE_ROOT_ALEX}settings_daily.png",
         record_pos=(-0.331, -0.912),
+        resolution=(1080, 2400)
+    )
+
+
+def button_back_popup():
+    return Template(
+        fr"{PAGE_ROOT_ALEX}button_back_popup.png",
+        record_pos=(-0.383, 0.995),
+        resolution=(1080, 2400)
+    )
+
+
+def button_pass():
+    return Template(
+        fr"{PAGE_ROOT_ALEX}button_pass.png",
+        record_pos=(0.186, 0.111),
         resolution=(1080, 2400)
     )
 

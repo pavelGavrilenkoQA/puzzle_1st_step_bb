@@ -8,8 +8,12 @@ from try_test_method import run_logger, remove_log_dir
 from general_steps_alex import skip_system_pop
 
 
+def skip_daily_popup():
+    if exists(button_pass()):
+        touch_button_back_popup()
+
+
 def test_press_setting_button():
-    touch_button_back_2()
     touch_button_settings()
     assert_exists_text_setting()
 
@@ -78,6 +82,7 @@ def run_setting_new():
     )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(skip_system_pop)
+    run_logger(skip_daily_popup)
     run_logger(test_press_setting_button)
     run_logger(test_sound_off)
     run_logger(test_vibro_off)
