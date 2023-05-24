@@ -11,8 +11,8 @@ def reload_app():
 
 def skip_tutor():
     touch_button_tap()
-    assert_pass()
-    touch_button_back_popup()
+    if exists(button_pass()):
+        touch_button_back_popup()
 
 
 def accept_privacy():

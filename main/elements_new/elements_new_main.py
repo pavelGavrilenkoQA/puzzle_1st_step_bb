@@ -128,6 +128,7 @@ def run_elements_in_art_new():
         project_root=AUTO_SETUP_ARG.get('project_root'),
     )
     start_app("com.jollyco.jbpuzzleadventure")
+    run_logger(skip_system_pop)
     run_logger(skip_daily_popup)
     run_logger(test_play_puzzle_9_elements)
     run_logger(test_play_puzzle_16_elements)
