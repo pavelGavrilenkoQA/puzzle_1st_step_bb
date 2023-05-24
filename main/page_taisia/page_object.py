@@ -1153,6 +1153,13 @@ def button_pass():
     )
 
 
+def button_tap():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}button_tap.png",
+        record_pos=(-0.256, -0.933),
+        resolution=(1080, 2400)
+    )
+
 
 if __name__ == "__main__":
     print(button_ok())

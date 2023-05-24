@@ -1004,3 +1004,13 @@ def assert_pass():
 def touch_button_claim():
     touch(button_claim())
     sleep(7)
+
+
+def touch_button_tap():
+    sleep(2)
+    touch(button_tap())
+    sleep(5)
+
+
+def assert_button_ok():
+    assert_exists(button_ok())
