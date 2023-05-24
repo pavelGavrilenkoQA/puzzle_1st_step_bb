@@ -13,6 +13,7 @@ test_first_unresolved_puzzle --- is passed
 test_first_puzzle_continue --- is passed
 test_second_unresolved_puzzle --- is passed
 test_second_puzzle_continue --- is passed
+test_third_unresolved_puzzle --- is passed
 test_third_puzzle_continue --- is passed
 test_first_resolved_puzzle --- is passed
 test_second_resolved_puzzle --- is passed
