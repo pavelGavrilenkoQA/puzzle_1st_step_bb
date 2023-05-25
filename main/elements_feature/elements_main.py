@@ -1,7 +1,6 @@
 __author__ = "QA SASHA"
 
 from general_steps_alex import *
-from tutorial_main import run_tutorial_feature
 from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
@@ -120,7 +119,7 @@ def test_play_puzzle_256_elements():
 
 
 def run_elements_in_art_new():
-    remove_log_dir('elements_new')
+    remove_log_dir('elements_feature')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),
@@ -139,5 +138,4 @@ def run_elements_in_art_new():
     run_logger(test_play_puzzle_144_elements)
     run_logger(test_play_puzzle_256_elements)
     stop_app("com.jollyco.jbpuzzleadventure")
-    simple_report(__file__, logpath=True, output='html_report/elements_new.html')
-
+    simple_report(__file__, logpath=True, output='html_report/elements_feature.html')

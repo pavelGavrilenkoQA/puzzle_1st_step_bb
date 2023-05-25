@@ -1,6 +1,9 @@
 __author__ = "TS"
 
 from general_steps_tasia import *
+from global_auto_agr import AUTO_SETUP_ARG
+from try_test_method import run_logger, remove_log_dir
+from airtest.report.report import simple_report
 
 
 def reload_app():
@@ -36,7 +39,7 @@ def pass_next_part():
 
 
 def run_skip_tutorial():
-    remove_log_dir('skip_tutorial')
+    remove_log_dir('skip_tutorial_feature')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),
@@ -68,4 +71,4 @@ def run_skip_tutorial():
     run_logger(puzzle_completed)
     run_logger(skip_tutor)
     stop_app("com.jollyco.jbpuzzleadventure")
-    simple_report(__file__, logpath=True, output='html_report/skip_tutorial.html')
+    simple_report(__file__, logpath=True, output='html_report/skip_tutorial_feature.html')

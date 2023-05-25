@@ -12,10 +12,10 @@ def run_logger(method):
     try:
         method()
         with open(f'{PATH_TO_PASSED}', 'a+') as f:
-            f.write(f'{method.__name__} --- is passed\n')
+            f.write(f'{method.__name__} --- is passed in {method.__module__}\n')
     except Exception as e:
         with open(f'{PATH_TO_FAILED}', 'a+') as f:
-            f.write(f'{method.__name__} --- is failed\n')
+            f.write(f'{method.__name__} --- is failed in {method.__module__}\n')
 
 
 def remove_txt_result_file():

@@ -1,291 +1,123 @@
 # -*- encoding=utf8 -*-
 __author__ = "TS"
 
-from airtest.core.api import *
 from airtest.report.report import simple_report
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
-from general_steps_tasia import skip_system_pop
+from general_steps_tasia import *
+
+
+def skip_daily_popup():
+    if exists(button_pass()):
+        touch_button_back_popup()
+
+
+def test_debug_clear():
+    touch_debug()
+    for i in range(5):
+        (touch_minus_1())
+    for i in range(3):
+        (touch_minus_10())
+    touch_hide()
 
 
 def test_press_market_button():
-    sleep(8)
-    touch(Template(r"tpl1678884817931.png",
-                   record_pos=(-0.379, 1.036),
-                   resolution=(1080, 2400)))
-    assert_exists(Template(r"tpl1678884965851.png",
-                           record_pos=(-0.002, -0.546),
-                           resolution=(1080, 2400)), "Shop")
+    touch_icon_shop()
+    assert_text_shop()
 
 
-def test_shop_failed():
-    touch(Template(r"tpl1678886094788.png",
-                   record_pos=(0.308, 0.006),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_not_exists(Template(r"tpl1678885322023.png",
-                               record_pos=(0.0, 0.381),
-                               resolution=(1080, 2400)))
-    touch(Template(r"tpl1678886142174.png",
-                   record_pos=(0.308, 0.17),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_not_exists(Template(r"tpl1678885322023.png",
-                               record_pos=(0.0, 0.381),
-                               resolution=(1080, 2400)))
-    touch(Template(r"tpl1678886163541.png",
-                   record_pos=(0.308, 0.329),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_not_exists(Template(r"tpl1678885322023.png",
-                               record_pos=(0.0, 0.381),
-                               resolution=(1080, 2400)))
+def test_locked_purchases():
+    touch_50()
+    assert_not_exists_claim()
+    touch_200()
+    assert_not_exists_claim()
+    touch_600()
+    assert_not_exists_claim()
 
 
 def test_ads_hint():
-    touch(Template(r"tpl1678885084910.png",
-                   record_pos=(0.272, -0.334),
-                   resolution=(1080, 2400)))
-    sleep(20.0)
-    touch(Template(r"tpl1678885160128.png",
-                   record_pos=(0.392, -0.898),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-    assert_exists(Template(r"tpl1678885189932.png",
-                           record_pos=(0.001, -0.24),
-                           resolution=(1080, 2400)), "Hint")
-    assert_exists(Template(r"tpl1678885278475.png",
-                           record_pos=(-0.001, 0.11),
-                           resolution=(1080, 2400)), "x1")
-    touch(Template(r"tpl1678885322023.png",
-                   record_pos=(0.0, 0.381),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_exists(Template(r"tpl1678885445348.png",
-                           record_pos=(0.399, -0.909),
-                           resolution=(1080, 2400)), "1")
-    sleep(1.0)
+    touch_ads_hint()
+    touch_close_ads()
+    assert_hint_x1()
+    assert_x1()
+    assert_claim()
+
+
+def test_receiving_hint():
+    touch_button_claim()
+    assert_1()
 
 
 def test_ads_coins():
-
-    touch(Template(r"tpl1678885772209.png",
-                   record_pos=(0.429, 1.068),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    touch(Template(r"tpl1678886000001.png",
-                   record_pos=(-0.219, 1.029),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-
-    touch(Template(r"tpl1678885514821.png",
-                   record_pos=(0.273, -0.172),
-                   resolution=(1080, 2400)))
-    sleep(20.0)
-    touch(Template(r"tpl1678885160128.png",
-                   record_pos=(0.392, -0.898),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-    assert_exists(Template(r"tpl1678885616274.png",
-                           record_pos=(0.001, -0.234),
-                           resolution=(1080, 2400)), "Coin")
-    assert_exists(Template(r"tpl1678885667252.png",
-                           record_pos=(-0.003, 0.112),
-                           resolution=(1080, 2400)), "x10")
-    touch(Template(r"tpl1678885322023.png",
-                   record_pos=(0.0, 0.381),
-                   resolution=(1080, 2400)))
-    assert_exists(Template(r"tpl1678886055763.png",
-                           record_pos=(0.001, -0.907),
-                           resolution=(1080, 2400)), "11")
-    sleep(3.0)
+    touch_debug()
+    touch_plus_100()
+    touch_hide()
+    touch_ads_coins()
+    touch_close_ads()
+    assert_coins_x10()
+    assert_x10()
+    assert_claim()
 
 
-def test_purchases_for_coins():
-    touch(Template(r"tpl1678885772209.png",
-                   record_pos=(0.429, 1.068),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678885897306.png",
-                   record_pos=(0.094, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678886841413.png",
-                   record_pos=(-0.283, -0.592),
-                   resolution=(1080, 2400)))
-    touch(Template(r"tpl1678886473551.png",
-                   record_pos=(-0.198, 0.902),
-                   resolution=(1080, 2400)))
-    sleep(3.0)
-    touch(Template(r"tpl1678884817931.png",
-                   record_pos=(-0.379, 1.036),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-
-    touch(Template(r"tpl1678886094788.png",
-                   record_pos=(0.308, 0.006),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_exists(Template(r"tpl1678885189932.png",
-                           record_pos=(0.001, -0.24),
-                           resolution=(1080, 2400)), "Hint")
-    assert_exists(Template(r"tpl1678885278475.png",
-                           record_pos=(-0.001, 0.11),
-                           resolution=(1080, 2400)), "x1")
-    touch(Template(r"tpl1678885322023.png",
-                   record_pos=(0.0, 0.381),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-    assert_exists(Template(r"tpl1678886892072.png",
-                           record_pos=(0.395, -0.912),
-                           resolution=(1080, 2400)), "3")
+def test_receiving_coins():
+    touch_button_claim()
+    assert_coins11()
 
 
+def debug():
+    touch_debug()
+    for i in range(8):
+        (touch_plus_100())
+    touch_plus_1()
+    touch_reload()
+    assert_91()
 
 
-
-    sleep(1.0)
-    touch(Template(r"tpl1678886142174.png",
-                   record_pos=(0.308, 0.17),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_exists(Template(r"tpl1678885189932.png",
-                           record_pos=(0.001, -0.24),
-                           resolution=(1080, 2400)), "Hint")
+def test_purchases_for_50coins():
+    touch_icon_shop()
+    touch_50()
+    assert_hint_x1()
+    assert_x1()
+    touch_button_claim()
+    assert_hint3()
 
 
-
-    assert_exists(Template(r"tpl1678886641504.png",
-                           record_pos=(0.02, 0.11),
-                           resolution=(1080, 2400)), "5")
-    touch(Template(r"tpl1678885322023.png",
-                   record_pos=(0.0, 0.381),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
+def test_purchases_for_200coins():
+    touch_200()
+    assert_hint_x1()
+    assert_5()
+    touch_button_claim()
+    assert_8()
 
 
-    assert_exists(Template(r"tpl1678887023215.png",
-                           record_pos=(0.393, -0.91),
-                           resolution=(1080, 2400)), "8")
+def test_purchases_for_600coins():
+    touch_600()
+    assert_hint_x1()
+    assert_20()
+    touch_button_claim()
+    assert_28()
 
 
+def test_purchases_for_0dollars():
+    touch_price_0()
+    assert_text_hint_ads()
+    android_quantity1()
+    android_price0()
+    touch_buy()
+    assert_hint_x1()
+    assert_x1()
+    touch_button_claim()
+    assert_29()
 
 
-    touch(Template(r"tpl1678886163541.png",
-                   record_pos=(0.308, 0.329),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-    assert_exists(Template(r"tpl1678885189932.png",
-                           record_pos=(0.001, -0.24),
-                           resolution=(1080, 2400)), "Hint")
-    assert_exists(Template(r"tpl1678886696379.png",
-                           record_pos=(0.02, 0.108),
-                           resolution=(1080, 2400)), "20")
-    touch(Template(r"tpl1678885322023.png",
-                   record_pos=(0.0, 0.381),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-    assert_exists(Template(r"tpl1678887126679.png",
-                           record_pos=(0.372, -0.91),
-                           resolution=(1080, 2400)), "28")
+def test_purchase_failed():
+    touch_price_4()
+    touch_loading()
+    assert_text_oops()
+    touch_button_yes()
 
 
-def test_purchases_for_dollars():
-    swipe(Template(r"tpl1678886732306.png",
-                   record_pos=(-0.01, 0.128),
-                   resolution=(1080, 2400)),
-          vector=[-0.0132, -0.2193])
-
-
-
-    touch(Template(r"tpl1678887207476.png",
-                   record_pos=(0.231, 0.071),
-                   resolution=(1080, 2400)))
-    sleep(3.0)
-
-
-    assert_exists(Template(r"tpl1678887470007.png",
-                           record_pos=(-0.18, 0.582),
-                           resolution=(1080, 2400)), "1")
-    assert_exists(Template(r"tpl1678887488850.png",
-                           record_pos=(0.34, 0.579),
-                           resolution=(1080, 2400)), "$0")
-
-    touch(Template(r"tpl1678887331922.png",
-                   record_pos=(0.404, 0.787),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-
-    touch(Template(r"tpl1678887416675.png",
-                   record_pos=(-0.396, -0.698),
-                   resolution=(1080, 2400)))
-    sleep(1.0)
-
-    touch(Template(r"tpl1678887436589.png",
-                   record_pos=(-0.002, 1.03),
-                   resolution=(1080, 2400)))
-    sleep(3.0)
-    assert_exists(Template(r"tpl1678885189932.png",
-                           record_pos=(0.001, -0.24),
-                           resolution=(1080, 2400)), "Hint")
-    assert_exists(Template(r"tpl1678885278475.png",
-                           record_pos=(-0.001, 0.11),
-                           resolution=(1080, 2400)), "x1")
-    touch(Template(r"tpl1678885322023.png",
-                   record_pos=(0.0, 0.381),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-
-
-
-
-    assert_exists(Template(r"tpl1678887563338.png",
-                           record_pos=(0.374, -0.909),
-                           resolution=(1080, 2400)), "29")
-
-
-
-
-    touch(Template(r"tpl1678890179493.png",
-                   record_pos=(0.227, 0.394),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-    touch(Template(r"tpl1678890193321.png",
-                   record_pos=(0.103, -0.082),
-                   resolution=(1080, 2400)))
-    sleep(2.0)
-    assert_exists(Template(r"tpl1678890220627.png",
-                           record_pos=(-0.001, -0.251),
-                           resolution=(1080, 2400)), "Oops")
-    touch(Template(r"tpl1678890255960.png",
-                   record_pos=(0.0, 0.099),
-                   resolution=(1080, 2400)))
-
-
-def run_shop_feature():
+def run_shop_new():
     remove_log_dir('shop_feature')
     auto_setup(
         __file__,
@@ -295,10 +127,19 @@ def run_shop_feature():
     )
     start_app("com.jollyco.jbpuzzleadventure")
     run_logger(skip_system_pop)
+    run_logger(skip_daily_popup)
+    run_logger(test_debug_clear)
     run_logger(test_press_market_button)
+    run_logger(test_locked_purchases)
     run_logger(test_ads_hint)
+    run_logger(test_receiving_hint)
     run_logger(test_ads_coins)
-    run_logger(test_purchases_for_coins)
-    run_logger(test_purchases_for_dollars)
+    run_logger(test_receiving_coins)
+    run_logger(debug)
+    run_logger(test_purchases_for_50coins)
+    run_logger(test_purchases_for_200coins)
+    run_logger(test_purchases_for_600coins)
+    run_logger(test_purchases_for_0dollars)
+    run_logger(test_purchase_failed)
     stop_app("com.jollyco.jbpuzzleadventure")
     simple_report(__file__, logpath=True, output='html_report/shop.html')

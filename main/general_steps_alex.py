@@ -1,9 +1,5 @@
 __author__ = "QA PG"
 
-from airtest.core.api import *
-from airtest.report.report import simple_report
-from global_auto_agr import AUTO_SETUP_ARG
-from try_test_method import run_logger, remove_log_dir
 from page_object import *
 from global_auto_agr import PAGE_ROOT_TAISIA
 from page_object_alex import *
@@ -159,12 +155,6 @@ def assert_exists_text_setting():
     assert_exists(text_setting())
 
 
-# def test_sound_off():
-#    touch(Template(
-#       r"swipe_sound_on.png"))
-#    assert_exists(Template(
-#        r"swipe_sound_off.png"))
-
 def touch_swipe_sound_on():
     touch(touch_swipe_sound_on())
 
@@ -181,12 +171,6 @@ def assert_exists_swipe_sound_off():
     assert_exists(swipe_sound_off())
 
 
-# def test_vibro_off():
-#   touch(Template(
-#        r"swipe_vibration_on.png"))
-#    assert_exists(Template(
-#        r"swipe_vibration_off.png"))
-
 def touch_swipe_vibration_on():
     touch(swipe_vibration_on())
 
@@ -194,14 +178,6 @@ def touch_swipe_vibration_on():
 def assert_exists_swipe_vibration_off():
     assert_exists(swipe_vibration_off())
 
-
-# def test_sound_and_vibro_on():
-#    touch(Template(
-#        r"sound_vibration_on.png"))
-#    touch(Template(
-#        r"swipe_vibration_off.png"))
-#    assert_exists(Template(
-#        r"sound_vibration_on.png"))
 
 def touch_sound_vibration_on():
     touch(sound_vibration_on())
@@ -314,14 +290,6 @@ def assert_exists_setting_and_coins():
     assert_exists(setting_and_coins())
 
 
-# def test_press_daily_button(assert_exists=None):
-#    touch(Template(
-#        r"button_daily.png"))
-#    assert_exists(Template(
-#        r"daily_challenge.png"))
-#    and assert_exists(Template(
-#        r"reward.png"))
-
 def touch_button_daily():
     touch(button_daily())
     sleep(1.0)
@@ -334,15 +302,6 @@ def assert_daily_challenge():
 def assert_reward():
     assert_exists(reward())
 
-
-# def test_tap_left_daily_puzzle():
-#    sleep(3)
-#    touch(Template(
-#        r"part_of_daily.png"))
-#    assert_exists(Template(
-#        r"button_start.png"))
-#    touch(Template(
-#        r"button_back.png"))
 
 def assert_button_back():
     assert_exists(button_back())
@@ -372,14 +331,6 @@ def assert_text_shop():
     assert_exists(text_shop())
 
 
-# def test_first_product_buy():
-#    touch(Template(
-#        r"first_product_buy.png"))
-#    assert_exists(Template(
-#        r"purchase_popap.png"))
-#    touch(Template(
-#        r"locked_text_shop.png"))
-
 def touch_first_product_buy():
     touch(first_product_buy())
 
@@ -391,12 +342,6 @@ def assert_exists_purchase_popap():
 def touch_locked_text_shop():
     touch(locked_text_shop())
 
-
-# def test_swipe_product_list():
-#    swipe(Template(
-#        r"product_list.png"))
-#    assert_exists(Template(
-#        r"product_3k_coins.png"))
 
 def swipe_product_list():
     swipe(product_list())
@@ -433,12 +378,6 @@ def assert_exists_sugar_mesh_pack():
     assert_exists(sugar_mesh_pack())
 
 
-# def test_open_art():
-#    touch(Template(
-#        r"sugar_mesh_bw.png"))
-#    assert_exists(Template(
-#        r"button_win.png"))
-
 def touch_sugar_mesh_bw():
     touch(sugar_mesh_bw())
 
@@ -446,14 +385,6 @@ def touch_sugar_mesh_bw():
 def assert_exists_button_win():
     assert_exists(button_win())
 
-
-# def test_rotation_button_on():
-#    touch(Template(
-#        r"swipe_rotation_off.png"))
-#    assert_exists(Template(
-#        r"swipe_rotation_on.png"))
-#    assert_not_exists(Template(
-#        r"coins_3.png"))
 
 def touch_swipe_rotation_off():
     touch(swipe_rotation_off())
@@ -467,14 +398,6 @@ def assert_exists_swipe_():
 def assert_not_exists_coins_3():
     assert_not_exists(coins_3())
 
-
-# def test_rotation_button_off():
-#    touch(Template(
-#        r"swipe_rotation_on.png"))
-#    assert_exists(Template(
-#        r"swipe_rotation_off.png"))
-#    assert_not_exists(Template(
-#        r"coins_6.png"))
 
 def touch_swipe_rotation_on():
     touch(swipe_rotation_on())
@@ -515,16 +438,6 @@ def assert_not_exists_coins_3():
     assert_not_exists(coins_3())
 
 
-# def test_start_art_puzzle():
-#    sleep(4)
-#    if exists(Template(
-#            r"another_puzzle_in_progress.png"))
-#        sleep(3)
-#        touch(Template(
-#            r"button_yes.png"))
-#        assert_exists(Template(
-#            r"buton_level_assert.png"))
-
 def test_another_puzzle_in_progress():
     sleep(4)
     if exists(another_puzzle_in_progress()):
@@ -555,16 +468,6 @@ def touch_button_exit():
 def popap_before_exit():
     assert_exists(popap_before_exit_1())
 
-
-# def test_exit_popup_close():
-#    touch(Template(
-#        r"button_no.png"))
-#    assert_not_exists(Template(
-#        r"buton_level_assert.png"))
-#    assert_not_exists(Template(
-#        r"sugar_mesh_pack.png"))
-#    assert_not_exists(Template(
-#        r"sugar_mesh_bw.png"))
 
 def touch_button_no():
     touch(button_no())
@@ -1044,4 +947,3 @@ def assert_pass():
     sleep(2)
     assert_exists(button_pass())
     sleep(1.0)
-
