@@ -424,6 +424,7 @@ def touch_sugar_mesh_pack():
 
 
 def assert_exists_sugar_mesh_bw():
+    sleep(2)
     assert_exists(sugar_mesh_bw())
 
 
@@ -686,10 +687,10 @@ def touch_ads_hint():
 
 def touch_ads_coins():
     touch(ads_coins())
-    sleep(20.0)
 
 
 def touch_close_ads():
+    sleep(24)
     touch(close_ads())
     sleep(2.0)
 
@@ -1007,10 +1008,51 @@ def touch_button_claim():
 
 
 def touch_button_tap():
-    sleep(2)
+    sleep(3)
     touch(button_tap())
     sleep(5)
 
 
 def assert_button_ok():
     assert_exists(button_ok())
+
+
+def assert_button_back_popup():
+    sleep(2)
+    assert_exists(button_back_popup())
+    sleep(2.0)
+
+
+def assert_text_complete():
+    assert_exists(text_complete())
+
+
+def touch_pass():
+    sleep(2)
+    touch(button_pass())
+    sleep(1.0)
+
+
+def touch_debug_checkmark():
+    touch(debug_checkmark_no())
+    sleep(1)
+
+
+def assert_debug_checkmark_yes():
+    assert_exists(debug_checkmark_yes())
+
+
+def assert_text_best_offer():
+    assert_exists(text_best_offer())
+
+
+def assert_hint_best_offer():
+    assert_exists(hint_best_offer())
+
+
+def assert_text_disable():
+    assert_exists(text_disable())
+
+
+def assert_popup_ads():
+    assert_exists(popup_ads())

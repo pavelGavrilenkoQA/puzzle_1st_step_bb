@@ -1,12 +1,24 @@
 __author__ = "TS"
 
 from general_steps_tasia import *
+from general_steps_alex import switch_english_language_test
 
 
 def reload_app():
     stop_app("com.jollyco.jbpuzzleadventure")
     clear_app("com.jollyco.jbpuzzleadventure")
     start_app("com.jollyco.jbpuzzleadventure")
+    sleep(5)
+    touch_button_ok()
+    sleep(8)
+    touch_button_ok()
+    sleep(10)
+    touch_button_settings()
+    switch_english_language_test()
+    touch_button_back()
+    stop_app("com.jollyco.jbpuzzleadventure")
+    start_app("com.jollyco.jbpuzzleadventure")
+
 
 
 def skip_tutor():
@@ -44,22 +56,18 @@ def run_skip_tutorial():
         project_root=AUTO_SETUP_ARG.get('project_root'),
     )
     run_logger(reload_app)
-    run_logger(accept_privacy)
     run_logger(skip_tutor)
     run_logger(reload_app)
-    run_logger(accept_privacy)
     run_logger(pass_first_part)
     run_logger(puzzle_completed)
     run_logger(skip_tutor)
     run_logger(reload_app)
-    run_logger(accept_privacy)
     run_logger(pass_first_part)
     run_logger(puzzle_completed)
     run_logger(pass_next_part)
     run_logger(puzzle_completed)
     run_logger(skip_tutor)
     run_logger(reload_app)
-    run_logger(accept_privacy)
     run_logger(pass_first_part)
     run_logger(puzzle_completed)
     run_logger(pass_next_part)

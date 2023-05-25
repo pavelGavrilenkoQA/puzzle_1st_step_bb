@@ -1161,6 +1161,62 @@ def button_tap():
     )
 
 
+def text_complete():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}text_complete.png",
+        record_pos=(-0.167, -0.124),
+        resolution=(1080, 2400)
+    )
+
+
+def debug_checkmark_yes():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}checkmark_yes.png",
+        record_pos=(-0.318, -0.099),
+        resolution=(1080, 2400)
+    )
+
+
+def debug_checkmark_no():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}checkmark_no.png",
+        record_pos=(-0.321, -0.096),
+        resolution=(1080, 2400)
+    )
+
+
+def text_best_offer():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}text_best_offer.png",
+        record_pos=(0.015, -0.092),
+        resolution=(1080, 2400)
+    )
+
+
+def hint_best_offer():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}hint_best_offer.png",
+        record_pos=(0.015, -0.092),
+        resolution=(1080, 2400)
+    )
+
+
+def popup_ads():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}ads.png",
+        record_pos=(-0.212, -0.017),
+        resolution=(1080, 2400)
+    )
+
+
+def text_disable():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}text_disable.png",
+        record_pos=(0.081, -0.155),
+        resolution=(1080, 2400)
+    )
+
+
 if __name__ == "__main__":
     print(button_ok())
     print(tutorial_image())

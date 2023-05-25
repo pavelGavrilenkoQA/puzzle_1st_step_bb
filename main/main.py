@@ -9,6 +9,7 @@ from tutorial_new import tutorial_new_main
 from setting_new_feature import setting_new
 from puzzle_tab_new import puzzle_tab_new_main
 from elements_new import elements_new_main
+from popup import popup_main
 
 
 if __name__ == "__main__":
@@ -20,3 +21,5 @@ if __name__ == "__main__":
     puzzle_tab_new_main.run_puzzle_tab_new()
     elements_new_main.run_elements_in_art_new()
     skip_tutorial_main.run_skip_tutorial()
+    popup_main.run_popup()
+
