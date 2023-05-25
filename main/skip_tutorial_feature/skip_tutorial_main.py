@@ -4,12 +4,24 @@ from general_steps_tasia import *
 from global_auto_agr import AUTO_SETUP_ARG
 from try_test_method import run_logger, remove_log_dir
 from airtest.report.report import simple_report
+from general_steps_alex import switch_english_language_test
 
 
 def reload_app():
     stop_app("com.jollyco.jbpuzzleadventure")
     clear_app("com.jollyco.jbpuzzleadventure")
     start_app("com.jollyco.jbpuzzleadventure")
+    sleep(5)
+    touch_button_ok()
+    sleep(8)
+    touch_button_ok()
+    sleep(10)
+    touch_button_settings()
+    switch_english_language_test()
+    touch_button_back()
+    stop_app("com.jollyco.jbpuzzleadventure")
+    start_app("com.jollyco.jbpuzzleadventure")
+
 
 
 def skip_tutor():

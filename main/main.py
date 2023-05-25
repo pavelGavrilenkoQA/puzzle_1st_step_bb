@@ -20,3 +20,5 @@ if __name__ == "__main__":
     puzzle_tab_main.run_puzzle_tab_new()
     elements_main.run_elements_in_art_new()
     skip_tutorial_main.run_skip_tutorial()
+    popup_main.run_popup()
+
