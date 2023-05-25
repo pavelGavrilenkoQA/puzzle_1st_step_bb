@@ -68,7 +68,9 @@ def switch_english_language_test():
 def touch_travelling_pack():
     sleep(2)
     touch(travelling_pack_color())
+    sleep(2)
     touch(travelling_pack_bw())
+    sleep(2)
     touch(button_start())
     sleep(6)
 
