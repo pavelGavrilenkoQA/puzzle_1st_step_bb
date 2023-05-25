@@ -24,19 +24,6 @@ def assert_exists_tutorial_image():
     assert_exists(tutorial_image())
 
 
-# def test_tutorial_part_1():
-#    touch(Template(
-#        r"button_ok.png"))
-#    sleep(6)
-#    assert_exists(Template(
-#        r"empty_elements_list.png"))
-#    sleep(5)
-#    touch(Template(
-#        r"button_win.png"))
-#   sleep(7)
-#    assert_exists(Template(
-#        r"tutorial_image.png"))
-
 def assert_exist_empty_elements_list():
     sleep(6)
     assert_exists(empty_elements_list())
@@ -48,64 +35,16 @@ def touch_button_win():
     sleep(3)
 
 
-# def test_tutorial_part_2():
-#    touch(Template(
-#        r"button_ok.png"))
-#    sleep(6)
-#    assert_exists(Template(
-#        r"empty_field.png"))
-#    touch(Template(
-#        r"button_win.png"))
-#    assert_exists(Template(
-#        r"tutorial_image.png"))
-
 def assert_exists_empty_field():
     sleep(6)
     assert_exists(empty_field())
     sleep(1)
 
 
-# def test_tutorial_part_3():
-#    touch(Template(
-#        r"button_ok.png"))
-#    sleep(7)
-#    assert_exists(Template(
-#        r"completed_art_tutorial.png"))
-
 def asserts_exists_completed_art_tutorial():
     sleep(7)
     assert_exists(completed_art_tutorial())
 
-
-# def test_language_check():
-#    sleep(2)
-#    touch(Template(
-#        r"button_back.png"))
-#    sleep(2)
-#    touch(Template(
-#       r"button_back.png"))
-#    sleep(2)
-#    touch(Template(
-#        r"button_settings.png"))
-#    if not exists(Template(
-#        r"english_language.png")):
-#        touch(Template(
-#        r"setting_menu.png"))
-#    touch(Template(
-#         r"english_language.png"))
-#    sleep(2)
-#    assert_exists(Template(
-#         r"english_language.png"))
-#    touch(Template(
-#        r"button_back.png"))
-#    sleep(2)
-#    touch(Template(
-#        r"travelling_pack_color.png"))
-#    touch(Template(
-#        r"travelling_pack_bw.png"))
-#    touch(Template(
-#        r"button_start.png"))
-#    sleep(6)
 
 def touch_button_back():
     sleep(2)
@@ -116,11 +55,6 @@ def touch_button_back():
 def touch_button_settings():
     touch(button_settings())
     sleep(1.0)
-
-
-# def touch_button_settings():
-#     sleep(2)
-#     touch(button_settings())
 
 
 def switch_english_language_test():
@@ -144,12 +78,6 @@ def touch_button_start():
     touch(button_start())
     sleep(2.0)
 
-
-# def test_press_setting_button():
-#    touch(Template(
-#        r"button_settings.png"))
-#    assert_exists(Template(
-#        r"text_setting.png"))
 
 def assert_exists_text_setting():
     assert_exists(text_setting())
@@ -191,14 +119,6 @@ def assert_exists_sound_vibration_on():
     assert_exists(sound_vibration_on())
 
 
-# def test_language_list_get():
-#    touch(Template(
-#        r"english_flag_text.png"))
-#    assert_exists(Template(
-#        r"all_languages.png"))
-#    touch(Template(
-#        r"button_back.png"))
-
 def touch_english_flag_text():
     touch(english_flag_text())
 
@@ -206,12 +126,6 @@ def touch_english_flag_text():
 def assert_exists_all_languages():
     assert_exists(all_languages())
 
-
-# def test_privacy_tap():
-#    touch(Template(
-#        r"button_privacy.png"))
-#    assert_exists(Template(
-#        r"green_privacy_shield.png"))
 
 def touch_button_privacy():
     touch(button_privacy())
@@ -221,14 +135,6 @@ def assert_exists_green_privacy_shield():
     sleep(2)
     assert_exists(green_privacy_shield())
 
-
-# def test_off_all_privacy():
-#    touch(Template(
-#        r"swipe_analytics_on.png"))
-#    touch(Template(
-#        r"swipe_personalized_ads_on.png"))
-#    assert_exists(Template(
-#        r"swipe_analytics_personalized_ads_off.png"))
 
 def touch_swipe_analytics_on():
     touch(swipe_analytics_on())
