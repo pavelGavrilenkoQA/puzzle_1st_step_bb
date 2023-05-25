@@ -75,7 +75,7 @@ def exit_to_main():
 
 
 def run_popup():
-    remove_log_dir('popup')
+    remove_log_dir('popup_feature')
     auto_setup(
         __file__,
         logdir=AUTO_SETUP_ARG.get('logdir'),
@@ -96,4 +96,4 @@ def run_popup():
     run_logger(no_ads_popup)
     run_logger(exit_to_main)
     stop_app("com.jollyco.jbpuzzleadventure")
-    simple_report(__file__, logpath=True, output='html_report/popup.html')
+    simple_report(__file__, logpath=True, output='html_report/popup_feature.html')

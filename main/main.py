@@ -9,6 +9,7 @@ from tutorial_feature import tutorial_main
 from setting_feature import setting_main
 from puzzle_tab_feature import puzzle_tab_main
 from elements_feature import elements_main
+from popup_feature import popup_main
 
 
 if __name__ == "__main__":

@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/main/daily_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/daily_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/setting_feature" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main/setting_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/puzzle_tab_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/puzzle_tab_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/html_report" isTestSource="false" />
@@ -15,7 +14,7 @@
       <sourceFolder url="file://$MODULE_DIR$/main/tutorial_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/elements_in_art" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/ads" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main/shop_feature" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main/popup_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/shop_feature" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/page_taisia" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main/page_alex" isTestSource="false" />
@@ -23,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/main/skip_tutorial_feature" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (puzzle_1st_step_bb)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (puzzle_1st_step_bb)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
