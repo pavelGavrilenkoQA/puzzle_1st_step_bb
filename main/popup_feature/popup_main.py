@@ -1,6 +1,9 @@
 __author__ = "TS"
 
 from general_steps_tasia import *
+from global_auto_agr import AUTO_SETUP_ARG
+from try_test_method import run_logger, remove_log_dir
+from airtest.report.report import simple_report
 
 
 def reload_app():
