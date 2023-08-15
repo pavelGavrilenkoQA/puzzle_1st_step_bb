@@ -65,7 +65,7 @@ def test_link_in_setting_present():
 
 def test_setting_menu_exit():
     touch_button_back()
-    assert_settings_daily()
+    assert_settings_daily() 
 
 
 def run_setting_new():
