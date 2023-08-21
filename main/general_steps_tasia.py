@@ -812,19 +812,19 @@ def assert_ads_offer_shop():
     assert_exists(ads_offer_shop())
 
 
-def assert_shop_hint_x1() -> object:
+def assert_shop_hint_x1():
     assert_exists(shop_hint_x1())
 
 
-def assert_shop_hint_x5() -> object:
+def assert_shop_hint_x5():
     assert_exists(shop_hint_x5())
 
 
-def assert_shop_hint_x20() -> object:
+def assert_shop_hint_x20():
     assert_exists(shop_hint_x20())
 
 
-def assert_shop_hint_x100() -> object:
+def assert_shop_hint_x100():
     assert_exists(shop_hint_x100())
 
 
@@ -832,3 +832,10 @@ def assert_limit():
     assert_exists(limit())
 
 
+def touch_button_ok_tutorial():
+    touch(button_ok_tutorial())
+
+
+def assert_icon_shop():
+    assert_exists(icon_shop())
+    sleep(2.0)

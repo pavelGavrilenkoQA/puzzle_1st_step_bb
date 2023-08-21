@@ -994,7 +994,7 @@ def text_hint():
 def text_puzzle_completed():
     return Template(
         fr"{PAGE_ROOT_TAISIA}text_puzzle_completed.png",
-        record_pos=(-0.001, -0.735),
+        record_pos=(-0.005, -0.735),
         resolution=(1080, 2400)
     )
 
@@ -1261,9 +1261,19 @@ def shop_hint_x100():
         record_pos=(0.222, -0.114),
         resolution=(1080, 2400)
     )
+
+
 def limit():
     return Template(
         fr"{PAGE_ROOT_TAISIA}limit.png",
         record_pos=(-0.211, 0.081),
+        resolution=(1080, 2400)
+    )
+
+
+def button_ok_tutorial():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}ok_privacy.png",
+        record_pos=(-0.001, 0.326),
         resolution=(1080, 2400)
     )

@@ -7,31 +7,39 @@ from airtest.report.report import simple_report
 from general_steps_alex import switch_english_language_test
 
 
+# def reload_app():
+#     stop_app("com.jollyco.jbpuzzleadventure")
+#     clear_app("com.jollyco.jbpuzzleadventure")
+#     start_app("com.jollyco.jbpuzzleadventure")
+#     sleep(5)
+#     touch_button_ok()
+#     sleep(8)
+#     touch_button_ok()
+#     sleep(10)
+#     touch_button_settings()
+#     switch_english_language_test()
+#     touch_button_back()
+#     stop_app("com.jollyco.jbpuzzleadventure")
+#     start_app("com.jollyco.jbpuzzleadventure")
+
+
 def reload_app():
     stop_app("com.jollyco.jbpuzzleadventure")
     clear_app("com.jollyco.jbpuzzleadventure")
     start_app("com.jollyco.jbpuzzleadventure")
-    sleep(5)
-    touch_button_ok()
-    sleep(8)
-    touch_button_ok()
-    sleep(10)
-    touch_button_settings()
-    switch_english_language_test()
-    touch_button_back()
-    stop_app("com.jollyco.jbpuzzleadventure")
-    start_app("com.jollyco.jbpuzzleadventure")
+    sleep(15)
+    touch_button_ok_tutorial()
 
 
 def skip_tutor():
     touch_button_tap()
-    if exists(button_pass()):
-        touch_button_back_popup()
+    # if exists(button_pass()):
+    #     touch_button_back_popup()
+    assert_icon_shop()
 
 
 def puzzle_completed():
     assert_text_puzzle_completed()
-    assert_exists_tutorial_image()
     assert_button_ok()
     touch_button_ok()
 

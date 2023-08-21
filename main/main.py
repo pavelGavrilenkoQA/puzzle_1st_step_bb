@@ -15,9 +15,9 @@ from popup_feature import popup_main
 if __name__ == "__main__":
     remove_txt_result_file()
     # tutorial_main.run_tutorial_new()
-    shop_main.run_shop_new()
+    # shop_main.run_shop_new()
     # setting_main.run_setting_new()
     # puzzle_tab_main.run_puzzle_tab_new()
     # elements_main.run_elements_in_art_new()
-    # skip_tutorial_main.run_skip_tutorial()
+    skip_tutorial_main.run_skip_tutorial()
 
