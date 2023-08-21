@@ -427,8 +427,8 @@ def assert_not_exists_claim():
     assert_not_exists(button_claim())
 
 
-def touch_ads_hint():
-    touch(ads_hint())
+def assert_ads_hint():
+    assert_exists(ads_hint())
 
 
 def touch_ads_coins():
@@ -436,7 +436,7 @@ def touch_ads_coins():
 
 
 def touch_close_ads():
-    sleep(24)
+    sleep(45)
     touch(close_ads())
     sleep(2.0)
 
@@ -489,7 +489,7 @@ def touch_plus_1():
 
 def touch_reload():
     touch(reload())
-    sleep(1.0)
+    sleep(8.0)
 
 
 def assert_x1():
@@ -801,3 +801,34 @@ def assert_text_disable():
 
 def assert_popup_ads():
     assert_exists(popup_ads())
+
+
+def touch_button_simulate_remote_ads():
+    touch(button_simulate_remote_ads())
+    sleep(1)
+
+
+def assert_ads_offer_shop():
+    assert_exists(ads_offer_shop())
+
+
+def assert_shop_hint_x1() -> object:
+    assert_exists(shop_hint_x1())
+
+
+def assert_shop_hint_x5() -> object:
+    assert_exists(shop_hint_x5())
+
+
+def assert_shop_hint_x20() -> object:
+    assert_exists(shop_hint_x20())
+
+
+def assert_shop_hint_x100() -> object:
+    assert_exists(shop_hint_x100())
+
+
+def assert_limit():
+    assert_exists(limit())
+
+

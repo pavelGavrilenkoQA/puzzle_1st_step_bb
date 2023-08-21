@@ -283,7 +283,7 @@ def text_coming_soon():
 def icon_shop():
     return Template(
         fr"{PAGE_ROOT_TAISIA}icon_shop.png",
-        record_pos=(-0.379, 1.036),
+        record_pos=(-0.378, 1.009),
         resolution=(1080, 2400)
     )
 
@@ -291,7 +291,7 @@ def icon_shop():
 def text_shop():
     return Template(
         fr"{PAGE_ROOT_TAISIA}text_shop.png",
-        record_pos=(0.0, -0.656),
+        record_pos=(-0.004, -0.713),
         resolution=(1080, 2400)
     )
 
@@ -314,8 +314,8 @@ def plus_1():
 
 def reload():
     return Template(
-        fr"{PAGE_ROOT_TAISIA}Reload.png",
-        record_pos=(-0.198, 0.902),
+        fr"{PAGE_ROOT_TAISIA}reload_scene.png",
+        record_pos=(0.2, 0.544),
         resolution=(1080, 2400)
     )
 
@@ -650,7 +650,7 @@ def locked_600():
 def ads_hint():
     return Template(
             fr"{PAGE_ROOT_TAISIA}ads_hint.png",
-            record_pos=(0.001, 0.66),
+            record_pos=(-0.207, 0.013),
             resolution=(1080, 2400)
     )
 
@@ -698,7 +698,7 @@ def hint_1():
 def debug():
     return Template(
         fr"{PAGE_ROOT_TAISIA}debug.png",
-        record_pos=(0.429, 1.068),
+        record_pos=(0.429, 0.842),
         resolution=(1080, 2400)
     )
 
@@ -1211,5 +1211,59 @@ def text_disable():
     return Template(
         fr"{PAGE_ROOT_TAISIA}text_disable.png",
         record_pos=(0.081, -0.155),
+        resolution=(1080, 2400)
+    )
+
+
+def button_simulate_remote_ads():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}simulate_remote_ads.png",
+        record_pos=(-0.338, -0.302),
+        resolution=(1080, 2400)
+    )
+
+
+def ads_offer_shop():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}ads.png",
+        record_pos=(-0.219, -0.44),
+        resolution=(1080, 2400)
+    )
+
+
+def shop_hint_x1():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}shop_hint_x1.png",
+        record_pos=(-0.216, -0.11),
+        resolution=(1080, 2400)
+    )
+
+
+def shop_hint_x5():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}shop_hint_x5.png",
+        record_pos=(-0.216, 0.286),
+        resolution=(1080, 2400)
+    )
+
+
+def shop_hint_x20():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}shop_hint_x20.png",
+        record_pos=(0.219, 0.287),
+        resolution=(1080, 2400)
+    )
+
+
+def shop_hint_x100():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}shop_hint_x100.png",
+        record_pos=(0.222, -0.114),
+        resolution=(1080, 2400)
+    )
+def limit():
+    return Template(
+        fr"{PAGE_ROOT_TAISIA}limit.png",
+        record_pos=(-0.211, 0.081),
         resolution=(1080, 2400)
     )
